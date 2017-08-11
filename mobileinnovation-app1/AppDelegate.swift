@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,8 +16,60 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        // APNs
+        if #available(iOS 10, *) {
+            // For iOS 10
+            UNUserNotificationCenter.current().requestAuthorization(options:[.alert, .sound, .badge]) { (granted: Bool, error: Error?) in
+                if (error != nil) {
+                    print("Failed to request authorization.")
+                    return
+                }
+                if granted {
+                    application.registerForRemoteNotifications()
+                } else {
+                    print("The user refused the push notification.")
+                }
+            }
+        } else {
+            // For iOS 8/iOS 9
+            let notificationSettings = UIUserNotificationSettings(types: [.alert, .sound, .badge], categories: nil)
+            application.registerUserNotificationSettings(notificationSettings)
+            application.registerForRemoteNotifications()
+        }
         return true
+    }
+
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+
+        let token = deviceToken.map { String(format: "%.2hhx", $0) }.joined()
+        print(token)
+    }
+
+    func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+
+        print("Failed to register to APNs: \(error)")
+    }
+
+    // POST 送信
+    func sendToken(token: String){
+        let serverPhp = "https://hoge.hage.jp/get_device_token.php"
+        let postString = "DeviceToken=" + token
+
+        var request = URLRequest(url: URL(string: serverPhp)!)
+        request.httpMethod = "POST"
+        request.httpBody = postString.data(using: .utf8)
+
+        let task = URLSession.shared.dataTask(with: request, completionHandler: {
+            (data, response, error) in
+
+            if error != nil {
+                print(error)
+                return
+            }
+            print("response: \(response!)")
+        })
+        task.resume()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
