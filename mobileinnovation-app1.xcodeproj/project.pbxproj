@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0FDD254E8D70A199A8B4340D /* Pods_mobileinnovation_app1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C4E3CD8AA443754CB79C21 /* Pods_mobileinnovation_app1Tests.framework */; };
+		10BDC59C1F3EB08E00DEED35 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDC59B1F3EB08E00DEED35 /* Configuration.swift */; };
 		10BE15DB1F3D9FAF0007641A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BE15DA1F3D9FAF0007641A /* AppDelegate.swift */; };
 		10BE15DD1F3D9FAF0007641A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BE15DC1F3D9FAF0007641A /* ViewController.swift */; };
 		10BE15E01F3D9FAF0007641A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BE15DE1F3D9FAF0007641A /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10BDC59B1F3EB08E00DEED35 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		10BE15D71F3D9FAF0007641A /* mobileinnovation-app1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobileinnovation-app1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BE15DA1F3D9FAF0007641A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10BE15DC1F3D9FAF0007641A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,8 +119,9 @@
 			children = (
 				10BE16081F3DD6500007641A /* mobileinnovation-app1.entitlements */,
 				10BE15DA1F3D9FAF0007641A /* AppDelegate.swift */,
-				10BE15DC1F3D9FAF0007641A /* ViewController.swift */,
 				10BE15DE1F3D9FAF0007641A /* Main.storyboard */,
+				10BE15DC1F3D9FAF0007641A /* ViewController.swift */,
+				10BDC59B1F3EB08E00DEED35 /* Configuration.swift */,
 				10BE15E11F3D9FAF0007641A /* Assets.xcassets */,
 				10BE15E31F3D9FAF0007641A /* LaunchScreen.storyboard */,
 				10BE15E61F3D9FAF0007641A /* Info.plist */,
@@ -443,6 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10BDC59C1F3EB08E00DEED35 /* Configuration.swift in Sources */,
 				10BE15DD1F3D9FAF0007641A /* ViewController.swift in Sources */,
 				10BE15DB1F3D9FAF0007641A /* AppDelegate.swift in Sources */,
 			);

@@ -10,16 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lbl_token: UILabel!
+
     override func viewDidLoad() {
+
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        let config_instance = Configuration()
+        lbl_token.text = config_instance.configurationGet_String(keyName: "DeviceToken")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
 }
 
