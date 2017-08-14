@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0FDD254E8D70A199A8B4340D /* Pods_mobileinnovation_app1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C4E3CD8AA443754CB79C21 /* Pods_mobileinnovation_app1Tests.framework */; };
-		10BDC59C1F3EB08E00DEED35 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BDC59B1F3EB08E00DEED35 /* Configuration.swift */; };
+		10AA60FE1F4192CB00F59887 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA60F91F4192CB00F59887 /* Configuration.swift */; };
+		10AA60FF1F4192CB00F59887 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA60FD1F4192CB00F59887 /* ViewController.swift */; };
 		10BE15DB1F3D9FAF0007641A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BE15DA1F3D9FAF0007641A /* AppDelegate.swift */; };
-		10BE15DD1F3D9FAF0007641A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BE15DC1F3D9FAF0007641A /* ViewController.swift */; };
 		10BE15E01F3D9FAF0007641A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BE15DE1F3D9FAF0007641A /* Main.storyboard */; };
 		10BE15E21F3D9FAF0007641A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BE15E11F3D9FAF0007641A /* Assets.xcassets */; };
 		10BE15E51F3D9FAF0007641A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BE15E31F3D9FAF0007641A /* LaunchScreen.storyboard */; };
@@ -38,10 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10BDC59B1F3EB08E00DEED35 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		10AA60F91F4192CB00F59887 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		10AA60FD1F4192CB00F59887 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10AA61001F41935C00F59887 /* mobileinnovation-app1.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "mobileinnovation-app1.entitlements"; sourceTree = "<group>"; };
 		10BE15D71F3D9FAF0007641A /* mobileinnovation-app1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobileinnovation-app1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BE15DA1F3D9FAF0007641A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		10BE15DC1F3D9FAF0007641A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		10BE15DF1F3D9FAF0007641A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10BE15E11F3D9FAF0007641A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10BE15E41F3D9FAF0007641A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,7 +53,6 @@
 		10BE15F61F3D9FAF0007641A /* mobileinnovation-app1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mobileinnovation-app1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BE15FA1F3D9FAF0007641A /* mobileinnovation_app1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobileinnovation_app1UITests.swift; sourceTree = "<group>"; };
 		10BE15FC1F3D9FAF0007641A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		10BE16081F3DD6500007641A /* mobileinnovation-app1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "mobileinnovation-app1.entitlements"; sourceTree = "<group>"; };
 		29C4E3CD8AA443754CB79C21 /* Pods_mobileinnovation_app1Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobileinnovation_app1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42889033F4FF58E880111948 /* Pods_mobileinnovation_app1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobileinnovation_app1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44041D7188E3C292CC84C372 /* Pods-mobileinnovation-app1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobileinnovation-app1Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobileinnovation-app1Tests/Pods-mobileinnovation-app1Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +92,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10AA60F61F4192CB00F59887 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		10AA60F71F4192CB00F59887 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				10AA60F81F4192CB00F59887 /* Configuration */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		10AA60F81F4192CB00F59887 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				10AA60F91F4192CB00F59887 /* Configuration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		10AA60FA1F4192CB00F59887 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		10AA60FB1F4192CB00F59887 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		10AA60FC1F4192CB00F59887 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				10AA60FD1F4192CB00F59887 /* ViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		10BE15CE1F3D9FAF0007641A = {
 			isa = PBXGroup;
 			children = (
@@ -117,11 +162,14 @@
 		10BE15D91F3D9FAF0007641A /* mobileinnovation-app1 */ = {
 			isa = PBXGroup;
 			children = (
-				10BE16081F3DD6500007641A /* mobileinnovation-app1.entitlements */,
+				10AA61001F41935C00F59887 /* mobileinnovation-app1.entitlements */,
+				10AA60F61F4192CB00F59887 /* Controllers */,
+				10AA60F71F4192CB00F59887 /* Library */,
+				10AA60FA1F4192CB00F59887 /* Models */,
+				10AA60FB1F4192CB00F59887 /* Resource */,
+				10AA60FC1F4192CB00F59887 /* Views */,
 				10BE15DA1F3D9FAF0007641A /* AppDelegate.swift */,
 				10BE15DE1F3D9FAF0007641A /* Main.storyboard */,
-				10BE15DC1F3D9FAF0007641A /* ViewController.swift */,
-				10BDC59B1F3EB08E00DEED35 /* Configuration.swift */,
 				10BE15E11F3D9FAF0007641A /* Assets.xcassets */,
 				10BE15E31F3D9FAF0007641A /* LaunchScreen.storyboard */,
 				10BE15E61F3D9FAF0007641A /* Info.plist */,
@@ -446,8 +494,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10BDC59C1F3EB08E00DEED35 /* Configuration.swift in Sources */,
-				10BE15DD1F3D9FAF0007641A /* ViewController.swift in Sources */,
+				10AA60FF1F4192CB00F59887 /* ViewController.swift in Sources */,
+				10AA60FE1F4192CB00F59887 /* Configuration.swift in Sources */,
 				10BE15DB1F3D9FAF0007641A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
