@@ -24,9 +24,11 @@ class ViewController: UIViewController, UrlSession_libDelegate {
         let config_instance = Configuration()
         lbl_token.text = config_instance.configurationGet_String(keyName: "DeviceToken")
 
-        let queryItems = [URLQueryItem(name: "a", value: "foo"),
-                          URLQueryItem(name: "b", value: "1234")]
-        urlSessionGetClient.get(currentView: self, url: "http://192.168.0.170:8000/api/json_notice_list/", queryItems: nil, session: urlSessionGetClient)
+//        let queryItems = [URLQueryItem(name: "a", value: "foo"),
+//                          URLQueryItem(name: "b", value: "1234")]
+//        urlSessionGetClient.get(currentView: self, url: "http://192.168.0.170:8000/api/json_notice_list/", queryItems: nil, session: urlSessionGetClient)
+
+        urlSessionGetClient.post(currentView: self, url: "http://192.168.0.170:8000/api/apikey_get/", parameters: ["app_code": "APP_fGsIk7S3SSi"])
     }
 
     override func didReceiveMemoryWarning() {
