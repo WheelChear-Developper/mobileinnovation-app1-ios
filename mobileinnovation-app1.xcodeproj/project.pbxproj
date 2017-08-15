@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0FDD254E8D70A199A8B4340D /* Pods_mobileinnovation_app1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C4E3CD8AA443754CB79C21 /* Pods_mobileinnovation_app1Tests.framework */; };
-		10AA60FE1F4192CB00F59887 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA60F91F4192CB00F59887 /* Configuration.swift */; };
 		10AA60FF1F4192CB00F59887 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA60FD1F4192CB00F59887 /* ViewController.swift */; };
+		10AA61041F419D9600F59887 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA61031F419D9600F59887 /* Configuration.swift */; };
+		10AA61061F419DC500F59887 /* UrlSession_lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA61051F419DC500F59887 /* UrlSession_lib.swift */; };
 		10BE15DB1F3D9FAF0007641A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BE15DA1F3D9FAF0007641A /* AppDelegate.swift */; };
 		10BE15E01F3D9FAF0007641A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BE15DE1F3D9FAF0007641A /* Main.storyboard */; };
 		10BE15E21F3D9FAF0007641A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10BE15E11F3D9FAF0007641A /* Assets.xcassets */; };
@@ -38,9 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10AA60F91F4192CB00F59887 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		10AA60FD1F4192CB00F59887 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		10AA61001F41935C00F59887 /* mobileinnovation-app1.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "mobileinnovation-app1.entitlements"; sourceTree = "<group>"; };
+		10AA61031F419D9600F59887 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		10AA61051F419DC500F59887 /* UrlSession_lib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlSession_lib.swift; sourceTree = "<group>"; };
+		10AA61071F41A20A00F59887 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		10BE15D71F3D9FAF0007641A /* mobileinnovation-app1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mobileinnovation-app1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BE15DA1F3D9FAF0007641A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10BE15DF1F3D9FAF0007641A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,17 +105,10 @@
 		10AA60F71F4192CB00F59887 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				10AA60F81F4192CB00F59887 /* Configuration */,
+				10AA61021F419D9600F59887 /* Configuration_lib */,
+				10AA61011F419D7C00F59887 /* UrlSession_lib */,
 			);
 			path = Library;
-			sourceTree = "<group>";
-		};
-		10AA60F81F4192CB00F59887 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-				10AA60F91F4192CB00F59887 /* Configuration.swift */,
-			);
-			path = Configuration;
 			sourceTree = "<group>";
 		};
 		10AA60FA1F4192CB00F59887 /* Models */ = {
@@ -135,6 +131,22 @@
 				10AA60FD1F4192CB00F59887 /* ViewController.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		10AA61011F419D7C00F59887 /* UrlSession_lib */ = {
+			isa = PBXGroup;
+			children = (
+				10AA61051F419DC500F59887 /* UrlSession_lib.swift */,
+			);
+			path = UrlSession_lib;
+			sourceTree = "<group>";
+		};
+		10AA61021F419D9600F59887 /* Configuration_lib */ = {
+			isa = PBXGroup;
+			children = (
+				10AA61031F419D9600F59887 /* Configuration.swift */,
+			);
+			path = Configuration_lib;
 			sourceTree = "<group>";
 		};
 		10BE15CE1F3D9FAF0007641A = {
@@ -173,6 +185,7 @@
 				10BE15E11F3D9FAF0007641A /* Assets.xcassets */,
 				10BE15E31F3D9FAF0007641A /* LaunchScreen.storyboard */,
 				10BE15E61F3D9FAF0007641A /* Info.plist */,
+				10AA61071F41A20A00F59887 /* MyPlayground.playground */,
 			);
 			path = "mobileinnovation-app1";
 			sourceTree = "<group>";
@@ -494,8 +507,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10AA61061F419DC500F59887 /* UrlSession_lib.swift in Sources */,
 				10AA60FF1F4192CB00F59887 /* ViewController.swift in Sources */,
-				10AA60FE1F4192CB00F59887 /* Configuration.swift in Sources */,
+				10AA61041F419D9600F59887 /* Configuration.swift in Sources */,
 				10BE15DB1F3D9FAF0007641A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
