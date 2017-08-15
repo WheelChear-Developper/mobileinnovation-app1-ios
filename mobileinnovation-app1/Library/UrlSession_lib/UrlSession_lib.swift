@@ -36,17 +36,17 @@ class UrlSession_lib:NSObject {
 
         let task = session.dataTask(with: url!) { (data: Data?, response: URLResponse?, error: Error?) in
             if let data = data, let response = response {
-                print(response)
+                //print(response)
+                //let statusCode = (response as! HTTPURLResponse).statusCode
+                //print("HttpCode _ \(statusCode)")
                 do {
                     let json = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments)
-                    print(json)
+                    //print(json)
                     self.urlSession_libDelegate?.UrlSessionBack_SuccessAction()
                 } catch {
-                    print("Serialize Error")
                     self.urlSession_libDelegate?.UrlSessionBack_DataFailureAction(errType: "Serialize Error")
                 }
             } else {
-                print(error ?? "Error")
                 self.urlSession_libDelegate?.UrlSessionBack_HttpFailureAction(errCode: error as! uint)
             }
         }
@@ -78,17 +78,17 @@ class UrlSession_lib:NSObject {
 
         let task = session.dataTask(with: request) { (data: Data?, response: URLResponse?, error: Error?) in
             if let data = data, let response = response {
-                print(response)
+                //print(response)
+                //let statusCode = (response as! HTTPURLResponse).statusCode
+                //print("HttpCode _ \(statusCode)")
                 do {
                     let json = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments)
-                    print(json)
+                    //print(json)
                     self.urlSession_libDelegate?.UrlSessionBack_SuccessAction()
                 } catch {
-                    print("Serialize Error")
                     self.urlSession_libDelegate?.UrlSessionBack_DataFailureAction(errType: "Serialize Error")
                 }
             } else {
-                print(error ?? "Error")
                 self.urlSession_libDelegate?.UrlSessionBack_HttpFailureAction(errCode: error as! uint)
             }
         }
