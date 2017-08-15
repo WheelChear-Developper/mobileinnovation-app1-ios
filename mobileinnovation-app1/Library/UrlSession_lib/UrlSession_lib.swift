@@ -9,7 +9,7 @@
 import Foundation
 
 protocol UrlSession_libDelegate {
-    func UrlSessionBack_SuccessAction()
+    func UrlSessionBack_SuccessAction(dicJson: NSDictionary)
     func UrlSessionBack_DataFailureAction(errType: String)
     func UrlSessionBack_HttpFailureAction(errCode: uint)
 }
@@ -21,7 +21,7 @@ class UrlSession_lib:NSObject {
 
     var urlSession_libDelegate:UrlSession_libDelegate?
 
-    func get(currentView: ViewController, url urlString: String, queryItems: [URLQueryItem]? = nil, session: UrlSession_lib) {
+    func get(currentView: BaseViewController, url urlString: String, queryItems: [URLQueryItem]? = nil, session: UrlSession_lib) {
 
         self.urlSession_libDelegate = currentView
 
@@ -40,9 +40,9 @@ class UrlSession_lib:NSObject {
                 //let statusCode = (response as! HTTPURLResponse).statusCode
                 //print("HttpCode _ \(statusCode)")
                 do {
-                    let json = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments)
-                    //print(json)
-                    self.urlSession_libDelegate?.UrlSessionBack_SuccessAction()
+                    let json: NSDictionary = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! NSDictionary
+                    print(json)
+                    self.urlSession_libDelegate?.UrlSessionBack_SuccessAction(dicJson: json)
                 } catch {
                     self.urlSession_libDelegate?.UrlSessionBack_DataFailureAction(errType: "Serialize Error")
                 }
@@ -55,7 +55,7 @@ class UrlSession_lib:NSObject {
     }
 
 
-    func post(currentView: ViewController, url urlString: String, parameters: [String: Any]) {
+    func post(currentView: BaseViewController, url urlString: String, parameters: [String: Any]) {
 
         self.urlSession_libDelegate = currentView
 
@@ -82,9 +82,9 @@ class UrlSession_lib:NSObject {
                 //let statusCode = (response as! HTTPURLResponse).statusCode
                 //print("HttpCode _ \(statusCode)")
                 do {
-                    let json = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments)
-                    //print(json)
-                    self.urlSession_libDelegate?.UrlSessionBack_SuccessAction()
+                    let json: NSDictionary = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! NSDictionary
+                    print(json)
+                    self.urlSession_libDelegate?.UrlSessionBack_SuccessAction(dicJson: json)
                 } catch {
                     self.urlSession_libDelegate?.UrlSessionBack_DataFailureAction(errType: "Serialize Error")
                 }
