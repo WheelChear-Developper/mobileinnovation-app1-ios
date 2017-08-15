@@ -26,18 +26,20 @@ class ViewController: UIViewController, UrlSession_libDelegate {
 
         let queryItems = [URLQueryItem(name: "a", value: "foo"),
                           URLQueryItem(name: "b", value: "1234")]
-//        urlSessionGetClient.get(url: "http://192.168.0.170:8000/api/json_notice_list/", queryItems: nil, session: urlSessionGetClient)
-
-
-        let api_instance = UrlSession_lib()
-        api_instance.UrlSession_lib_Test(currentView: self)
+        urlSessionGetClient.get(currentView: self, url: "http://192.168.0.170:8000/api/json_notice_list/", queryItems: nil, session: urlSessionGetClient)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
-    func UrlSession_BackAction() {
+    func UrlSessionBack_SuccessAction() {
+
+    }
+    func UrlSessionBack_DataFailureAction(errType: String) {
+
+    }
+    func UrlSessionBack_HttpFailureAction(errCode: uint) {
 
     }
 
