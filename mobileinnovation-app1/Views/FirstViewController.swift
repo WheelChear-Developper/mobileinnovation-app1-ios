@@ -19,6 +19,14 @@ class FirstViewController: BaseViewController {
 
         super.viewDidLoad()
 
+        // 通知設定していない場合、通知設定画面表示（通知OFFにした場合出ない）
+        if Notification_lib.isPushNotificationEnable == false {
+
+            notification_lib.setNotification()
+        }
+
+
+
         // 通信状態確認
         let reachability = AMReachability()
         if (reachability?.isReachable)! {
@@ -44,11 +52,6 @@ class FirstViewController: BaseViewController {
         //        let queryItems = [URLQueryItem(name: "a", value: "foo"),
         //                          URLQueryItem(name: "b", value: "1234")]
         //        urlSessionGetClient.get(currentView: self, url: "http://192.168.0.170:8000/api/json_notice_list/", queryItems: nil, session: urlSessionGetClient)
-
-
-
-        //let appDelegate:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-
     }
 
     override func didReceiveMemoryWarning() {

@@ -16,26 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-        // APNs
-        if #available(iOS 10, *) {
-            // For iOS 10
-            UNUserNotificationCenter.current().requestAuthorization(options:[.alert, .sound, .badge]) { (granted: Bool, error: Error?) in
-                if (error != nil) {
-                    print("Failed to request authorization.")
-                    return
-                }
-                if granted {
-                    application.registerForRemoteNotifications()
-                } else {
-                    print("The user refused the push notification.")
-                }
-            }
-        } else {
-            // For iOS 8/iOS 9
-            let notificationSettings = UIUserNotificationSettings(types: [.alert, .sound, .badge], categories: nil)
-            application.registerUserNotificationSettings(notificationSettings)
-            application.registerForRemoteNotifications()
-        }
+        // 通知用ライブラリのインスタンス
+        let notification_lib = Notification_lib()
+        notification_lib.setNotificationCount(count: 0)
+
         return true
     }
 

@@ -12,6 +12,10 @@ class BaseViewController: UIViewController, UrlSession_libDelegate {
 
     // Congigrationのインスタンス
     let config_instance = Configuration()
+    // AppDelegateへのインスタンス
+    let appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    // 通知用ライブラリのインスタンス
+    let notification_lib = Notification_lib()
 
     override func viewDidLoad() {
 
@@ -28,5 +32,4 @@ class BaseViewController: UIViewController, UrlSession_libDelegate {
     }
     func UrlSessionBack_HttpFailureAction(errType: String) {
     }
-    
 }
