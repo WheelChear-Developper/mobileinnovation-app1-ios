@@ -13,6 +13,8 @@ import UserNotifications
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    // appDelegateの UIApplicationインスタンス保存用
+    var appApplication: UIApplication?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
@@ -20,7 +22,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let notification_lib = Notification_lib()
         notification_lib.setNotificationCount(count: 0)
 
+        // appDelegateの UIApplicationインスタンス保存
+        appApplication = application
+
         return true
+    }
+
+    func setNotification() {
+
+        // APNs
+        if #available(iOS 10, *) {
+            // For iOS 10
+            UNUserNotificationCenter.current().requestAuthorization(options:[.alert, .sound, .badge]) { (granted: Bool, error: Error?) in
+                if (error != nil) {
+                    print("Failed to request authorization.")
+                    return
+                }
+                if granted {
+                    self.appApplication?.registerForRemoteNotifications()
+                } else {
+                    print("The user refused the push notification.")
+                }
+            }
+        } else {
+            // For iOS 8/iOS 9
+            let notificationSettings = UIUserNotificationSettings(types: [.alert, .sound, .badge], categories: nil)
+            self.appApplication?.registerUserNotificationSettings(notificationSettings)
+            self.appApplication?.registerForRemoteNotifications()
+        }
     }
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {

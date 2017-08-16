@@ -41,7 +41,7 @@ class UrlSession_lib:NSObject {
                 print("HttpStatusCode : \(statusCode)")
                 do {
                     let json: NSDictionary = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! NSDictionary
-                    print("Json : \(json)")
+                    //print("Json : \(json)")
                     self.urlSession_libDelegate?.UrlSessionBack_SuccessAction(urlSession_lib: urlSession_lib, currentView: currentView, dicJson: json)
                 } catch {
                     self.urlSession_libDelegate?.UrlSessionBack_DataFailureAction(statusErrCode: statusCode, errType: "Serialize Error")
@@ -83,7 +83,7 @@ class UrlSession_lib:NSObject {
                 print("HttpStatusCode : \(statusCode)")
                 do {
                     let json: NSDictionary = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! NSDictionary
-                    print("Json : \(json)")
+                    //print("Json : \(json)")
                     self.urlSession_libDelegate?.UrlSessionBack_SuccessAction(urlSession_lib: urlSession_lib, currentView: currentView, dicJson: json)
                 } catch {
                     self.urlSession_libDelegate?.UrlSessionBack_DataFailureAction(statusErrCode: statusCode, errType: "Serialize Error")

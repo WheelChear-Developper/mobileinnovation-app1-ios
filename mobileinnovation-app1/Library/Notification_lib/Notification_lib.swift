@@ -35,32 +35,13 @@ class Notification_lib: NSObject {
         }
     }
 
-    func setNotification() {
-
-        if #available(iOS 10.0, *) {
-            // iOS 10以降
-            UNUserNotificationCenter.current().requestAuthorization(options:[.alert, .sound, .badge]) { (granted: Bool, error: Error?) in
-                if (error != nil) {
-                    print("Failed to request authorization.")
-                }
-                if granted {
-                    //UIApplication.registerForRemoteNotifications()
-                } else {
-                    print("The user refused the push notification.")
-                }
-            }
-        } else {
-            // iOS 9以下
-            let settings = UIUserNotificationSettings(types: [.badge, .sound, .alert], categories: nil)
-            UIApplication.shared.registerUserNotificationSettings(settings)
-        }
-    }
-
+    // 通知件数設定
     func setNotificationCount(count: Int) {
 
         UIApplication.shared.applicationIconBadgeNumber = count
     }
 
+    // ローカル通知
     func setNotificationAleart(titleMessage: String, subTitleMessage: String, bodyMessage: String, bageNo: Double, secondTime: Double) {
 
         if #available(iOS 10.0, *) {

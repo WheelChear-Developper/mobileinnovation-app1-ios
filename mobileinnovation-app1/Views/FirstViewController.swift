@@ -19,14 +19,6 @@ class FirstViewController: BaseViewController {
 
         super.viewDidLoad()
 
-        // 通知設定していない場合、通知設定画面表示（通知OFFにした場合出ない）
-        if Notification_lib.isPushNotificationEnable == false {
-
-            notification_lib.setNotification()
-        }
-
-
-
         // 通信状態確認
         let reachability = AMReachability()
         if (reachability?.isReachable)! {
@@ -43,6 +35,9 @@ class FirstViewController: BaseViewController {
         config_instance.configurationSet_String(value: "", keyName: "DeviceToken")
 
         lbl_token.text = config_instance.configurationGet_String(keyName: "DeviceToken")
+
+        // 起動ごとにDeviceToken取得
+        appDelegate.setNotification()
 
         //APIKEY取得
         urlSessionGetClient_apikeyget.post(urlSession_lib: urlSessionGetClient_apikeyget, currentView: self, url: "http://192.168.0.170:8000/api/apikey_get/", parameters: ["app_code": "APP_fGsIk7S3SSi"])
@@ -65,7 +60,7 @@ class FirstViewController: BaseViewController {
             // ApiKey ローカル保存
             let dic = dicJson["apikey"]
             config_instance.configurationSet_String(value: dic as! String, keyName: "ApiKey")
-            //        print("apikey = " + config_instance.configurationGet_String(keyName: "ApiKey"))
+            print("apikey = " + config_instance.configurationGet_String(keyName: "ApiKey"))
         }
     }
     override func UrlSessionBack_DataFailureAction(statusErrCode: Int, errType: String) {
