@@ -10,6 +10,7 @@
 		0FDD254E8D70A199A8B4340D /* Pods_mobileinnovation_app1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C4E3CD8AA443754CB79C21 /* Pods_mobileinnovation_app1Tests.framework */; };
 		10084C281F432E1D00EFE995 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10084C271F432E1D00EFE995 /* FirstViewController.swift */; };
 		10084C2A1F43363E00EFE995 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10084C291F43363E00EFE995 /* BaseViewController.swift */; };
+		108D47691F44158400441C23 /* AMReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108D47681F44158400441C23 /* AMReachability.swift */; };
 		10AA61041F419D9600F59887 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA61031F419D9600F59887 /* Configuration.swift */; };
 		10AA61061F419DC500F59887 /* UrlSession_lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AA61051F419DC500F59887 /* UrlSession_lib.swift */; };
 		10BE15DB1F3D9FAF0007641A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BE15DA1F3D9FAF0007641A /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 /* Begin PBXFileReference section */
 		10084C271F432E1D00EFE995 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		10084C291F43363E00EFE995 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		108D47681F44158400441C23 /* AMReachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMReachability.swift; sourceTree = "<group>"; };
 		10AA61001F41935C00F59887 /* mobileinnovation-app1.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "mobileinnovation-app1.entitlements"; sourceTree = "<group>"; };
 		10AA61031F419D9600F59887 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		10AA61051F419DC500F59887 /* UrlSession_lib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlSession_lib.swift; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		108D47671F44158400441C23 /* AMReachability */ = {
+			isa = PBXGroup;
+			children = (
+				108D47681F44158400441C23 /* AMReachability.swift */,
+			);
+			path = AMReachability;
+			sourceTree = "<group>";
+		};
 		10AA60F61F4192CB00F59887 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +117,7 @@
 		10AA60F71F4192CB00F59887 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				108D47671F44158400441C23 /* AMReachability */,
 				10AA61021F419D9600F59887 /* Configuration_lib */,
 				10AA61011F419D7C00F59887 /* UrlSession_lib */,
 			);
@@ -510,6 +521,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				108D47691F44158400441C23 /* AMReachability.swift in Sources */,
 				10084C2A1F43363E00EFE995 /* BaseViewController.swift in Sources */,
 				10084C281F432E1D00EFE995 /* FirstViewController.swift in Sources */,
 				10AA61061F419DC500F59887 /* UrlSession_lib.swift in Sources */,

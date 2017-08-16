@@ -9,9 +9,9 @@
 import Foundation
 
 protocol UrlSession_libDelegate {
-    func UrlSessionBack_SuccessAction(dicJson: NSDictionary)
-    func UrlSessionBack_DataFailureAction(errType: String)
-    func UrlSessionBack_HttpFailureAction(errCode: uint)
+    func UrlSessionBack_SuccessAction(urlSession_lib: UrlSession_lib, currentView: BaseViewController, dicJson: NSDictionary)
+    func UrlSessionBack_DataFailureAction(statusErrCode: Int, errType: String)
+    func UrlSessionBack_HttpFailureAction(errType: String)
 }
 
 class UrlSession_lib:NSObject {
@@ -21,7 +21,7 @@ class UrlSession_lib:NSObject {
 
     var urlSession_libDelegate:UrlSession_libDelegate?
 
-    func get(currentView: BaseViewController, url urlString: String, queryItems: [URLQueryItem]? = nil, session: UrlSession_lib) {
+    func get(urlSession_lib: UrlSession_lib, currentView: BaseViewController, url urlString: String, queryItems: [URLQueryItem]? = nil, session: UrlSession_lib) {
 
         self.urlSession_libDelegate = currentView
 
@@ -37,17 +37,17 @@ class UrlSession_lib:NSObject {
         let task = session.dataTask(with: url!) { (data: Data?, response: URLResponse?, error: Error?) in
             if let data = data, let response = response {
                 //print(response)
-                //let statusCode = (response as! HTTPURLResponse).statusCode
-                //print("HttpCode _ \(statusCode)")
+                let statusCode: Int = (response as! HTTPURLResponse).statusCode
+                print("HttpStatusCode : \(statusCode)")
                 do {
                     let json: NSDictionary = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! NSDictionary
-                    print(json)
-                    self.urlSession_libDelegate?.UrlSessionBack_SuccessAction(dicJson: json)
+                    print("Json : \(json)")
+                    self.urlSession_libDelegate?.UrlSessionBack_SuccessAction(urlSession_lib: urlSession_lib, currentView: currentView, dicJson: json)
                 } catch {
-                    self.urlSession_libDelegate?.UrlSessionBack_DataFailureAction(errType: "Serialize Error")
+                    self.urlSession_libDelegate?.UrlSessionBack_DataFailureAction(statusErrCode: statusCode, errType: "Serialize Error")
                 }
             } else {
-                self.urlSession_libDelegate?.UrlSessionBack_HttpFailureAction(errCode: error as! uint)
+                self.urlSession_libDelegate?.UrlSessionBack_HttpFailureAction(errType: "Internet Error")
             }
         }
 
@@ -55,7 +55,7 @@ class UrlSession_lib:NSObject {
     }
 
 
-    func post(currentView: BaseViewController, url urlString: String, parameters: [String: Any]) {
+    func post(urlSession_lib: UrlSession_lib, currentView: BaseViewController, url urlString: String, parameters: [String: Any]) {
 
         self.urlSession_libDelegate = currentView
 
@@ -79,17 +79,17 @@ class UrlSession_lib:NSObject {
         let task = session.dataTask(with: request) { (data: Data?, response: URLResponse?, error: Error?) in
             if let data = data, let response = response {
                 //print(response)
-                //let statusCode = (response as! HTTPURLResponse).statusCode
-                //print("HttpCode _ \(statusCode)")
+                let statusCode = (response as! HTTPURLResponse).statusCode
+                print("HttpStatusCode : \(statusCode)")
                 do {
                     let json: NSDictionary = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! NSDictionary
-                    print(json)
-                    self.urlSession_libDelegate?.UrlSessionBack_SuccessAction(dicJson: json)
+                    print("Json : \(json)")
+                    self.urlSession_libDelegate?.UrlSessionBack_SuccessAction(urlSession_lib: urlSession_lib, currentView: currentView, dicJson: json)
                 } catch {
-                    self.urlSession_libDelegate?.UrlSessionBack_DataFailureAction(errType: "Serialize Error")
+                    self.urlSession_libDelegate?.UrlSessionBack_DataFailureAction(statusErrCode: statusCode, errType: "Serialize Error")
                 }
             } else {
-                self.urlSession_libDelegate?.UrlSessionBack_HttpFailureAction(errCode: error as! uint)
+                self.urlSession_libDelegate?.UrlSessionBack_HttpFailureAction(errType: "Internet Error")
             }
         }
         task.resume()

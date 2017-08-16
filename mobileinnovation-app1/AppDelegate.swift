@@ -14,7 +14,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         // APNs
@@ -43,36 +42,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
 
         let token = deviceToken.map { String(format: "%.2hhx", $0) }.joined()
-        print(token)
+        print("DeviceToken : " + token)
 
         let config_instance = Configuration()
-        config_instance.configurationSet_String(token: token, keyName: "DeviceToken")
+        config_instance.configurationSet_String(value: token, keyName: "DeviceToken")
     }
 
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
 
         print("Failed to register to APNs: \(error)")
-    }
-
-    // POST 送信
-    func sendToken(token: String){
-        let serverPhp = "https://hoge.hage.jp/get_device_token.php"
-        let postString = "DeviceToken=" + token
-
-        var request = URLRequest(url: URL(string: serverPhp)!)
-        request.httpMethod = "POST"
-        request.httpBody = postString.data(using: .utf8)
-
-        let task = URLSession.shared.dataTask(with: request, completionHandler: {
-            (data, response, error) in
-
-            if error != nil {
-                print(error)
-                return
-            }
-            print("response: \(response!)")
-        })
-        task.resume()
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

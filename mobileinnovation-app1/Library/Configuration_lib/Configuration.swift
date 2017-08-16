@@ -10,9 +10,9 @@ import UIKit
 
 class Configuration: NSObject {
 
-    func configurationSet_Bool(token :Bool, keyName: String) {
+    func configurationSet_Bool(value :Bool, keyName: String) {
 
-        UserDefaults.standard.set(token, forKey: keyName)
+        UserDefaults.standard.set(value, forKey: keyName)
     }
     func configurationGet_Bool(keyName: String) -> Bool {
 
@@ -21,9 +21,9 @@ class Configuration: NSObject {
         return userDefaults.bool(forKey: keyName)
     }
 
-    func configurationSet_String(token :String, keyName: String) {
+    func configurationSet_String(value :String, keyName: String) {
 
-        UserDefaults.standard.set(token, forKey: keyName)
+        UserDefaults.standard.set(value, forKey: keyName)
     }
     func configurationGet_String(keyName: String) -> String {
 
@@ -32,9 +32,9 @@ class Configuration: NSObject {
         return userDefaults.string(forKey: keyName)!
     }
 
-    func configurationSet_CDouble(token :CDouble, keyName: String) {
+    func configurationSet_CDouble(value :CDouble, keyName: String) {
 
-        UserDefaults.standard.set(token, forKey: keyName)
+        UserDefaults.standard.set(value, forKey: keyName)
     }
     func configurationGet_CDouble(keyName: String) -> CDouble {
 
@@ -43,9 +43,9 @@ class Configuration: NSObject {
         return userDefaults.double(forKey: keyName)
     }
 
-    func configurationSet_URL(token :URL, keyName: String) {
+    func configurationSet_URL(value :URL, keyName: String) {
 
-        UserDefaults.standard.set(token, forKey: keyName)
+        UserDefaults.standard.set(value, forKey: keyName)
     }
     func configurationGet_URL(keyName: String) -> URL {
 
