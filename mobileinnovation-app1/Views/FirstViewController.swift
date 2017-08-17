@@ -38,9 +38,17 @@ class FirstViewController: BaseViewController {
         timer.fire()
 
         // DeviceToken 初期化
+        let config_instance = Configuration()
         config_instance.configurationSet_String(value: "", keyName: "DeviceToken")
-        // 起動ごとにDeviceToken取得
-        appDelegate.setNotification()
+        #if (!arch(i386) && !arch(x86_64))
+            // 実機
+
+            // 起動ごとにDeviceToken取得
+            appDelegate.setNotification()
+        #else
+            // シミュレータ時の仮DeviceToken設定
+            config_instance.configurationSet_String(value: "ios_Emureter999999999999999999999999999999999999999999999999999999999999999", keyName: "DeviceToken")
+        #endif
 
         // logoフェードイン
         img_logo.fadeIn(type: .Slow)
@@ -71,7 +79,7 @@ class FirstViewController: BaseViewController {
     func getApi_akikey() {
 
         // APIKEY取得
-        urlSessionGetClient_apikeyget.post(urlSession_lib: urlSessionGetClient_apikeyget, currentView: self, url: "http://192.168.0.170:8000/api/apikey_get/", parameters: ["app_code": "APP_fGsIk7S3SSi"])
+        urlSessionGetClient_apikeyget.post(urlSession_lib: urlSessionGetClient_apikeyget, currentView: self, url: "api/apikey_get/", parameters: ["app_code": "APP_fGsIk7S3SSi"])
     }
 
     override func viewDidAppear(_ animated: Bool) {

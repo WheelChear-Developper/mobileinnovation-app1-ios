@@ -18,6 +18,8 @@ class UrlSession_lib:NSObject {
 
     static var STATIC_TIMEOUTINTERVALFORREQUEST: TimeInterval = 20
     static var STATIC_TIMEOUTINTERVALFORRESOURCE: TimeInterval = 20
+    static var STATIC_STAGING_DOMAINURL: String = "http://192.168.0.170:8000/"
+    static var STATIC_PRODUCTION_DOMAINURL: String = "http://192.168.0.170:8000/"
 
     var urlSession_libDelegate:UrlSession_libDelegate?
 
@@ -29,9 +31,18 @@ class UrlSession_lib:NSObject {
             self.urlSession_libDelegate?.UrlSessionBack_HttpFailureAction(errType: "Internet Error")
         }
 
+        var totalUrl: String = ""
+        #if DEBUG
+            totalUrl = UrlSession_lib.STATIC_STAGING_DOMAINURL + urlString
+        #elseif STAGING
+            totalUrl = UrlSession_lib.STATIC_STAGING_DOMAINURL + urlString
+        #else
+            totalUrl = UrlSession_lib.STATIC_PRODUCTION_DOMAINURL + urlString
+        #endif
+
         self.urlSession_libDelegate = currentView
 
-        var compnents = URLComponents(string: urlString)
+        var compnents = URLComponents(string: totalUrl)
         compnents?.queryItems = queryItems
         let url = compnents?.url
 
@@ -69,9 +80,18 @@ class UrlSession_lib:NSObject {
             self.urlSession_libDelegate?.UrlSessionBack_HttpFailureAction(errType: "Internet Error")
         }
 
+        var totalUrl: String = ""
+        #if DEBUG
+            totalUrl = UrlSession_lib.STATIC_STAGING_DOMAINURL + urlString
+        #elseif STAGING
+            totalUrl = UrlSession_lib.STATIC_STAGING_DOMAINURL + urlString
+        #else
+            totalUrl = UrlSession_lib.STATIC_PRODUCTION_DOMAINURL + urlString
+        #endif
+
         self.urlSession_libDelegate = currentView
 
-        var request = URLRequest(url: URL(string: urlString)!)
+        var request = URLRequest(url: URL(string: totalUrl)!)
         request.httpMethod = "POST"
 
         let parametersString: String = parameters.enumerated().reduce("") { (input, tuple) -> String in

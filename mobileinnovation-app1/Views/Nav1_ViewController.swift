@@ -12,7 +12,24 @@ class Nav1_ViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+/*
+        if let tabItem = self.tabBarController?.tabBar.items?[0] {
+            if #available(iOS 10.0, *) {
+                tabItem.badgeColor = UIColor.darkGray
+            } else {
+                // Fallback on earlier versions
+            }
+            tabItem.badgeValue = "new"
+        }
+        if let tabItem = self.tabBarController?.tabBar.items?[1] {
+            if #available(iOS 10.0, *) {
+                tabItem.badgeColor = UIColor.blue
+            } else {
+                // Fallback on earlier versions
+            }
+            tabItem.badgeValue = "5"
+        }
+*/
     }
 
     override func didReceiveMemoryWarning() {
