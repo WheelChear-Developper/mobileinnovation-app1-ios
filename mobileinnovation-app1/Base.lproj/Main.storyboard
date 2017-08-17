@@ -5,7 +5,9 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,27 +23,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="cEn-oR-VCA">
-                                <rect key="frame" x="26" y="334" width="323" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Zv-aD-ofE" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
+                                <rect key="frame" x="21" y="636" width="333" height="21"/>
+                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="company_icon_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="a74-T4-hu3">
+                                <rect key="frame" x="94" y="240" width="188" height="188"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="a74-T4-hu3" secondAttribute="height" multiplier="1:1" id="5Vm-b0-ATw"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="cEn-oR-VCA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="KUy-Ll-HYN"/>
-                            <constraint firstItem="cEn-oR-VCA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kdb-fL-nyr"/>
-                            <constraint firstItem="cEn-oR-VCA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sTM-8u-wEg"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="cEn-oR-VCA" secondAttribute="trailing" constant="10" id="zn9-WD-hrL"/>
+                            <constraint firstItem="5Zv-aD-ofE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="STc-HP-kfS"/>
+                            <constraint firstItem="a74-T4-hu3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dan-ue-FOK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Zv-aD-ofE" secondAttribute="trailing" constant="5" id="e45-GF-obw"/>
+                            <constraint firstItem="a74-T4-hu3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eBh-fC-2Rh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5Zv-aD-ofE" secondAttribute="bottom" constant="10" id="n7L-s2-YoH"/>
+                            <constraint firstItem="a74-T4-hu3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="seL-PP-332"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="lbl_token" destination="cEn-oR-VCA" id="fSV-PF-IDs"/>
+                        <outlet property="img_logo" destination="a74-T4-hu3" id="eMY-ay-mbS"/>
+                        <outlet property="lbl_Loading" destination="5Zv-aD-ofE" id="pB1-A8-E1T"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="79" y="123"/>
         </scene>
         <!--Item 2-->
         <scene sceneID="80f-Xf-TQA">
@@ -54,7 +67,7 @@
                     <view key="view" contentMode="scaleToFill" id="b4M-7C-VEq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="cMj-m3-enh"/>
                 </viewController>
@@ -73,7 +86,7 @@
                     <view key="view" contentMode="scaleToFill" id="Y3O-Rz-xre">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="PzL-jY-Oqk"/>
                 </viewController>
@@ -132,7 +145,7 @@
                     <view key="view" contentMode="scaleToFill" id="d7s-F3-RF5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 3" id="ipw-7C-WhM"/>
                 </viewController>
@@ -151,7 +164,7 @@
                     <view key="view" contentMode="scaleToFill" id="pzK-Ep-30F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 4" id="SHE-BJ-5kS"/>
                 </viewController>
@@ -170,7 +183,7 @@
                     <view key="view" contentMode="scaleToFill" id="X2t-m9-h1e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 5" id="hx2-l6-7Ul"/>
                 </viewController>
@@ -179,4 +192,7 @@
             <point key="canvasLocation" x="3636" y="1691"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="company_icon_logo.png" width="200" height="200"/>
+    </resources>
 </document>
