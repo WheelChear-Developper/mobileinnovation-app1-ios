@@ -10,7 +10,7 @@ import Foundation
 
 protocol UrlSession_libDelegate {
     func UrlSessionBack_SuccessAction(urlSession_lib: UrlSession_lib, currentView: BaseViewController, dicJson: NSDictionary)
-    func UrlSessionBack_DataFailureAction(statusErrCode: Int, errType: String)
+    func UrlSessionBack_DataFailureAction(urlSession_lib: UrlSession_lib, statusErrCode: Int, errType: String)
     func UrlSessionBack_HttpFailureAction(errType: String)
 }
 
@@ -50,7 +50,7 @@ class UrlSession_lib:NSObject {
                     //print("Json : \(json)")
                     self.urlSession_libDelegate?.UrlSessionBack_SuccessAction(urlSession_lib: urlSession_lib, currentView: currentView, dicJson: json)
                 } catch {
-                    self.urlSession_libDelegate?.UrlSessionBack_DataFailureAction(statusErrCode: statusCode, errType: "Serialize Error")
+                    self.urlSession_libDelegate?.UrlSessionBack_DataFailureAction(urlSession_lib: urlSession_lib, statusErrCode: statusCode, errType: "Serialize Error")
                 }
             } else {
                 self.urlSession_libDelegate?.UrlSessionBack_HttpFailureAction(errType: "Internet Error")
@@ -98,7 +98,7 @@ class UrlSession_lib:NSObject {
                     //print("Json : \(json)")
                     self.urlSession_libDelegate?.UrlSessionBack_SuccessAction(urlSession_lib: urlSession_lib, currentView: currentView, dicJson: json)
                 } catch {
-                    self.urlSession_libDelegate?.UrlSessionBack_DataFailureAction(statusErrCode: statusCode, errType: "Serialize Error")
+                    self.urlSession_libDelegate?.UrlSessionBack_DataFailureAction(urlSession_lib: urlSession_lib, statusErrCode: statusCode, errType: "Serialize Error")
                 }
             } else {
                 self.urlSession_libDelegate?.UrlSessionBack_HttpFailureAction(errType: "Internet Error")

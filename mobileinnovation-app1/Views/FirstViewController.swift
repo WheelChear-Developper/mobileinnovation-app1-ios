@@ -26,7 +26,7 @@ class FirstViewController: BaseViewController {
         appDelegate.setNotification()
 
         //APIKEY取得
-        urlSessionGetClient_apikeyget.post(urlSession_lib: urlSessionGetClient_apikeyget, currentView: self, url: "http://192.168.0.170:8000/api/apikey_get/", parameters: ["app_code": "APP_fGsIk7S3SSi"])
+        self.getApi_akikey()
 
         //        lbl_token.text = config_instance.configurationGet_String(keyName: "DeviceToken")
 
@@ -35,7 +35,13 @@ class FirstViewController: BaseViewController {
         //        urlSessionGetClient.get(currentView: self, url: "http://192.168.0.170:8000/api/json_notice_list/", queryItems: nil, session: urlSessionGetClient)
 
 
-        lbl_token.text = config_instance.configurationGet_String(keyName: "DeviceToken")
+        //        lbl_token.text = config_instance.configurationGet_String(keyName: "DeviceToken")
+    }
+
+    func getApi_akikey() {
+
+        //APIKEY取得
+        urlSessionGetClient_apikeyget.post(urlSession_lib: urlSessionGetClient_apikeyget, currentView: self, url: "http://192.168.0.170:8000/api/apikey_get/", parameters: ["app_code": "APP_fGsIk7S3SSi"])
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -56,8 +62,22 @@ class FirstViewController: BaseViewController {
             print("apikey = " + config_instance.configurationGet_String(keyName: "ApiKey"))
         }
     }
-    override func UrlSessionBack_DataFailureAction(statusErrCode: Int, errType: String) {
-        print("HttpStatusErr:\(statusErrCode) ErrType\(errType)")
+    override func UrlSessionBack_DataFailureAction(urlSession_lib: UrlSession_lib, statusErrCode: Int, errType: String) {
+
+        if urlSession_lib == urlSessionGetClient_apikeyget {
+
+            let alert = UIAlertController(
+                title: "エラー",
+                message: "通信に失敗しました。電波条件の良い場所で再度お試しください。(エラーコード：\(statusErrCode))",
+                preferredStyle: .alert)
+
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                //APIKEY取得
+                self.getApi_akikey()
+            }))
+
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     override func UrlSessionBack_HttpFailureAction(errType: String) {
 

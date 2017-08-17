@@ -35,7 +35,7 @@ class BaseViewController: UIViewController, UrlSession_libDelegate {
 
     func UrlSessionBack_SuccessAction(urlSession_lib: UrlSession_lib, currentView: BaseViewController, dicJson: NSDictionary) {
     }
-    func UrlSessionBack_DataFailureAction(statusErrCode: Int, errType: String) {
+    func UrlSessionBack_DataFailureAction(urlSession_lib: UrlSession_lib, statusErrCode: Int, errType: String) {
     }
     func UrlSessionBack_HttpFailureAction(errType: String) {
     }
