@@ -18,8 +18,15 @@ class BaseViewController: UIViewController, UrlSession_libDelegate {
     let notification_lib = Notification_lib()
 
     override func viewDidLoad() {
-
         super.viewDidLoad()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
 
     override func didReceiveMemoryWarning() {

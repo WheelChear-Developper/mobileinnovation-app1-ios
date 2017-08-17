@@ -23,6 +23,12 @@ class UrlSession_lib:NSObject {
 
     func get(urlSession_lib: UrlSession_lib, currentView: BaseViewController, url urlString: String, queryItems: [URLQueryItem]? = nil, session: UrlSession_lib) {
 
+        // 通信状態確認
+        let reachability = AMReachability()
+        if (reachability?.isReachable) == false {
+            self.urlSession_libDelegate?.UrlSessionBack_HttpFailureAction(errType: "Internet Error")
+        }
+
         self.urlSession_libDelegate = currentView
 
         var compnents = URLComponents(string: urlString)
@@ -56,6 +62,12 @@ class UrlSession_lib:NSObject {
 
 
     func post(urlSession_lib: UrlSession_lib, currentView: BaseViewController, url urlString: String, parameters: [String: Any]) {
+
+        // 通信状態確認
+        let reachability = AMReachability()
+        if (reachability?.isReachable) == false {
+            self.urlSession_libDelegate?.UrlSessionBack_HttpFailureAction(errType: "Internet Error")
+        }
 
         self.urlSession_libDelegate = currentView
 
