@@ -10,6 +10,16 @@
 		0FDD254E8D70A199A8B4340D /* Pods_mobileinnovation_app1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C4E3CD8AA443754CB79C21 /* Pods_mobileinnovation_app1Tests.framework */; };
 		10084C281F432E1D00EFE995 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10084C271F432E1D00EFE995 /* FirstViewController.swift */; };
 		10084C2A1F43363E00EFE995 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10084C291F43363E00EFE995 /* BaseViewController.swift */; };
+		1028B95D1F4571F000CCFBA1 /* Care.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B9531F4571F000CCFBA1 /* Care.png */; };
+		1028B95E1F4571F000CCFBA1 /* Care@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B9541F4571F000CCFBA1 /* Care@2x.png */; };
+		1028B95F1F4571F000CCFBA1 /* Deskwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B9551F4571F000CCFBA1 /* Deskwork.png */; };
+		1028B9601F4571F000CCFBA1 /* Deskwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B9561F4571F000CCFBA1 /* Deskwork@2x.png */; };
+		1028B9611F4571F000CCFBA1 /* PersonalConnections.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B9571F4571F000CCFBA1 /* PersonalConnections.png */; };
+		1028B9621F4571F000CCFBA1 /* PersonalConnections@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B9581F4571F000CCFBA1 /* PersonalConnections@2x.png */; };
+		1028B9631F4571F000CCFBA1 /* PinMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B9591F4571F000CCFBA1 /* PinMap.png */; };
+		1028B9641F4571F000CCFBA1 /* PinMap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B95A1F4571F000CCFBA1 /* PinMap@2x.png */; };
+		1028B9651F4571F000CCFBA1 /* Takeout.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B95B1F4571F000CCFBA1 /* Takeout.png */; };
+		1028B9661F4571F000CCFBA1 /* Takeout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B95C1F4571F000CCFBA1 /* Takeout@2x.png */; };
 		106A8C321F4557E100FC9E0F /* AnimationView_lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A8C311F4557E100FC9E0F /* AnimationView_lib.swift */; };
 		106A8C6C1F45635200FC9E0F /* Android.mk in Resources */ = {isa = PBXBuildFile; fileRef = 106A8C381F45635100FC9E0F /* Android.mk */; };
 		106A8C6D1F45635200FC9E0F /* AndroidClock.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 106A8C391F45635100FC9E0F /* AndroidClock.ttf */; };
@@ -96,6 +106,16 @@
 /* Begin PBXFileReference section */
 		10084C271F432E1D00EFE995 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		10084C291F43363E00EFE995 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		1028B9531F4571F000CCFBA1 /* Care.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Care.png; sourceTree = "<group>"; };
+		1028B9541F4571F000CCFBA1 /* Care@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Care@2x.png"; sourceTree = "<group>"; };
+		1028B9551F4571F000CCFBA1 /* Deskwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Deskwork.png; sourceTree = "<group>"; };
+		1028B9561F4571F000CCFBA1 /* Deskwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Deskwork@2x.png"; sourceTree = "<group>"; };
+		1028B9571F4571F000CCFBA1 /* PersonalConnections.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PersonalConnections.png; sourceTree = "<group>"; };
+		1028B9581F4571F000CCFBA1 /* PersonalConnections@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PersonalConnections@2x.png"; sourceTree = "<group>"; };
+		1028B9591F4571F000CCFBA1 /* PinMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PinMap.png; sourceTree = "<group>"; };
+		1028B95A1F4571F000CCFBA1 /* PinMap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PinMap@2x.png"; sourceTree = "<group>"; };
+		1028B95B1F4571F000CCFBA1 /* Takeout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Takeout.png; sourceTree = "<group>"; };
+		1028B95C1F4571F000CCFBA1 /* Takeout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Takeout@2x.png"; sourceTree = "<group>"; };
 		106A8C311F4557E100FC9E0F /* AnimationView_lib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationView_lib.swift; sourceTree = "<group>"; };
 		106A8C381F45635100FC9E0F /* Android.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
 		106A8C391F45635100FC9E0F /* AndroidClock.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AndroidClock.ttf; sourceTree = "<group>"; };
@@ -205,6 +225,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1028B9201F456F8300CCFBA1 /* navigation_icon */ = {
+			isa = PBXGroup;
+			children = (
+				1028B9531F4571F000CCFBA1 /* Care.png */,
+				1028B9541F4571F000CCFBA1 /* Care@2x.png */,
+				1028B9551F4571F000CCFBA1 /* Deskwork.png */,
+				1028B9561F4571F000CCFBA1 /* Deskwork@2x.png */,
+				1028B9571F4571F000CCFBA1 /* PersonalConnections.png */,
+				1028B9581F4571F000CCFBA1 /* PersonalConnections@2x.png */,
+				1028B9591F4571F000CCFBA1 /* PinMap.png */,
+				1028B95A1F4571F000CCFBA1 /* PinMap@2x.png */,
+				1028B95B1F4571F000CCFBA1 /* Takeout.png */,
+				1028B95C1F4571F000CCFBA1 /* Takeout@2x.png */,
+			);
+			path = navigation_icon;
+			sourceTree = "<group>";
+		};
 		106A8C371F45635100FC9E0F /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +302,7 @@
 		106A8C6A1F45635200FC9E0F /* images */ = {
 			isa = PBXGroup;
 			children = (
+				1028B9201F456F8300CCFBA1 /* navigation_icon */,
 				106A8C6B1F45635200FC9E0F /* company_icon_logo.png */,
 			);
 			path = images;
@@ -560,7 +598,11 @@
 				106A8C821F45635200FC9E0F /* DroidSansHebrew-Regular.ttf in Resources */,
 				106A8C801F45635200FC9E0F /* DroidSansGeorgian.ttf in Resources */,
 				106A8C861F45635200FC9E0F /* DroidSerif-BoldItalic.ttf in Resources */,
+				1028B9601F4571F000CCFBA1 /* Deskwork@2x.png in Resources */,
 				106A8C791F45635200FC9E0F /* DroidSansArabic.ttf in Resources */,
+				1028B9661F4571F000CCFBA1 /* Takeout@2x.png in Resources */,
+				1028B95F1F4571F000CCFBA1 /* Deskwork.png in Resources */,
+				1028B9641F4571F000CCFBA1 /* PinMap@2x.png in Resources */,
 				106A8C711F45635200FC9E0F /* Clockopia.ttf in Resources */,
 				106A8C921F45635200FC9E0F /* Roboto-Italic.ttf in Resources */,
 				106A8C731F45635200FC9E0F /* DroidKufi-Regular.ttf in Resources */,
@@ -569,6 +611,7 @@
 				106A8C7B1F45635200FC9E0F /* DroidSansEthiopic-Bold.ttf in Resources */,
 				106A8C771F45635200FC9E0F /* DroidSans-Bold.ttf in Resources */,
 				106A8C901F45635200FC9E0F /* Roboto-Bold.ttf in Resources */,
+				1028B9651F4571F000CCFBA1 /* Takeout.png in Resources */,
 				106A8C9B1F45635200FC9E0F /* RobotoCondensed-Regular.ttf in Resources */,
 				106A8C7A1F45635200FC9E0F /* DroidSansArmenian.ttf in Resources */,
 				106A8C931F45635200FC9E0F /* Roboto-Light.ttf in Resources */,
@@ -581,11 +624,14 @@
 				106A8C891F45635200FC9E0F /* fallback_fonts.xml in Resources */,
 				106A8C8D1F45635200FC9E0F /* MTLmr3m.ttf in Resources */,
 				106A8C841F45635200FC9E0F /* DroidSansMono.ttf in Resources */,
+				1028B9611F4571F000CCFBA1 /* PersonalConnections.png in Resources */,
+				1028B95E1F4571F000CCFBA1 /* Care@2x.png in Resources */,
 				106A8C981F45635200FC9E0F /* RobotoCondensed-Bold.ttf in Resources */,
 				106A8C911F45635200FC9E0F /* Roboto-BoldItalic.ttf in Resources */,
 				106A8C701F45635200FC9E0F /* AndroidEmoji.ttf in Resources */,
 				106A8C9A1F45635200FC9E0F /* RobotoCondensed-Italic.ttf in Resources */,
 				106A8C761F45635200FC9E0F /* DroidNaskhUI-Regular.ttf in Resources */,
+				1028B95D1F4571F000CCFBA1 /* Care.png in Resources */,
 				106A8C881F45635200FC9E0F /* DroidSerif-Regular.ttf in Resources */,
 				106A8C871F45635200FC9E0F /* DroidSerif-Italic.ttf in Resources */,
 				106A8C971F45635200FC9E0F /* Roboto-ThinItalic.ttf in Resources */,
@@ -603,6 +649,8 @@
 				10BE15E21F3D9FAF0007641A /* Assets.xcassets in Resources */,
 				10BE15E01F3D9FAF0007641A /* Main.storyboard in Resources */,
 				106A8C6F1F45635200FC9E0F /* AndroidClock_Solid.ttf in Resources */,
+				1028B9621F4571F000CCFBA1 /* PersonalConnections@2x.png in Resources */,
+				1028B9631F4571F000CCFBA1 /* PinMap.png in Resources */,
 				106A8C8C1F45635200FC9E0F /* MTLc3m.ttf in Resources */,
 				106A8C6D1F45635200FC9E0F /* AndroidClock.ttf in Resources */,
 				106A8C811F45635200FC9E0F /* DroidSansHebrew-Bold.ttf in Resources */,
