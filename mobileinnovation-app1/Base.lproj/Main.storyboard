@@ -59,7 +59,7 @@
         <!--Item 2-->
         <scene sceneID="80f-Xf-TQA">
             <objects>
-                <viewController id="hkp-0D-WLg" sceneMemberID="viewController">
+                <viewController id="hkp-0D-WLg" customClass="Nav2_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Q9a-QZ-phX"/>
                         <viewControllerLayoutGuide type="bottom" id="vze-tY-bIY"/>
@@ -69,7 +69,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" image="Deskwork.png" id="cMj-m3-enh" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                    <tabBarItem key="tabBarItem" tag="2" title="Item 2" image="Deskwork.png" id="cMj-m3-enh" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
                                 <color key="value" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -100,7 +100,7 @@
         <!--Item 1-->
         <scene sceneID="YSv-1R-8Eu">
             <objects>
-                <viewController id="XNy-Vg-fri" sceneMemberID="viewController">
+                <viewController id="XNy-Vg-fri" customClass="Nav1_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aCr-0y-Ngg"/>
                         <viewControllerLayoutGuide type="bottom" id="ZzT-js-8ge"/>
@@ -110,7 +110,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" image="Care.png" id="PzL-jY-Oqk" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                    <tabBarItem key="tabBarItem" tag="1" title="Item 1" image="Care.png" id="PzL-jY-Oqk" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                 <color key="value" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -166,7 +166,7 @@
                 <navigationController storyboardIdentifier="MainNavigation" navigationBarHidden="YES" id="9ON-Qf-WyB" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ciZ-hW-9Xv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ciZ-hW-9Xv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -181,7 +181,7 @@
         <!--Item 3-->
         <scene sceneID="7br-tU-yeF">
             <objects>
-                <viewController id="fcc-MG-MOf" sceneMemberID="viewController">
+                <viewController id="fcc-MG-MOf" customClass="Nav3_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Oyc-4P-Oep"/>
                         <viewControllerLayoutGuide type="bottom" id="qMz-ja-OVU"/>
@@ -191,7 +191,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 3" image="PersonalConnections.png" id="ipw-7C-WhM" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
+                    <tabBarItem key="tabBarItem" tag="3" title="Item 3" image="PersonalConnections.png" id="ipw-7C-WhM" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                 <color key="value" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -222,7 +222,7 @@
         <!--Item 4-->
         <scene sceneID="9zJ-ry-PS9">
             <objects>
-                <viewController id="ExW-db-4oI" sceneMemberID="viewController">
+                <viewController id="ExW-db-4oI" customClass="Nav4_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3bj-BA-cDn"/>
                         <viewControllerLayoutGuide type="bottom" id="eUx-8H-Ne6"/>
@@ -232,7 +232,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 4" image="Takeout.png" id="SHE-BJ-5kS" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                    <tabBarItem key="tabBarItem" tag="4" title="Item 4" image="Takeout.png" id="SHE-BJ-5kS" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                 <color key="value" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -263,7 +263,7 @@
         <!--Map-->
         <scene sceneID="hYe-FH-JTZ">
             <objects>
-                <viewController id="Vsa-kO-G7R" sceneMemberID="viewController">
+                <viewController id="Vsa-kO-G7R" customClass="Nav5_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="52L-eR-etc"/>
                         <viewControllerLayoutGuide type="bottom" id="XJd-uT-nxN"/>
@@ -273,7 +273,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="PinMap.png" id="hx2-l6-7Ul" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                    <tabBarItem key="tabBarItem" tag="5" title="Map" image="PinMap.png" id="hx2-l6-7Ul" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                 <color key="value" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>

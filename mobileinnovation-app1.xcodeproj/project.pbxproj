@@ -10,6 +10,12 @@
 		0FDD254E8D70A199A8B4340D /* Pods_mobileinnovation_app1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C4E3CD8AA443754CB79C21 /* Pods_mobileinnovation_app1Tests.framework */; };
 		10084C281F432E1D00EFE995 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10084C271F432E1D00EFE995 /* FirstViewController.swift */; };
 		10084C2A1F43363E00EFE995 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10084C291F43363E00EFE995 /* BaseViewController.swift */; };
+		10117EFE1F4584DC00A7C2BD /* AnimationView_lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117EFD1F4584DC00A7C2BD /* AnimationView_lib.swift */; };
+		10117F001F45854A00A7C2BD /* Nav1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117EFF1F45854A00A7C2BD /* Nav1_ViewController.swift */; };
+		10117F021F45855800A7C2BD /* Nav2_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117F011F45855800A7C2BD /* Nav2_ViewController.swift */; };
+		10117F041F45856700A7C2BD /* Nav3_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117F031F45856700A7C2BD /* Nav3_ViewController.swift */; };
+		10117F061F45857700A7C2BD /* Nav4_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117F051F45857700A7C2BD /* Nav4_ViewController.swift */; };
+		10117F081F45858C00A7C2BD /* Nav5_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117F071F45858C00A7C2BD /* Nav5_ViewController.swift */; };
 		1028B95D1F4571F000CCFBA1 /* Care.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B9531F4571F000CCFBA1 /* Care.png */; };
 		1028B95E1F4571F000CCFBA1 /* Care@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B9541F4571F000CCFBA1 /* Care@2x.png */; };
 		1028B95F1F4571F000CCFBA1 /* Deskwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B9551F4571F000CCFBA1 /* Deskwork.png */; };
@@ -20,7 +26,6 @@
 		1028B9641F4571F000CCFBA1 /* PinMap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B95A1F4571F000CCFBA1 /* PinMap@2x.png */; };
 		1028B9651F4571F000CCFBA1 /* Takeout.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B95B1F4571F000CCFBA1 /* Takeout.png */; };
 		1028B9661F4571F000CCFBA1 /* Takeout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B95C1F4571F000CCFBA1 /* Takeout@2x.png */; };
-		106A8C321F4557E100FC9E0F /* AnimationView_lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A8C311F4557E100FC9E0F /* AnimationView_lib.swift */; };
 		106A8C6C1F45635200FC9E0F /* Android.mk in Resources */ = {isa = PBXBuildFile; fileRef = 106A8C381F45635100FC9E0F /* Android.mk */; };
 		106A8C6D1F45635200FC9E0F /* AndroidClock.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 106A8C391F45635100FC9E0F /* AndroidClock.ttf */; };
 		106A8C6E1F45635200FC9E0F /* AndroidClock_Highlight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 106A8C3A1F45635100FC9E0F /* AndroidClock_Highlight.ttf */; };
@@ -106,6 +111,12 @@
 /* Begin PBXFileReference section */
 		10084C271F432E1D00EFE995 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		10084C291F43363E00EFE995 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		10117EFD1F4584DC00A7C2BD /* AnimationView_lib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationView_lib.swift; sourceTree = "<group>"; };
+		10117EFF1F45854A00A7C2BD /* Nav1_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nav1_ViewController.swift; sourceTree = "<group>"; };
+		10117F011F45855800A7C2BD /* Nav2_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nav2_ViewController.swift; sourceTree = "<group>"; };
+		10117F031F45856700A7C2BD /* Nav3_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nav3_ViewController.swift; sourceTree = "<group>"; };
+		10117F051F45857700A7C2BD /* Nav4_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nav4_ViewController.swift; sourceTree = "<group>"; };
+		10117F071F45858C00A7C2BD /* Nav5_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nav5_ViewController.swift; sourceTree = "<group>"; };
 		1028B9531F4571F000CCFBA1 /* Care.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Care.png; sourceTree = "<group>"; };
 		1028B9541F4571F000CCFBA1 /* Care@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Care@2x.png"; sourceTree = "<group>"; };
 		1028B9551F4571F000CCFBA1 /* Deskwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Deskwork.png; sourceTree = "<group>"; };
@@ -116,7 +127,6 @@
 		1028B95A1F4571F000CCFBA1 /* PinMap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PinMap@2x.png"; sourceTree = "<group>"; };
 		1028B95B1F4571F000CCFBA1 /* Takeout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Takeout.png; sourceTree = "<group>"; };
 		1028B95C1F4571F000CCFBA1 /* Takeout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Takeout@2x.png"; sourceTree = "<group>"; };
-		106A8C311F4557E100FC9E0F /* AnimationView_lib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationView_lib.swift; sourceTree = "<group>"; };
 		106A8C381F45635100FC9E0F /* Android.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
 		106A8C391F45635100FC9E0F /* AndroidClock.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AndroidClock.ttf; sourceTree = "<group>"; };
 		106A8C3A1F45635100FC9E0F /* AndroidClock_Highlight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AndroidClock_Highlight.ttf; sourceTree = "<group>"; };
@@ -225,6 +235,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10117EFC1F4584DC00A7C2BD /* AnimationView_lib */ = {
+			isa = PBXGroup;
+			children = (
+				10117EFD1F4584DC00A7C2BD /* AnimationView_lib.swift */,
+			);
+			path = AnimationView_lib;
+			sourceTree = "<group>";
+		};
 		1028B9201F456F8300CCFBA1 /* navigation_icon */ = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +353,7 @@
 			isa = PBXGroup;
 			children = (
 				108D47671F44158400441C23 /* AMReachability */,
+				10117EFC1F4584DC00A7C2BD /* AnimationView_lib */,
 				10AA61021F419D9600F59887 /* Configuration_lib */,
 				108D476A1F446C5A00441C23 /* Notification_lib */,
 				10AA61011F419D7C00F59887 /* UrlSession_lib */,
@@ -363,7 +382,11 @@
 			children = (
 				10084C291F43363E00EFE995 /* BaseViewController.swift */,
 				10084C271F432E1D00EFE995 /* FirstViewController.swift */,
-				106A8C311F4557E100FC9E0F /* AnimationView_lib.swift */,
+				10117EFF1F45854A00A7C2BD /* Nav1_ViewController.swift */,
+				10117F011F45855800A7C2BD /* Nav2_ViewController.swift */,
+				10117F031F45856700A7C2BD /* Nav3_ViewController.swift */,
+				10117F051F45857700A7C2BD /* Nav4_ViewController.swift */,
+				10117F071F45858C00A7C2BD /* Nav5_ViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -806,10 +829,15 @@
 				108D47691F44158400441C23 /* AMReachability.swift in Sources */,
 				10084C2A1F43363E00EFE995 /* BaseViewController.swift in Sources */,
 				10084C281F432E1D00EFE995 /* FirstViewController.swift in Sources */,
-				106A8C321F4557E100FC9E0F /* AnimationView_lib.swift in Sources */,
+				10117F061F45857700A7C2BD /* Nav4_ViewController.swift in Sources */,
+				10117EFE1F4584DC00A7C2BD /* AnimationView_lib.swift in Sources */,
 				10AA61061F419DC500F59887 /* UrlSession_lib.swift in Sources */,
+				10117F081F45858C00A7C2BD /* Nav5_ViewController.swift in Sources */,
+				10117F041F45856700A7C2BD /* Nav3_ViewController.swift in Sources */,
+				10117F021F45855800A7C2BD /* Nav2_ViewController.swift in Sources */,
 				10AA61041F419D9600F59887 /* Configuration.swift in Sources */,
 				10BE15DB1F3D9FAF0007641A /* AppDelegate.swift in Sources */,
+				10117F001F45854A00A7C2BD /* Nav1_ViewController.swift in Sources */,
 				108D476C1F446C7A00441C23 /* Notification_lib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
