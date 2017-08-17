@@ -60,6 +60,10 @@ class FirstViewController: BaseViewController {
             let dic = dicJson["apikey"]
             config_instance.configurationSet_String(value: dic as! String, keyName: "ApiKey")
             print("apikey = " + config_instance.configurationGet_String(keyName: "ApiKey"))
+
+            // 画面遷移
+            let next = storyboard!.instantiateViewController(withIdentifier: "MainNavigation")
+            self.present(next,animated: true, completion: nil)
         }
     }
     override func UrlSessionBack_DataFailureAction(urlSession_lib: UrlSession_lib, statusErrCode: Int, errType: String) {
