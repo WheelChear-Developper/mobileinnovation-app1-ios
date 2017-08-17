@@ -13,6 +13,8 @@ class FirstViewController: BaseViewController {
 
     // UrlSession_libのインスタンス(apikeyget用)
     let urlSessionGetClient_apikeyget = UrlSession_lib()
+    // UrlSession_libのインスタンス(apidevicetoken用)
+    let urlSessionGetClient_apidevicetoken = UrlSession_lib()
 
     // Loading関連変数
     var timer: Timer!
@@ -57,15 +59,6 @@ class FirstViewController: BaseViewController {
             //APIKEY取得
             self?.getApi_akikey()
         }
-
-        //        lbl_token.text = config_instance.configurationGet_String(keyName: "DeviceToken")
-
-        //        let queryItems = [URLQueryItem(name: "a", value: "foo"),
-        //                          URLQueryItem(name: "b", value: "1234")]
-        //        urlSessionGetClient.get(currentView: self, url: "http://192.168.0.170:8000/api/json_notice_list/", queryItems: nil, session: urlSessionGetClient)
-
-
-        //        lbl_token.text = config_instance.configurationGet_String(keyName: "DeviceToken")
     }
 
     func update(tm: Timer) {
@@ -78,8 +71,32 @@ class FirstViewController: BaseViewController {
 
     func getApi_akikey() {
 
+        // 本体のAPP_CODE取得
+        let path = Bundle.main.path(forResource: "propaty", ofType: "plist")
+        let dictionary = NSDictionary(contentsOfFile: path!)
+        let appCode: AnyObject = dictionary?.object(forKey: "APP_CODE") as AnyObject
+
         // APIKEY取得
-        urlSessionGetClient_apikeyget.post(urlSession_lib: urlSessionGetClient_apikeyget, currentView: self, url: "api/apikey_get/", parameters: ["app_code": "APP_fGsIk7S3SSi"])
+        urlSessionGetClient_apikeyget.post(urlSession_lib: urlSessionGetClient_apikeyget, currentView: self, url: "api/apikey_get", parameters: ["app_code": appCode])
+    }
+
+    func setApi_devicetoken() {
+
+        // 本体のAPP_CODE取得
+        let path = Bundle.main.path(forResource: "propaty", ofType: "plist")
+        let dictionary = NSDictionary(contentsOfFile: path!)
+        let appCode: AnyObject = dictionary?.object(forKey: "APP_CODE") as AnyObject
+
+        #if DEBUG
+            // APIKEY取得
+            urlSessionGetClient_apidevicetoken.post(urlSession_lib: urlSessionGetClient_apidevicetoken, currentView: self, url: "api/notification/token_post", parameters: ["app_code": appCode, "device_token": config_instance.configurationGet_String(keyName: "DeviceToken"), "device_type": "iOS_Staging"])
+        #elseif STAGING
+            // APIKEY取得
+            urlSessionGetClient_apidevicetoken.post(urlSession_lib: urlSessionGetClient_apidevicetoken, currentView: self, url: "api/notification/token_post", parameters: ["app_code": appCode, "device_token": config_instance.configurationGet_String(keyName: "DeviceToken"), "device_type": "iOS_Staging"])
+        #else
+            // APIKEY取得
+            urlSessionGetClient_apidevicetoken.post(urlSession_lib: urlSessionGetClient_apidevicetoken, currentView: self, url: "api/notification/token_post", parameters: ["app_code": appCode, "device_token": config_instance.configurationGet_String(keyName: "DeviceToken"), "device_type": "iOS"])
+        #endif
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -105,6 +122,12 @@ class FirstViewController: BaseViewController {
                     break
                 }
             }
+
+            // DeviceToken登録
+            self.setApi_devicetoken()
+        }
+
+        if urlSession_lib == urlSessionGetClient_apidevicetoken {
 
             // タイマーストップ
             timer.invalidate()

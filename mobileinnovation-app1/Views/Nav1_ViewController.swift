@@ -30,6 +30,15 @@ class Nav1_ViewController: BaseViewController {
             tabItem.badgeValue = "5"
         }
 */
+
+        //        lbl_token.text = config_instance.configurationGet_String(keyName: "DeviceToken")
+
+        //        let queryItems = [URLQueryItem(name: "a", value: "foo"),
+        //                          URLQueryItem(name: "b", value: "1234")]
+        //        urlSessionGetClient.get(currentView: self, url: "http://192.168.0.170:8000/api/json_notice_list/", queryItems: nil, session: urlSessionGetClient)
+
+
+        //        lbl_token.text = config_instance.configurationGet_String(keyName: "DeviceToken")
     }
 
     override func didReceiveMemoryWarning() {
