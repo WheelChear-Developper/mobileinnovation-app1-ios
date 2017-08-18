@@ -12,24 +12,9 @@ class Nav1_ViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-/*
-        if let tabItem = self.tabBarController?.tabBar.items?[0] {
-            if #available(iOS 10.0, *) {
-                tabItem.badgeColor = UIColor.darkGray
-            } else {
-                // Fallback on earlier versions
-            }
-            tabItem.badgeValue = "new"
-        }
-        if let tabItem = self.tabBarController?.tabBar.items?[1] {
-            if #available(iOS 10.0, *) {
-                tabItem.badgeColor = UIColor.blue
-            } else {
-                // Fallback on earlier versions
-            }
-            tabItem.badgeValue = "5"
-        }
-*/
+
+        //self.base_tabIconCountSet(tabNo: 1, bage:"123")
+
 
         //        lbl_token.text = config_instance.configurationGet_String(keyName: "DeviceToken")
 

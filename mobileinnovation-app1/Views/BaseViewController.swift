@@ -11,11 +11,11 @@ import UIKit
 class BaseViewController: UIViewController, UrlSession_libDelegate {
 
     // Congigrationのインスタンス
-    let config_instance = Configuration()
+    let base_config_instance = Configuration()
     // AppDelegateへのインスタンス
-    let appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    let base_appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
     // 通知用ライブラリのインスタンス
-    let notification_lib = Notification_lib()
+    let base_notification_lib = Notification_lib()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +33,14 @@ class BaseViewController: UIViewController, UrlSession_libDelegate {
         super.didReceiveMemoryWarning()
     }
 
+    // Tabにカウントを設定する
+    func base_tabIconCountSet(tabNo: Int, bage: String) {
+        if let tabItem = self.tabBarController?.tabBar.items?[tabNo] {
+            tabItem.badgeValue = bage
+        }
+    }
+
+    // UrlSession後処理
     func UrlSessionBack_SuccessAction(urlSession_lib: UrlSession_lib, currentView: BaseViewController, dicJson: NSDictionary) {
     }
     func UrlSessionBack_DataFailureAction(urlSession_lib: UrlSession_lib, statusErrCode: Int, errType: String) {

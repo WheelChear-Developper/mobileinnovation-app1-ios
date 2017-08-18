@@ -40,16 +40,15 @@ class FirstViewController: BaseViewController {
         timer.fire()
 
         // DeviceToken 初期化
-        let config_instance = Configuration()
-        config_instance.configurationSet_String(value: "", keyName: "DeviceToken")
+        self.base_config_instance.configurationSet_String(value: "", keyName: "DeviceToken")
         #if (!arch(i386) && !arch(x86_64))
             // 実機
 
             // 起動ごとにDeviceToken取得
-            appDelegate.setNotification()
+            self.base_appDelegate.setNotification()
         #else
             // シミュレータ時の仮DeviceToken設定
-            config_instance.configurationSet_String(value: "ios_Emureter999999999999999999999999999999999999999999999999999999999999999", keyName: "DeviceToken")
+            self.base_config_instance.configurationSet_String(value: "ios_Emureter999999999999999999999999999999999999999999999999999999999999999", keyName: "DeviceToken")
         #endif
 
         // logoフェードイン
@@ -89,13 +88,13 @@ class FirstViewController: BaseViewController {
 
         #if DEBUG
             // APIKEY取得
-            urlSessionGetClient_apidevicetoken.post(urlSession_lib: urlSessionGetClient_apidevicetoken, currentView: self, url: "api/notification/token_post", parameters: ["app_code": appCode, "device_token": config_instance.configurationGet_String(keyName: "DeviceToken"), "device_type": "iOS_Staging"])
+            urlSessionGetClient_apidevicetoken.post(urlSession_lib: urlSessionGetClient_apidevicetoken, currentView: self, url: "api/notification/token_post", parameters: ["app_code": appCode, "device_token": self.base_config_instance.configurationGet_String(keyName: "DeviceToken"), "device_type": "iOS_Staging"])
         #elseif STAGING
             // APIKEY取得
-            urlSessionGetClient_apidevicetoken.post(urlSession_lib: urlSessionGetClient_apidevicetoken, currentView: self, url: "api/notification/token_post", parameters: ["app_code": appCode, "device_token": config_instance.configurationGet_String(keyName: "DeviceToken"), "device_type": "iOS_Staging"])
+            urlSessionGetClient_apidevicetoken.post(urlSession_lib: urlSessionGetClient_apidevicetoken, currentView: self, url: "api/notification/token_post", parameters: ["app_code": appCode, "device_token": self.base_config_instance.configurationGet_String(keyName: "DeviceToken"), "device_type": "iOS_Staging"])
         #else
             // APIKEY取得
-            urlSessionGetClient_apidevicetoken.post(urlSession_lib: urlSessionGetClient_apidevicetoken, currentView: self, url: "api/notification/token_post", parameters: ["app_code": appCode, "device_token": config_instance.configurationGet_String(keyName: "DeviceToken"), "device_type": "iOS"])
+            urlSessionGetClient_apidevicetoken.post(urlSession_lib: urlSessionGetClient_apidevicetoken, currentView: self, url: "api/notification/token_post", parameters: ["app_code": appCode, "device_token": self.base_config_instance.configurationGet_String(keyName: "DeviceToken"), "device_type": "iOS"])
         #endif
     }
 
@@ -113,12 +112,12 @@ class FirstViewController: BaseViewController {
 
             // ApiKey ローカル保存
             let dic = dicJson["apikey"]
-            config_instance.configurationSet_String(value: dic as! String, keyName: "ApiKey")
-            print("apikey = " + config_instance.configurationGet_String(keyName: "ApiKey"))
+            self.base_config_instance.configurationSet_String(value: dic as! String, keyName: "ApiKey")
+            print("apikey = " + self.base_config_instance.configurationGet_String(keyName: "ApiKey"))
 
             // DeviceTokenチェック
             while true {
-                if config_instance.configurationGet_String(keyName: "DeviceToken") != "" {
+                if self.base_config_instance.configurationGet_String(keyName: "DeviceToken") != "" {
                     break
                 }
             }
