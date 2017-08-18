@@ -1,5 +1,5 @@
 //
-//  Nav3_ViewController.swift
+//  Tab2_ViewController.swift
 //  mobileinnovation-app1
 //
 //  Created by M.Amatani on 2017/08/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Nav3_ViewController: BaseViewController {
+class Tab2_ViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

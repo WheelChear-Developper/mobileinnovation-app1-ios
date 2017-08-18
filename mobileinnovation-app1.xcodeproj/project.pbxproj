@@ -11,21 +11,21 @@
 		10084C281F432E1D00EFE995 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10084C271F432E1D00EFE995 /* FirstViewController.swift */; };
 		10084C2A1F43363E00EFE995 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10084C291F43363E00EFE995 /* BaseViewController.swift */; };
 		10117EFE1F4584DC00A7C2BD /* AnimationView_lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117EFD1F4584DC00A7C2BD /* AnimationView_lib.swift */; };
-		10117F001F45854A00A7C2BD /* Nav1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117EFF1F45854A00A7C2BD /* Nav1_ViewController.swift */; };
-		10117F021F45855800A7C2BD /* Nav2_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117F011F45855800A7C2BD /* Nav2_ViewController.swift */; };
-		10117F041F45856700A7C2BD /* Nav3_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117F031F45856700A7C2BD /* Nav3_ViewController.swift */; };
-		10117F061F45857700A7C2BD /* Nav4_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117F051F45857700A7C2BD /* Nav4_ViewController.swift */; };
-		10117F081F45858C00A7C2BD /* Nav5_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117F071F45858C00A7C2BD /* Nav5_ViewController.swift */; };
-		1028B95D1F4571F000CCFBA1 /* Care.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B9531F4571F000CCFBA1 /* Care.png */; };
-		1028B95E1F4571F000CCFBA1 /* Care@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B9541F4571F000CCFBA1 /* Care@2x.png */; };
-		1028B95F1F4571F000CCFBA1 /* Deskwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B9551F4571F000CCFBA1 /* Deskwork.png */; };
-		1028B9601F4571F000CCFBA1 /* Deskwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B9561F4571F000CCFBA1 /* Deskwork@2x.png */; };
-		1028B9611F4571F000CCFBA1 /* PersonalConnections.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B9571F4571F000CCFBA1 /* PersonalConnections.png */; };
-		1028B9621F4571F000CCFBA1 /* PersonalConnections@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B9581F4571F000CCFBA1 /* PersonalConnections@2x.png */; };
-		1028B9631F4571F000CCFBA1 /* PinMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B9591F4571F000CCFBA1 /* PinMap.png */; };
-		1028B9641F4571F000CCFBA1 /* PinMap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B95A1F4571F000CCFBA1 /* PinMap@2x.png */; };
-		1028B9651F4571F000CCFBA1 /* Takeout.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B95B1F4571F000CCFBA1 /* Takeout.png */; };
-		1028B9661F4571F000CCFBA1 /* Takeout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1028B95C1F4571F000CCFBA1 /* Takeout@2x.png */; };
+		10117F001F45854A00A7C2BD /* Tab1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117EFF1F45854A00A7C2BD /* Tab1_ViewController.swift */; };
+		10117F021F45855800A7C2BD /* Tab2_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117F011F45855800A7C2BD /* Tab2_ViewController.swift */; };
+		10117F041F45856700A7C2BD /* Tab3_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117F031F45856700A7C2BD /* Tab3_ViewController.swift */; };
+		10117F061F45857700A7C2BD /* Tab4_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117F051F45857700A7C2BD /* Tab4_ViewController.swift */; };
+		10117F081F45858C00A7C2BD /* Tab5_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117F071F45858C00A7C2BD /* Tab5_ViewController.swift */; };
+		10328EAB1F469801008B2B7C /* Care.png in Resources */ = {isa = PBXBuildFile; fileRef = 10328EA11F469801008B2B7C /* Care.png */; };
+		10328EAC1F469801008B2B7C /* Care@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10328EA21F469801008B2B7C /* Care@2x.png */; };
+		10328EAD1F469801008B2B7C /* Deskwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 10328EA31F469801008B2B7C /* Deskwork.png */; };
+		10328EAE1F469801008B2B7C /* Deskwork@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10328EA41F469801008B2B7C /* Deskwork@2x.png */; };
+		10328EAF1F469801008B2B7C /* PersonalConnections.png in Resources */ = {isa = PBXBuildFile; fileRef = 10328EA51F469801008B2B7C /* PersonalConnections.png */; };
+		10328EB01F469801008B2B7C /* PersonalConnections@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10328EA61F469801008B2B7C /* PersonalConnections@2x.png */; };
+		10328EB11F469801008B2B7C /* PinMap.png in Resources */ = {isa = PBXBuildFile; fileRef = 10328EA71F469801008B2B7C /* PinMap.png */; };
+		10328EB21F469801008B2B7C /* PinMap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10328EA81F469801008B2B7C /* PinMap@2x.png */; };
+		10328EB31F469801008B2B7C /* Takeout.png in Resources */ = {isa = PBXBuildFile; fileRef = 10328EA91F469801008B2B7C /* Takeout.png */; };
+		10328EB41F469801008B2B7C /* Takeout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10328EAA1F469801008B2B7C /* Takeout@2x.png */; };
 		1044723A1F45B476006E1034 /* propaty.plist in Resources */ = {isa = PBXBuildFile; fileRef = 104472391F45B476006E1034 /* propaty.plist */; };
 		106A8C6C1F45635200FC9E0F /* Android.mk in Resources */ = {isa = PBXBuildFile; fileRef = 106A8C381F45635100FC9E0F /* Android.mk */; };
 		106A8C6D1F45635200FC9E0F /* AndroidClock.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 106A8C391F45635100FC9E0F /* AndroidClock.ttf */; };
@@ -113,21 +113,21 @@
 		10084C271F432E1D00EFE995 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		10084C291F43363E00EFE995 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		10117EFD1F4584DC00A7C2BD /* AnimationView_lib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationView_lib.swift; sourceTree = "<group>"; };
-		10117EFF1F45854A00A7C2BD /* Nav1_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nav1_ViewController.swift; sourceTree = "<group>"; };
-		10117F011F45855800A7C2BD /* Nav2_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nav2_ViewController.swift; sourceTree = "<group>"; };
-		10117F031F45856700A7C2BD /* Nav3_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nav3_ViewController.swift; sourceTree = "<group>"; };
-		10117F051F45857700A7C2BD /* Nav4_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nav4_ViewController.swift; sourceTree = "<group>"; };
-		10117F071F45858C00A7C2BD /* Nav5_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nav5_ViewController.swift; sourceTree = "<group>"; };
-		1028B9531F4571F000CCFBA1 /* Care.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Care.png; sourceTree = "<group>"; };
-		1028B9541F4571F000CCFBA1 /* Care@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Care@2x.png"; sourceTree = "<group>"; };
-		1028B9551F4571F000CCFBA1 /* Deskwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Deskwork.png; sourceTree = "<group>"; };
-		1028B9561F4571F000CCFBA1 /* Deskwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Deskwork@2x.png"; sourceTree = "<group>"; };
-		1028B9571F4571F000CCFBA1 /* PersonalConnections.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PersonalConnections.png; sourceTree = "<group>"; };
-		1028B9581F4571F000CCFBA1 /* PersonalConnections@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PersonalConnections@2x.png"; sourceTree = "<group>"; };
-		1028B9591F4571F000CCFBA1 /* PinMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PinMap.png; sourceTree = "<group>"; };
-		1028B95A1F4571F000CCFBA1 /* PinMap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PinMap@2x.png"; sourceTree = "<group>"; };
-		1028B95B1F4571F000CCFBA1 /* Takeout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Takeout.png; sourceTree = "<group>"; };
-		1028B95C1F4571F000CCFBA1 /* Takeout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Takeout@2x.png"; sourceTree = "<group>"; };
+		10117EFF1F45854A00A7C2BD /* Tab1_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab1_ViewController.swift; sourceTree = "<group>"; };
+		10117F011F45855800A7C2BD /* Tab2_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab2_ViewController.swift; sourceTree = "<group>"; };
+		10117F031F45856700A7C2BD /* Tab3_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab3_ViewController.swift; sourceTree = "<group>"; };
+		10117F051F45857700A7C2BD /* Tab4_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab4_ViewController.swift; sourceTree = "<group>"; };
+		10117F071F45858C00A7C2BD /* Tab5_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab5_ViewController.swift; sourceTree = "<group>"; };
+		10328EA11F469801008B2B7C /* Care.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Care.png; sourceTree = "<group>"; };
+		10328EA21F469801008B2B7C /* Care@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Care@2x.png"; sourceTree = "<group>"; };
+		10328EA31F469801008B2B7C /* Deskwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Deskwork.png; sourceTree = "<group>"; };
+		10328EA41F469801008B2B7C /* Deskwork@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Deskwork@2x.png"; sourceTree = "<group>"; };
+		10328EA51F469801008B2B7C /* PersonalConnections.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PersonalConnections.png; sourceTree = "<group>"; };
+		10328EA61F469801008B2B7C /* PersonalConnections@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PersonalConnections@2x.png"; sourceTree = "<group>"; };
+		10328EA71F469801008B2B7C /* PinMap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PinMap.png; sourceTree = "<group>"; };
+		10328EA81F469801008B2B7C /* PinMap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PinMap@2x.png"; sourceTree = "<group>"; };
+		10328EA91F469801008B2B7C /* Takeout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Takeout.png; sourceTree = "<group>"; };
+		10328EAA1F469801008B2B7C /* Takeout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Takeout@2x.png"; sourceTree = "<group>"; };
 		104472391F45B476006E1034 /* propaty.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = propaty.plist; sourceTree = "<group>"; };
 		106A8C381F45635100FC9E0F /* Android.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
 		106A8C391F45635100FC9E0F /* AndroidClock.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AndroidClock.ttf; sourceTree = "<group>"; };
@@ -245,21 +245,21 @@
 			path = AnimationView_lib;
 			sourceTree = "<group>";
 		};
-		1028B9201F456F8300CCFBA1 /* navigation_icon */ = {
+		10328EA01F469801008B2B7C /* tab */ = {
 			isa = PBXGroup;
 			children = (
-				1028B9531F4571F000CCFBA1 /* Care.png */,
-				1028B9541F4571F000CCFBA1 /* Care@2x.png */,
-				1028B9551F4571F000CCFBA1 /* Deskwork.png */,
-				1028B9561F4571F000CCFBA1 /* Deskwork@2x.png */,
-				1028B9571F4571F000CCFBA1 /* PersonalConnections.png */,
-				1028B9581F4571F000CCFBA1 /* PersonalConnections@2x.png */,
-				1028B9591F4571F000CCFBA1 /* PinMap.png */,
-				1028B95A1F4571F000CCFBA1 /* PinMap@2x.png */,
-				1028B95B1F4571F000CCFBA1 /* Takeout.png */,
-				1028B95C1F4571F000CCFBA1 /* Takeout@2x.png */,
+				10328EA11F469801008B2B7C /* Care.png */,
+				10328EA21F469801008B2B7C /* Care@2x.png */,
+				10328EA31F469801008B2B7C /* Deskwork.png */,
+				10328EA41F469801008B2B7C /* Deskwork@2x.png */,
+				10328EA51F469801008B2B7C /* PersonalConnections.png */,
+				10328EA61F469801008B2B7C /* PersonalConnections@2x.png */,
+				10328EA71F469801008B2B7C /* PinMap.png */,
+				10328EA81F469801008B2B7C /* PinMap@2x.png */,
+				10328EA91F469801008B2B7C /* Takeout.png */,
+				10328EAA1F469801008B2B7C /* Takeout@2x.png */,
 			);
-			path = navigation_icon;
+			path = tab;
 			sourceTree = "<group>";
 		};
 		106A8C371F45635100FC9E0F /* fonts */ = {
@@ -322,7 +322,7 @@
 		106A8C6A1F45635200FC9E0F /* images */ = {
 			isa = PBXGroup;
 			children = (
-				1028B9201F456F8300CCFBA1 /* navigation_icon */,
+				10328EA01F469801008B2B7C /* tab */,
 				106A8C6B1F45635200FC9E0F /* company_icon_logo.png */,
 			);
 			path = images;
@@ -384,11 +384,11 @@
 			children = (
 				10084C291F43363E00EFE995 /* BaseViewController.swift */,
 				10084C271F432E1D00EFE995 /* FirstViewController.swift */,
-				10117EFF1F45854A00A7C2BD /* Nav1_ViewController.swift */,
-				10117F011F45855800A7C2BD /* Nav2_ViewController.swift */,
-				10117F031F45856700A7C2BD /* Nav3_ViewController.swift */,
-				10117F051F45857700A7C2BD /* Nav4_ViewController.swift */,
-				10117F071F45858C00A7C2BD /* Nav5_ViewController.swift */,
+				10117EFF1F45854A00A7C2BD /* Tab1_ViewController.swift */,
+				10117F011F45855800A7C2BD /* Tab2_ViewController.swift */,
+				10117F031F45856700A7C2BD /* Tab3_ViewController.swift */,
+				10117F051F45857700A7C2BD /* Tab4_ViewController.swift */,
+				10117F071F45858C00A7C2BD /* Tab5_ViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -620,46 +620,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				106A8C8E1F45635200FC9E0F /* NOTICE in Resources */,
+				10328EB01F469801008B2B7C /* PersonalConnections@2x.png in Resources */,
 				106A8C7C1F45635200FC9E0F /* DroidSansEthiopic-Regular.ttf in Resources */,
 				10BE15E51F3D9FAF0007641A /* LaunchScreen.storyboard in Resources */,
 				106A8C821F45635200FC9E0F /* DroidSansHebrew-Regular.ttf in Resources */,
 				106A8C801F45635200FC9E0F /* DroidSansGeorgian.ttf in Resources */,
+				10328EB41F469801008B2B7C /* Takeout@2x.png in Resources */,
 				106A8C861F45635200FC9E0F /* DroidSerif-BoldItalic.ttf in Resources */,
-				1028B9601F4571F000CCFBA1 /* Deskwork@2x.png in Resources */,
 				106A8C791F45635200FC9E0F /* DroidSansArabic.ttf in Resources */,
-				1028B9661F4571F000CCFBA1 /* Takeout@2x.png in Resources */,
-				1028B95F1F4571F000CCFBA1 /* Deskwork.png in Resources */,
-				1028B9641F4571F000CCFBA1 /* PinMap@2x.png in Resources */,
 				106A8C711F45635200FC9E0F /* Clockopia.ttf in Resources */,
 				106A8C921F45635200FC9E0F /* Roboto-Italic.ttf in Resources */,
 				106A8C731F45635200FC9E0F /* DroidKufi-Regular.ttf in Resources */,
 				106A8C741F45635200FC9E0F /* DroidNaskh-Bold.ttf in Resources */,
+				10328EB21F469801008B2B7C /* PinMap@2x.png in Resources */,
 				106A8C851F45635200FC9E0F /* DroidSerif-Bold.ttf in Resources */,
 				106A8C7B1F45635200FC9E0F /* DroidSansEthiopic-Bold.ttf in Resources */,
 				106A8C771F45635200FC9E0F /* DroidSans-Bold.ttf in Resources */,
+				10328EAB1F469801008B2B7C /* Care.png in Resources */,
 				106A8C901F45635200FC9E0F /* Roboto-Bold.ttf in Resources */,
-				1028B9651F4571F000CCFBA1 /* Takeout.png in Resources */,
 				106A8C9B1F45635200FC9E0F /* RobotoCondensed-Regular.ttf in Resources */,
+				10328EAF1F469801008B2B7C /* PersonalConnections.png in Resources */,
 				106A8C7A1F45635200FC9E0F /* DroidSansArmenian.ttf in Resources */,
 				106A8C931F45635200FC9E0F /* Roboto-Light.ttf in Resources */,
 				106A8C751F45635200FC9E0F /* DroidNaskh-Regular.ttf in Resources */,
 				106A8C8F1F45635200FC9E0F /* README.txt in Resources */,
+				10328EAD1F469801008B2B7C /* Deskwork.png in Resources */,
 				106A8C9C1F45635200FC9E0F /* system_fonts.xml in Resources */,
 				106A8C6E1F45635200FC9E0F /* AndroidClock_Highlight.ttf in Resources */,
+				10328EB31F469801008B2B7C /* Takeout.png in Resources */,
 				106A8C781F45635200FC9E0F /* DroidSans.ttf in Resources */,
 				106A8C8B1F45635200FC9E0F /* MODULE_LICENSE_APACHE2 in Resources */,
 				1044723A1F45B476006E1034 /* propaty.plist in Resources */,
 				106A8C891F45635200FC9E0F /* fallback_fonts.xml in Resources */,
 				106A8C8D1F45635200FC9E0F /* MTLmr3m.ttf in Resources */,
 				106A8C841F45635200FC9E0F /* DroidSansMono.ttf in Resources */,
-				1028B9611F4571F000CCFBA1 /* PersonalConnections.png in Resources */,
-				1028B95E1F4571F000CCFBA1 /* Care@2x.png in Resources */,
 				106A8C981F45635200FC9E0F /* RobotoCondensed-Bold.ttf in Resources */,
+				10328EAE1F469801008B2B7C /* Deskwork@2x.png in Resources */,
 				106A8C911F45635200FC9E0F /* Roboto-BoldItalic.ttf in Resources */,
 				106A8C701F45635200FC9E0F /* AndroidEmoji.ttf in Resources */,
 				106A8C9A1F45635200FC9E0F /* RobotoCondensed-Italic.ttf in Resources */,
 				106A8C761F45635200FC9E0F /* DroidNaskhUI-Regular.ttf in Resources */,
-				1028B95D1F4571F000CCFBA1 /* Care.png in Resources */,
 				106A8C881F45635200FC9E0F /* DroidSerif-Regular.ttf in Resources */,
 				106A8C871F45635200FC9E0F /* DroidSerif-Italic.ttf in Resources */,
 				106A8C971F45635200FC9E0F /* Roboto-ThinItalic.ttf in Resources */,
@@ -677,12 +677,12 @@
 				10BE15E21F3D9FAF0007641A /* Assets.xcassets in Resources */,
 				10BE15E01F3D9FAF0007641A /* Main.storyboard in Resources */,
 				106A8C6F1F45635200FC9E0F /* AndroidClock_Solid.ttf in Resources */,
-				1028B9621F4571F000CCFBA1 /* PersonalConnections@2x.png in Resources */,
-				1028B9631F4571F000CCFBA1 /* PinMap.png in Resources */,
 				106A8C8C1F45635200FC9E0F /* MTLc3m.ttf in Resources */,
+				10328EB11F469801008B2B7C /* PinMap.png in Resources */,
 				106A8C6D1F45635200FC9E0F /* AndroidClock.ttf in Resources */,
 				106A8C811F45635200FC9E0F /* DroidSansHebrew-Bold.ttf in Resources */,
 				106A8C951F45635200FC9E0F /* Roboto-Regular.ttf in Resources */,
+				10328EAC1F469801008B2B7C /* Care@2x.png in Resources */,
 				106A8C6C1F45635200FC9E0F /* Android.mk in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -891,15 +891,15 @@
 				108D47691F44158400441C23 /* AMReachability.swift in Sources */,
 				10084C2A1F43363E00EFE995 /* BaseViewController.swift in Sources */,
 				10084C281F432E1D00EFE995 /* FirstViewController.swift in Sources */,
-				10117F061F45857700A7C2BD /* Nav4_ViewController.swift in Sources */,
+				10117F061F45857700A7C2BD /* Tab4_ViewController.swift in Sources */,
 				10117EFE1F4584DC00A7C2BD /* AnimationView_lib.swift in Sources */,
 				10AA61061F419DC500F59887 /* UrlSession_lib.swift in Sources */,
-				10117F081F45858C00A7C2BD /* Nav5_ViewController.swift in Sources */,
-				10117F041F45856700A7C2BD /* Nav3_ViewController.swift in Sources */,
-				10117F021F45855800A7C2BD /* Nav2_ViewController.swift in Sources */,
+				10117F081F45858C00A7C2BD /* Tab5_ViewController.swift in Sources */,
+				10117F041F45856700A7C2BD /* Tab3_ViewController.swift in Sources */,
+				10117F021F45855800A7C2BD /* Tab2_ViewController.swift in Sources */,
 				10AA61041F419D9600F59887 /* Configuration.swift in Sources */,
 				10BE15DB1F3D9FAF0007641A /* AppDelegate.swift in Sources */,
-				10117F001F45854A00A7C2BD /* Nav1_ViewController.swift in Sources */,
+				10117F001F45854A00A7C2BD /* Tab1_ViewController.swift in Sources */,
 				108D476C1F446C7A00441C23 /* Notification_lib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

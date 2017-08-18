@@ -1,5 +1,5 @@
 //
-//  Nav5_ViewController.swift
+//  Tab3_ViewController.swift
 //  mobileinnovation-app1
 //
 //  Created by M.Amatani on 2017/08/17.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class Nav5_ViewController: BaseViewController {
+class Tab3_ViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
     }
 
     override func didReceiveMemoryWarning() {

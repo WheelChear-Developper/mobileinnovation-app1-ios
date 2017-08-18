@@ -59,7 +59,7 @@
         <!--Item 2-->
         <scene sceneID="80f-Xf-TQA">
             <objects>
-                <viewController id="hkp-0D-WLg" customClass="Nav2_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hkp-0D-WLg" customClass="Tab2_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Q9a-QZ-phX"/>
                         <viewControllerLayoutGuide type="bottom" id="vze-tY-bIY"/>
@@ -100,7 +100,7 @@
         <!--Item 1-->
         <scene sceneID="YSv-1R-8Eu">
             <objects>
-                <viewController id="XNy-Vg-fri" customClass="Nav1_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XNy-Vg-fri" customClass="Tab1_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aCr-0y-Ngg"/>
                         <viewControllerLayoutGuide type="bottom" id="ZzT-js-8ge"/>
@@ -166,7 +166,7 @@
                 <navigationController storyboardIdentifier="MainNavigation" navigationBarHidden="YES" id="9ON-Qf-WyB" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ciZ-hW-9Xv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ciZ-hW-9Xv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -181,7 +181,7 @@
         <!--Item 3-->
         <scene sceneID="7br-tU-yeF">
             <objects>
-                <viewController id="fcc-MG-MOf" customClass="Nav3_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fcc-MG-MOf" customClass="Tab3_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Oyc-4P-Oep"/>
                         <viewControllerLayoutGuide type="bottom" id="qMz-ja-OVU"/>
@@ -222,7 +222,7 @@
         <!--Item 4-->
         <scene sceneID="9zJ-ry-PS9">
             <objects>
-                <viewController id="ExW-db-4oI" customClass="Nav4_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ExW-db-4oI" customClass="Tab4_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3bj-BA-cDn"/>
                         <viewControllerLayoutGuide type="bottom" id="eUx-8H-Ne6"/>
@@ -263,7 +263,7 @@
         <!--Map-->
         <scene sceneID="hYe-FH-JTZ">
             <objects>
-                <viewController id="Vsa-kO-G7R" customClass="Nav5_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Vsa-kO-G7R" customClass="Tab5_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="52L-eR-etc"/>
                         <viewControllerLayoutGuide type="bottom" id="XJd-uT-nxN"/>
