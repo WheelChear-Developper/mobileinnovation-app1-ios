@@ -24,6 +24,8 @@ class FirstViewController: BaseViewController {
     // View
     @IBOutlet weak var lbl_Loading: LTMorphingLabel!
     @IBOutlet weak var img_logo: UIImageView!
+    @IBOutlet weak var lbl_info1: UILabel!
+    @IBOutlet weak var lbl_info2: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,8 +54,9 @@ class FirstViewController: BaseViewController {
         #endif
 
         // logoフェードイン
-        img_logo.fadeIn(type: .Slow)
-        img_logo.fadeIn(type: .Slow) { [weak self] in
+        lbl_info1.fadeIn(type: .Slow)
+        lbl_info2.fadeIn(type: .Slow)
+        lbl_info1.fadeIn(type: .Slow) { [weak self] in
 
             //APIKEY取得
             self?.getApi_akikey()

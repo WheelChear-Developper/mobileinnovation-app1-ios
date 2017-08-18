@@ -5,6 +5,8 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,12 +21,62 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wQI-n5-v6m">
+                                <rect key="frame" x="19.5" y="94.5" width="337.5" height="478.5"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="モバイルへの 果てしない挑戦と ものづくり" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6rD-I1-RCi">
+                                        <rect key="frame" x="0.5" y="0.5" width="337.5" height="138"/>
+                                        <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="36"/>
+                                        <color key="textColor" red="0.25490196078431371" green="0.34901960784313724" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="company_icon_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="vV7-gW-wyu">
+                                        <rect key="frame" x="84" y="158.5" width="169" height="168.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="vV7-gW-wyu" secondAttribute="height" multiplier="1:1" id="SbC-iK-h4K"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boundless challenge and  manufacturing to mobility" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jf9-lU-k6t">
+                                        <rect key="frame" x="0.0" y="347" width="337.5" height="131.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="32"/>
+                                        <color key="textColor" red="0.25489547028725235" green="0.34781902354750899" blue="0.54060913705583757" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="vV7-gW-wyu" firstAttribute="top" secondItem="6rD-I1-RCi" secondAttribute="bottom" constant="20" id="8O7-FZ-z7N"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jf9-lU-k6t" secondAttribute="bottom" id="9qa-l5-Pjg"/>
+                                    <constraint firstItem="Jf9-lU-k6t" firstAttribute="leading" secondItem="wQI-n5-v6m" secondAttribute="leading" id="BXc-1S-QKd"/>
+                                    <constraint firstAttribute="trailing" secondItem="6rD-I1-RCi" secondAttribute="trailing" id="F46-p3-0j8"/>
+                                    <constraint firstItem="6rD-I1-RCi" firstAttribute="centerX" secondItem="wQI-n5-v6m" secondAttribute="centerX" id="MKd-Zq-l7h"/>
+                                    <constraint firstItem="6rD-I1-RCi" firstAttribute="top" secondItem="wQI-n5-v6m" secondAttribute="top" id="MWH-EC-eND"/>
+                                    <constraint firstItem="vV7-gW-wyu" firstAttribute="centerX" secondItem="wQI-n5-v6m" secondAttribute="centerX" id="Rwj-Ft-gRa"/>
+                                    <constraint firstItem="6rD-I1-RCi" firstAttribute="leading" secondItem="wQI-n5-v6m" secondAttribute="leading" id="Vai-ZZ-KDG"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jf9-lU-k6t" secondAttribute="trailing" id="W8x-5L-X4W"/>
+                                    <constraint firstItem="vV7-gW-wyu" firstAttribute="width" secondItem="wQI-n5-v6m" secondAttribute="width" multiplier="0.5" id="WyS-bo-3R5"/>
+                                    <constraint firstItem="Jf9-lU-k6t" firstAttribute="top" secondItem="vV7-gW-wyu" secondAttribute="bottom" constant="20" id="iuT-1M-Lma"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.97254901960784312" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="wQI-n5-v6m" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="23x-jC-Hl1"/>
+                            <constraint firstItem="wQI-n5-v6m" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.9" id="oV7-NP-ltv"/>
+                            <constraint firstItem="wQI-n5-v6m" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vBF-Db-pVs"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="company_icon_logo.png" width="200" height="200"/>
+    </resources>
 </document>

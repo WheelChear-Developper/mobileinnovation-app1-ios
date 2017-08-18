@@ -10,6 +10,11 @@
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Typodermic - NasalizationRg-Regular.otf">
+            <string>NasalizationRg-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--First View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -24,32 +29,64 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Zv-aD-ofE" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
-                                <rect key="frame" x="21" y="636" width="333" height="21"/>
-                                <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
+                                <rect key="frame" x="21" y="635" width="333" height="22"/>
+                                <fontDescription key="fontDescription" name="NasalizationRg-Regular" family="Nasalization" pointSize="18"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="company_icon_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="a74-T4-hu3">
-                                <rect key="frame" x="94" y="240" width="188" height="188"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dxs-sV-kgR">
+                                <rect key="frame" x="19" y="115.5" width="337.5" height="436.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="モバイルへの 果てしない挑戦と ものづくり" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zXZ-F1-mdd">
+                                        <rect key="frame" x="0.5" y="0.5" width="337.5" height="140.5"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="36"/>
+                                        <color key="textColor" red="0.25490196079999999" green="0.34901960780000002" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="company_icon_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="SuF-3y-aBX">
+                                        <rect key="frame" x="84" y="161" width="168.5" height="168"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="SuF-3y-aBX" secondAttribute="height" multiplier="1:1" id="XvZ-0M-k1W"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boundless challenge and  manufacturing to mobility" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="73h-zx-xhR">
+                                        <rect key="frame" x="0.0" y="349" width="337.5" height="87.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="32"/>
+                                        <color key="textColor" red="0.25489547029999998" green="0.34781902349999999" blue="0.54060913710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="a74-T4-hu3" secondAttribute="height" multiplier="1:1" id="5Vm-b0-ATw"/>
+                                    <constraint firstItem="73h-zx-xhR" firstAttribute="top" secondItem="SuF-3y-aBX" secondAttribute="bottom" constant="20" id="4KX-Fj-bEr"/>
+                                    <constraint firstItem="SuF-3y-aBX" firstAttribute="centerX" secondItem="Dxs-sV-kgR" secondAttribute="centerX" id="9cF-Xe-y18"/>
+                                    <constraint firstItem="zXZ-F1-mdd" firstAttribute="centerX" secondItem="Dxs-sV-kgR" secondAttribute="centerX" id="A5S-lj-hbg"/>
+                                    <constraint firstItem="73h-zx-xhR" firstAttribute="leading" secondItem="Dxs-sV-kgR" secondAttribute="leading" id="BRc-YE-yA0"/>
+                                    <constraint firstAttribute="trailing" secondItem="73h-zx-xhR" secondAttribute="trailing" id="Exs-aA-K6e"/>
+                                    <constraint firstItem="zXZ-F1-mdd" firstAttribute="leading" secondItem="Dxs-sV-kgR" secondAttribute="leading" id="bxv-Zl-2JT"/>
+                                    <constraint firstItem="zXZ-F1-mdd" firstAttribute="top" secondItem="Dxs-sV-kgR" secondAttribute="top" id="dTZ-ZP-u0c"/>
+                                    <constraint firstAttribute="bottom" secondItem="73h-zx-xhR" secondAttribute="bottom" id="oEQ-4u-YBp"/>
+                                    <constraint firstAttribute="trailing" secondItem="zXZ-F1-mdd" secondAttribute="trailing" id="qA3-XR-SL8"/>
+                                    <constraint firstItem="SuF-3y-aBX" firstAttribute="width" secondItem="Dxs-sV-kgR" secondAttribute="width" multiplier="0.5" id="qHh-N7-7On"/>
+                                    <constraint firstItem="SuF-3y-aBX" firstAttribute="top" secondItem="zXZ-F1-mdd" secondAttribute="bottom" constant="20" id="qUc-HM-jSz"/>
                                 </constraints>
-                            </imageView>
+                            </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.97254901960784312" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="5Zv-aD-ofE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="STc-HP-kfS"/>
-                            <constraint firstItem="a74-T4-hu3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dan-ue-FOK"/>
+                            <constraint firstItem="Dxs-sV-kgR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UIA-B3-dB8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5Zv-aD-ofE" secondAttribute="trailing" constant="5" id="e45-GF-obw"/>
-                            <constraint firstItem="a74-T4-hu3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eBh-fC-2Rh"/>
+                            <constraint firstItem="Dxs-sV-kgR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="j0q-HW-AgR"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5Zv-aD-ofE" secondAttribute="bottom" constant="10" id="n7L-s2-YoH"/>
-                            <constraint firstItem="a74-T4-hu3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="seL-PP-332"/>
+                            <constraint firstItem="Dxs-sV-kgR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sWa-Gm-Hwc"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="img_logo" destination="a74-T4-hu3" id="eMY-ay-mbS"/>
+                        <outlet property="img_logo" destination="SuF-3y-aBX" id="umQ-8F-X1X"/>
                         <outlet property="lbl_Loading" destination="5Zv-aD-ofE" id="pB1-A8-E1T"/>
+                        <outlet property="lbl_info1" destination="zXZ-F1-mdd" id="Hg1-Uz-4E8"/>
+                        <outlet property="lbl_info2" destination="73h-zx-xhR" id="wNS-qF-lcV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -69,7 +106,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="2" title="Item 2" image="Deskwork.png" id="cMj-m3-enh" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                    <tabBarItem key="tabBarItem" tag="1" title="Item 2" image="Deskwork.png" id="cMj-m3-enh" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
                                 <color key="value" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -110,7 +147,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="Item 1" image="Care.png" id="PzL-jY-Oqk" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                    <tabBarItem key="tabBarItem" title="Item 1" image="Care.png" id="PzL-jY-Oqk" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                 <color key="value" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -143,7 +180,7 @@
             <objects>
                 <tabBarController id="Tsh-A0-tlK" customClass="RAMAnimatedTabBarController" customModule="RAMAnimatedTabBarController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="4WV-lR-4Kd"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="Bm1-Kx-nnq">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" backgroundImage="TabBack.png" id="Bm1-Kx-nnq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -191,13 +228,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="3" title="Item 3" image="PersonalConnections.png" id="ipw-7C-WhM" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                    <tabBarItem key="tabBarItem" tag="2" title="Item 3" image="PersonalConnections.png" id="ipw-7C-WhM" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="8"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                 <color key="value" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
                                 <color key="value" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="yOffSet">
+                                <real key="value" value="8"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                         <connections>
@@ -232,7 +273,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="4" title="Item 4" image="Takeout.png" id="SHE-BJ-5kS" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                    <tabBarItem key="tabBarItem" tag="3" title="Item 4" image="Takeout.png" id="SHE-BJ-5kS" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                 <color key="value" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -273,7 +314,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="5" title="Map" image="PinMap.png" id="hx2-l6-7Ul" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                    <tabBarItem key="tabBarItem" tag="4" title="Map" image="PinMap.png" id="hx2-l6-7Ul" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                 <color key="value" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -307,6 +348,7 @@
         <image name="Deskwork.png" width="30" height="30"/>
         <image name="PersonalConnections.png" width="30" height="30"/>
         <image name="PinMap.png" width="30" height="30"/>
+        <image name="TabBack.png" width="375" height="71"/>
         <image name="Takeout.png" width="30" height="30"/>
         <image name="company_icon_logo.png" width="200" height="200"/>
     </resources>
