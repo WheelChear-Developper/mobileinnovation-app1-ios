@@ -499,12 +499,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10BE15FF1F3D9FAF0007641A /* Build configuration list for PBXNativeTarget "mobileinnovation-app1" */;
 			buildPhases = (
-				AC57AB2D24D1F3F97998DB89 /* 📦 Check Pods Manifest.lock */,
+				AC57AB2D24D1F3F97998DB89 /* [CP] Check Pods Manifest.lock */,
 				10BE15D31F3D9FAF0007641A /* Sources */,
 				10BE15D41F3D9FAF0007641A /* Frameworks */,
 				10BE15D51F3D9FAF0007641A /* Resources */,
-				1DD160F938327D8869B6FBCA /* 📦 Embed Pods Frameworks */,
-				98A3D7F94DDCB169A4CC3966 /* 📦 Copy Pods Resources */,
+				1DD160F938327D8869B6FBCA /* [CP] Embed Pods Frameworks */,
+				98A3D7F94DDCB169A4CC3966 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -519,12 +519,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10BE16021F3D9FAF0007641A /* Build configuration list for PBXNativeTarget "mobileinnovation-app1Tests" */;
 			buildPhases = (
-				30C13745C2E2F2A64F939B4A /* 📦 Check Pods Manifest.lock */,
+				30C13745C2E2F2A64F939B4A /* [CP] Check Pods Manifest.lock */,
 				10BE15E71F3D9FAF0007641A /* Sources */,
 				10BE15E81F3D9FAF0007641A /* Frameworks */,
 				10BE15E91F3D9FAF0007641A /* Resources */,
-				C78AC0A4BAAE307D50917612 /* 📦 Embed Pods Frameworks */,
-				02E97EADDF6DA089A1362B17 /* 📦 Copy Pods Resources */,
+				C78AC0A4BAAE307D50917612 /* [CP] Embed Pods Frameworks */,
+				02E97EADDF6DA089A1362B17 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -540,11 +540,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 10BE16051F3D9FAF0007641A /* Build configuration list for PBXNativeTarget "mobileinnovation-app1UITests" */;
 			buildPhases = (
-				303E188185D0F77392969A43 /* 📦 Check Pods Manifest.lock */,
+				303E188185D0F77392969A43 /* [CP] Check Pods Manifest.lock */,
 				10BE15F21F3D9FAF0007641A /* Sources */,
 				10BE15F31F3D9FAF0007641A /* Frameworks */,
 				10BE15F41F3D9FAF0007641A /* Resources */,
-				033A73824D03DBEA4B66273C /* 📦 Copy Pods Resources */,
+				033A73824D03DBEA4B66273C /* [CP] Copy Pods Resources */,
+				C8B51BEC68DEF5D8FDC088FB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -703,124 +704,181 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		02E97EADDF6DA089A1362B17 /* 📦 Copy Pods Resources */ = {
+		02E97EADDF6DA089A1362B17 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mobileinnovation-app1Tests/Pods-mobileinnovation-app1Tests-resources.sh",
+				"${PODS_ROOT}/DeployGateSDK/DeployGateSDK1.0.7.embeddedframework/DeployGateSDK.framework/Versions/A/Resources/en.lproj",
+				"${PODS_ROOT}/DeployGateSDK/DeployGateSDK1.0.7.embeddedframework/DeployGateSDK.framework/Versions/A/Resources/ja.lproj",
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobileinnovation-app1Tests/Pods-mobileinnovation-app1Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		033A73824D03DBEA4B66273C /* 📦 Copy Pods Resources */ = {
+		033A73824D03DBEA4B66273C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mobileinnovation-app1UITests/Pods-mobileinnovation-app1UITests-resources.sh",
+				"${PODS_ROOT}/DeployGateSDK/DeployGateSDK1.0.7.embeddedframework/DeployGateSDK.framework/Versions/A/Resources/en.lproj",
+				"${PODS_ROOT}/DeployGateSDK/DeployGateSDK1.0.7.embeddedframework/DeployGateSDK.framework/Versions/A/Resources/ja.lproj",
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobileinnovation-app1UITests/Pods-mobileinnovation-app1UITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		1DD160F938327D8869B6FBCA /* 📦 Embed Pods Frameworks */ = {
+		1DD160F938327D8869B6FBCA /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mobileinnovation-app1/Pods-mobileinnovation-app1-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTMorphingLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobileinnovation-app1/Pods-mobileinnovation-app1-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		303E188185D0F77392969A43 /* 📦 Check Pods Manifest.lock */ = {
+		303E188185D0F77392969A43 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mobileinnovation-app1UITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		30C13745C2E2F2A64F939B4A /* 📦 Check Pods Manifest.lock */ = {
+		30C13745C2E2F2A64F939B4A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mobileinnovation-app1Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		98A3D7F94DDCB169A4CC3966 /* 📦 Copy Pods Resources */ = {
+		98A3D7F94DDCB169A4CC3966 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mobileinnovation-app1/Pods-mobileinnovation-app1-resources.sh",
+				"${PODS_ROOT}/DeployGateSDK/DeployGateSDK1.0.7.embeddedframework/DeployGateSDK.framework/Versions/A/Resources/en.lproj",
+				"${PODS_ROOT}/DeployGateSDK/DeployGateSDK1.0.7.embeddedframework/DeployGateSDK.framework/Versions/A/Resources/ja.lproj",
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobileinnovation-app1/Pods-mobileinnovation-app1-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AC57AB2D24D1F3F97998DB89 /* 📦 Check Pods Manifest.lock */ = {
+		AC57AB2D24D1F3F97998DB89 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mobileinnovation-app1-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C78AC0A4BAAE307D50917612 /* 📦 Embed Pods Frameworks */ = {
+		C78AC0A4BAAE307D50917612 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mobileinnovation-app1Tests/Pods-mobileinnovation-app1Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTMorphingLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobileinnovation-app1Tests/Pods-mobileinnovation-app1Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8B51BEC68DEF5D8FDC088FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-mobileinnovation-app1UITests/Pods-mobileinnovation-app1UITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTMorphingLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mobileinnovation-app1UITests/Pods-mobileinnovation-app1UITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1034,7 +1092,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9BAD9819F7F24614DBD2EB00 /* Pods-mobileinnovation-app1Tests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = N5PT49EP9P;
 				INFOPLIST_FILE = "mobileinnovation-app1Tests/Info.plist";
@@ -1050,7 +1108,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 44041D7188E3C292CC84C372 /* Pods-mobileinnovation-app1Tests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = N5PT49EP9P;
 				INFOPLIST_FILE = "mobileinnovation-app1Tests/Info.plist";
@@ -1066,7 +1124,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A1FC17C3787785A9B41C61F5 /* Pods-mobileinnovation-app1UITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = N5PT49EP9P;
 				INFOPLIST_FILE = "mobileinnovation-app1UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1081,7 +1139,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BE278F53FFBDE28B4B2AFBAC /* Pods-mobileinnovation-app1UITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				DEVELOPMENT_TEAM = N5PT49EP9P;
 				INFOPLIST_FILE = "mobileinnovation-app1UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
