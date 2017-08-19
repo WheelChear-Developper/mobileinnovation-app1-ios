@@ -26,9 +26,13 @@
 		10328EB21F469801008B2B7C /* PinMap@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10328EA81F469801008B2B7C /* PinMap@2x.png */; };
 		10328EB31F469801008B2B7C /* Takeout.png in Resources */ = {isa = PBXBuildFile; fileRef = 10328EA91F469801008B2B7C /* Takeout.png */; };
 		10328EB41F469801008B2B7C /* Takeout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10328EAA1F469801008B2B7C /* Takeout@2x.png */; };
-		10328EB71F469892008B2B7C /* TabBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 10328EB51F469892008B2B7C /* TabBack.png */; };
-		10328EB81F469892008B2B7C /* TabBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10328EB61F469892008B2B7C /* TabBack@2x.png */; };
 		10328EC51F46BE78008B2B7C /* Typodermic - NasalizationRg-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10328EC01F46BD7B008B2B7C /* Typodermic - NasalizationRg-Regular.otf */; };
+		1034247D1F47D12C00AD45BF /* TabBack_320.png in Resources */ = {isa = PBXBuildFile; fileRef = 1034247C1F47D12C00AD45BF /* TabBack_320.png */; };
+		103424891F47D4FB00AD45BF /* TabBack_375.png in Resources */ = {isa = PBXBuildFile; fileRef = 103424881F47D4FB00AD45BF /* TabBack_375.png */; };
+		1034248D1F47D73700AD45BF /* TabBack_414.png in Resources */ = {isa = PBXBuildFile; fileRef = 1034248C1F47D73700AD45BF /* TabBack_414.png */; };
+		1034248F1F47D90B00AD45BF /* TabBack_768.png in Resources */ = {isa = PBXBuildFile; fileRef = 1034248E1F47D90B00AD45BF /* TabBack_768.png */; };
+		103424911F47DA1B00AD45BF /* TabBack_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 103424901F47DA1B00AD45BF /* TabBack_1024.png */; };
+		103424931F47DB2300AD45BF /* TabBack_834.png in Resources */ = {isa = PBXBuildFile; fileRef = 103424921F47DB2300AD45BF /* TabBack_834.png */; };
 		1044723A1F45B476006E1034 /* propaty.plist in Resources */ = {isa = PBXBuildFile; fileRef = 104472391F45B476006E1034 /* propaty.plist */; };
 		106A8C6D1F45635200FC9E0F /* AndroidClock.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 106A8C391F45635100FC9E0F /* AndroidClock.ttf */; };
 		106A8C6E1F45635200FC9E0F /* AndroidClock_Highlight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 106A8C3A1F45635100FC9E0F /* AndroidClock_Highlight.ttf */; };
@@ -108,10 +112,14 @@
 		10328EA81F469801008B2B7C /* PinMap@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PinMap@2x.png"; sourceTree = "<group>"; };
 		10328EA91F469801008B2B7C /* Takeout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Takeout.png; sourceTree = "<group>"; };
 		10328EAA1F469801008B2B7C /* Takeout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Takeout@2x.png"; sourceTree = "<group>"; };
-		10328EB51F469892008B2B7C /* TabBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack.png; sourceTree = "<group>"; };
-		10328EB61F469892008B2B7C /* TabBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TabBack@2x.png"; sourceTree = "<group>"; };
 		10328EB91F46B5E6008B2B7C /* Bridght-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridght-Header.h"; sourceTree = "<group>"; };
 		10328EC01F46BD7B008B2B7C /* Typodermic - NasalizationRg-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Typodermic - NasalizationRg-Regular.otf"; sourceTree = "<group>"; };
+		1034247C1F47D12C00AD45BF /* TabBack_320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_320.png; sourceTree = "<group>"; };
+		103424881F47D4FB00AD45BF /* TabBack_375.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_375.png; sourceTree = "<group>"; };
+		1034248C1F47D73700AD45BF /* TabBack_414.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_414.png; sourceTree = "<group>"; };
+		1034248E1F47D90B00AD45BF /* TabBack_768.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_768.png; sourceTree = "<group>"; };
+		103424901F47DA1B00AD45BF /* TabBack_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_1024.png; sourceTree = "<group>"; };
+		103424921F47DB2300AD45BF /* TabBack_834.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_834.png; sourceTree = "<group>"; };
 		104472391F45B476006E1034 /* propaty.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = propaty.plist; sourceTree = "<group>"; };
 		106A8C391F45635100FC9E0F /* AndroidClock.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AndroidClock.ttf; sourceTree = "<group>"; };
 		106A8C3A1F45635100FC9E0F /* AndroidClock_Highlight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AndroidClock_Highlight.ttf; sourceTree = "<group>"; };
@@ -216,10 +224,14 @@
 				10328EA61F469801008B2B7C /* PersonalConnections@2x.png */,
 				10328EA71F469801008B2B7C /* PinMap.png */,
 				10328EA81F469801008B2B7C /* PinMap@2x.png */,
-				10328EB51F469892008B2B7C /* TabBack.png */,
-				10328EB61F469892008B2B7C /* TabBack@2x.png */,
 				10328EA91F469801008B2B7C /* Takeout.png */,
 				10328EAA1F469801008B2B7C /* Takeout@2x.png */,
+				1034247C1F47D12C00AD45BF /* TabBack_320.png */,
+				103424881F47D4FB00AD45BF /* TabBack_375.png */,
+				1034248C1F47D73700AD45BF /* TabBack_414.png */,
+				1034248E1F47D90B00AD45BF /* TabBack_768.png */,
+				103424921F47DB2300AD45BF /* TabBack_834.png */,
+				103424901F47DA1B00AD45BF /* TabBack_1024.png */,
 			);
 			path = tab;
 			sourceTree = "<group>";
@@ -560,7 +572,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				10328EC51F46BE78008B2B7C /* Typodermic - NasalizationRg-Regular.otf in Resources */,
+				103424911F47DA1B00AD45BF /* TabBack_1024.png in Resources */,
 				10328EB01F469801008B2B7C /* PersonalConnections@2x.png in Resources */,
+				103424891F47D4FB00AD45BF /* TabBack_375.png in Resources */,
 				10BE15E51F3D9FAF0007641A /* LaunchScreen.storyboard in Resources */,
 				10328EB41F469801008B2B7C /* Takeout@2x.png in Resources */,
 				106A8C861F45635200FC9E0F /* DroidSerif-BoldItalic.ttf in Resources */,
@@ -574,25 +588,27 @@
 				10328EAF1F469801008B2B7C /* PersonalConnections.png in Resources */,
 				106A8C931F45635200FC9E0F /* Roboto-Light.ttf in Resources */,
 				10328EAD1F469801008B2B7C /* Deskwork.png in Resources */,
-				10328EB71F469892008B2B7C /* TabBack.png in Resources */,
 				106A8C6E1F45635200FC9E0F /* AndroidClock_Highlight.ttf in Resources */,
 				10328EB31F469801008B2B7C /* Takeout.png in Resources */,
+				1034248F1F47D90B00AD45BF /* TabBack_768.png in Resources */,
 				106A8C781F45635200FC9E0F /* DroidSans.ttf in Resources */,
+				103424931F47DB2300AD45BF /* TabBack_834.png in Resources */,
 				1044723A1F45B476006E1034 /* propaty.plist in Resources */,
 				106A8C841F45635200FC9E0F /* DroidSansMono.ttf in Resources */,
 				106A8C981F45635200FC9E0F /* RobotoCondensed-Bold.ttf in Resources */,
 				10328EAE1F469801008B2B7C /* Deskwork@2x.png in Resources */,
 				106A8C911F45635200FC9E0F /* Roboto-BoldItalic.ttf in Resources */,
+				1034248D1F47D73700AD45BF /* TabBack_414.png in Resources */,
 				106A8C701F45635200FC9E0F /* AndroidEmoji.ttf in Resources */,
 				106A8C9A1F45635200FC9E0F /* RobotoCondensed-Italic.ttf in Resources */,
 				106A8C881F45635200FC9E0F /* DroidSerif-Regular.ttf in Resources */,
 				106A8C871F45635200FC9E0F /* DroidSerif-Italic.ttf in Resources */,
 				106A8C971F45635200FC9E0F /* Roboto-ThinItalic.ttf in Resources */,
-				10328EB81F469892008B2B7C /* TabBack@2x.png in Resources */,
 				106A8C7E1F45635200FC9E0F /* DroidSansFallbackFull.ttf in Resources */,
 				106A8C961F45635200FC9E0F /* Roboto-Thin.ttf in Resources */,
 				106A8C9E1F45635200FC9E0F /* company_icon_logo.png in Resources */,
 				106A8C941F45635200FC9E0F /* Roboto-LightItalic.ttf in Resources */,
+				1034247D1F47D12C00AD45BF /* TabBack_320.png in Resources */,
 				106A8C991F45635200FC9E0F /* RobotoCondensed-BoldItalic.ttf in Resources */,
 				106A8C7F1F45635200FC9E0F /* DroidSansFallbackLegacy.ttf in Resources */,
 				106A8C7D1F45635200FC9E0F /* DroidSansFallback.ttf in Resources */,
@@ -994,6 +1010,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1014,6 +1031,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "Mobile Innovation APP1 Distribution";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -25,32 +25,32 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Zv-aD-ofE" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
-                                <rect key="frame" x="21" y="635" width="333" height="22"/>
+                                <rect key="frame" x="25" y="705" width="364" height="21"/>
                                 <fontDescription key="fontDescription" name="NasalizationRg-Regular" family="Nasalization" pointSize="18"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dxs-sV-kgR">
-                                <rect key="frame" x="19" y="115.5" width="337.5" height="436.5"/>
+                                <rect key="frame" x="20.666666666666657" y="140.66666666666663" width="372.66666666666663" height="454.66666666666674"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="モバイルへの 果てしない挑戦と ものづくり" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zXZ-F1-mdd">
-                                        <rect key="frame" x="0.5" y="0.5" width="337.5" height="140.5"/>
+                                        <rect key="frame" x="0.66666666666665719" y="0.0" width="372" height="140.00000000000003"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="36"/>
                                         <color key="textColor" red="0.25490196079999999" green="0.34901960780000002" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="company_icon_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="SuF-3y-aBX">
-                                        <rect key="frame" x="84" y="161" width="168.5" height="168"/>
+                                        <rect key="frame" x="92.333333333333343" y="160.00000000000003" width="186.66666666666666" height="186.6666666666666"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="SuF-3y-aBX" secondAttribute="height" multiplier="1:1" id="XvZ-0M-k1W"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boundless challenge and  manufacturing to mobility" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="73h-zx-xhR">
-                                        <rect key="frame" x="0.0" y="349" width="337.5" height="87.5"/>
+                                        <rect key="frame" x="0.0" y="366.66666666666663" width="372.66666666666663" height="88.000000000000057"/>
                                         <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="32"/>
                                         <color key="textColor" red="0.25489547029999998" green="0.34781902349999999" blue="0.54060913710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
@@ -102,7 +102,7 @@
                         <viewControllerLayoutGuide type="bottom" id="vze-tY-bIY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="b4M-7C-VEq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
@@ -143,7 +143,7 @@
                         <viewControllerLayoutGuide type="bottom" id="ZzT-js-8ge"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Y3O-Rz-xre">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
@@ -180,7 +180,7 @@
             <objects>
                 <tabBarController id="Tsh-A0-tlK" customClass="RAMAnimatedTabBarController" customModule="RAMAnimatedTabBarController" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="4WV-lR-4Kd"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" backgroundImage="TabBack.png" id="Bm1-Kx-nnq">
+                    <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="Bm1-Kx-nnq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -203,7 +203,7 @@
                 <navigationController storyboardIdentifier="MainNavigation" navigationBarHidden="YES" id="9ON-Qf-WyB" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ciZ-hW-9Xv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ciZ-hW-9Xv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -224,7 +224,7 @@
                         <viewControllerLayoutGuide type="bottom" id="qMz-ja-OVU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="d7s-F3-RF5">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
@@ -269,7 +269,7 @@
                         <viewControllerLayoutGuide type="bottom" id="eUx-8H-Ne6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="pzK-Ep-30F">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
@@ -310,7 +310,7 @@
                         <viewControllerLayoutGuide type="bottom" id="XJd-uT-nxN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="X2t-m9-h1e">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
@@ -348,7 +348,6 @@
         <image name="Deskwork.png" width="30" height="30"/>
         <image name="PersonalConnections.png" width="30" height="30"/>
         <image name="PinMap.png" width="30" height="30"/>
-        <image name="TabBack.png" width="375" height="71"/>
         <image name="Takeout.png" width="30" height="30"/>
         <image name="company_icon_logo.png" width="200" height="200"/>
     </resources>
