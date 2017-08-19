@@ -3,9 +3,7 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'mobileinnovation-app1' do
-    pod 'Download-Font-iOS'
     pod 'LTMorphingLabel', :git => 'https://github.com/lexrus/LTMorphingLabel.git', :branch => 'swift3'
-    pod 'RAMAnimatedTabBarController'
     pod 'SVProgressHUD'
     pod 'DeployGateSDK'
 
@@ -13,9 +11,7 @@ target 'mobileinnovation-app1' do
 end
 
 target 'mobileinnovation-app1Tests' do
-    pod 'Download-Font-iOS'
     pod 'LTMorphingLabel', :git => 'https://github.com/lexrus/LTMorphingLabel.git', :branch => 'swift3'
-    pod 'RAMAnimatedTabBarController'
     pod 'SVProgressHUD'
     pod 'DeployGateSDK'
 
@@ -23,9 +19,7 @@ target 'mobileinnovation-app1Tests' do
 end
 
 target 'mobileinnovation-app1UITests' do
-    pod 'Download-Font-iOS'
     pod 'LTMorphingLabel', :git => 'https://github.com/lexrus/LTMorphingLabel.git', :branch => 'swift3'
-    pod 'RAMAnimatedTabBarController'
     pod 'SVProgressHUD'
     pod 'DeployGateSDK'
 

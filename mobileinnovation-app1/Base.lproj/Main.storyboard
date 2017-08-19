@@ -106,7 +106,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="Item 2" image="Deskwork.png" id="cMj-m3-enh" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                    <tabBarItem key="tabBarItem" tag="1" title="Item 2" image="Deskwork.png" id="cMj-m3-enh" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
                                 <color key="value" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -121,7 +121,7 @@
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wdk-0r-QJW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="VU2-aR-TWB" customClass="RAMFlipTopTransitionItemAnimations" customModule="RAMAnimatedTabBarController">
+                <customObject id="VU2-aR-TWB" customClass="RAMFlipTopTransitionItemAnimations" customModule="mobileinnovation_app1">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="textSelectedColor">
                             <color key="value" red="0.1602814759" green="0.54555299509999999" blue="0.65736040610000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -147,7 +147,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" image="Care.png" id="PzL-jY-Oqk" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                    <tabBarItem key="tabBarItem" title="Item 1" image="Care.png" id="PzL-jY-Oqk" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                 <color key="value" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -162,7 +162,7 @@
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hbd-hL-xeC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="k40-mS-NMw" customClass="RAMFlipTopTransitionItemAnimations" customModule="RAMAnimatedTabBarController">
+                <customObject id="k40-mS-NMw" customClass="RAMFlipTopTransitionItemAnimations" customModule="mobileinnovation_app1">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="textSelectedColor">
                             <color key="value" red="0.1602814759" green="0.54555299509999999" blue="0.65736040610000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -178,7 +178,7 @@
         <!--Animated Tab Bar Controller-->
         <scene sceneID="ciP-aP-6df">
             <objects>
-                <tabBarController id="Tsh-A0-tlK" customClass="RAMAnimatedTabBarController" customModule="RAMAnimatedTabBarController" sceneMemberID="viewController">
+                <tabBarController id="Tsh-A0-tlK" customClass="RAMAnimatedTabBarController" customModule="mobileinnovation_app1" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="4WV-lR-4Kd"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" barStyle="black" id="Bm1-Kx-nnq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -203,7 +203,7 @@
                 <navigationController storyboardIdentifier="MainNavigation" navigationBarHidden="YES" id="9ON-Qf-WyB" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ciZ-hW-9Xv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ciZ-hW-9Xv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -228,7 +228,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="2" title="Item 3" image="PersonalConnections.png" id="ipw-7C-WhM" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                    <tabBarItem key="tabBarItem" tag="2" title="Item 3" image="PersonalConnections.png" id="ipw-7C-WhM" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="8"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">
@@ -247,7 +247,7 @@
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NMh-HB-gqB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="467-Cg-ecn" customClass="RAMFlipTopTransitionItemAnimations" customModule="RAMAnimatedTabBarController">
+                <customObject id="467-Cg-ecn" customClass="RAMFlipTopTransitionItemAnimations" customModule="mobileinnovation_app1">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="textSelectedColor">
                             <color key="value" red="0.1602814759" green="0.54555299509999999" blue="0.65736040610000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -273,7 +273,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="3" title="Item 4" image="Takeout.png" id="SHE-BJ-5kS" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                    <tabBarItem key="tabBarItem" tag="3" title="Item 4" image="Takeout.png" id="SHE-BJ-5kS" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                 <color key="value" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -288,7 +288,7 @@
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7gc-T3-JGG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="2tW-yg-168" customClass="RAMFlipTopTransitionItemAnimations" customModule="RAMAnimatedTabBarController">
+                <customObject id="2tW-yg-168" customClass="RAMFlipTopTransitionItemAnimations" customModule="mobileinnovation_app1">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="textSelectedColor">
                             <color key="value" red="0.1602814759" green="0.54555299509999999" blue="0.65736040610000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -314,7 +314,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="4" title="Map" image="PinMap.png" id="hx2-l6-7Ul" customClass="RAMAnimatedTabBarItem" customModule="RAMAnimatedTabBarController">
+                    <tabBarItem key="tabBarItem" tag="4" title="Map" image="PinMap.png" id="hx2-l6-7Ul" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                 <color key="value" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -329,7 +329,7 @@
                     </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="byS-D7-gQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="ATE-kb-6z0" customClass="RAMFlipTopTransitionItemAnimations" customModule="RAMAnimatedTabBarController">
+                <customObject id="ATE-kb-6z0" customClass="RAMFlipTopTransitionItemAnimations" customModule="mobileinnovation_app1">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="textSelectedColor">
                             <color key="value" red="0.1602814759" green="0.54555299509999999" blue="0.65736040610000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

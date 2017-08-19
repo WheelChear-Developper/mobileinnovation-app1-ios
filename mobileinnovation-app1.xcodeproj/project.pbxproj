@@ -33,6 +33,14 @@
 		1034248F1F47D90B00AD45BF /* TabBack_768.png in Resources */ = {isa = PBXBuildFile; fileRef = 1034248E1F47D90B00AD45BF /* TabBack_768.png */; };
 		103424911F47DA1B00AD45BF /* TabBack_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 103424901F47DA1B00AD45BF /* TabBack_1024.png */; };
 		103424931F47DB2300AD45BF /* TabBack_834.png in Resources */ = {isa = PBXBuildFile; fileRef = 103424921F47DB2300AD45BF /* TabBack_834.png */; };
+		103424A41F47E45900AD45BF /* RAMBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103424971F47E45900AD45BF /* RAMBounceAnimation.swift */; };
+		103424A51F47E45900AD45BF /* RAMFrameItemAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103424991F47E45900AD45BF /* RAMFrameItemAnimation.swift */; };
+		103424A61F47E45900AD45BF /* RAMFumeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1034249B1F47E45900AD45BF /* RAMFumeAnimation.swift */; };
+		103424A71F47E45900AD45BF /* RAMRotationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1034249D1F47E45900AD45BF /* RAMRotationAnimation.swift */; };
+		103424A81F47E45900AD45BF /* RAMTransitionItemAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1034249F1F47E45900AD45BF /* RAMTransitionItemAnimations.swift */; };
+		103424A91F47E45900AD45BF /* RAMAnimatedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103424A01F47E45900AD45BF /* RAMAnimatedTabBarController.swift */; };
+		103424AA1F47E45900AD45BF /* RAMBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103424A21F47E45900AD45BF /* RAMBadge.swift */; };
+		103424AB1F47E45900AD45BF /* RAMItemAnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103424A31F47E45900AD45BF /* RAMItemAnimationProtocol.swift */; };
 		1044723A1F45B476006E1034 /* propaty.plist in Resources */ = {isa = PBXBuildFile; fileRef = 104472391F45B476006E1034 /* propaty.plist */; };
 		106A8C6D1F45635200FC9E0F /* AndroidClock.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 106A8C391F45635100FC9E0F /* AndroidClock.ttf */; };
 		106A8C6E1F45635200FC9E0F /* AndroidClock_Highlight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 106A8C3A1F45635100FC9E0F /* AndroidClock_Highlight.ttf */; };
@@ -120,6 +128,14 @@
 		1034248E1F47D90B00AD45BF /* TabBack_768.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_768.png; sourceTree = "<group>"; };
 		103424901F47DA1B00AD45BF /* TabBack_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_1024.png; sourceTree = "<group>"; };
 		103424921F47DB2300AD45BF /* TabBack_834.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_834.png; sourceTree = "<group>"; };
+		103424971F47E45900AD45BF /* RAMBounceAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMBounceAnimation.swift; sourceTree = "<group>"; };
+		103424991F47E45900AD45BF /* RAMFrameItemAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMFrameItemAnimation.swift; sourceTree = "<group>"; };
+		1034249B1F47E45900AD45BF /* RAMFumeAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMFumeAnimation.swift; sourceTree = "<group>"; };
+		1034249D1F47E45900AD45BF /* RAMRotationAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMRotationAnimation.swift; sourceTree = "<group>"; };
+		1034249F1F47E45900AD45BF /* RAMTransitionItemAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMTransitionItemAnimations.swift; sourceTree = "<group>"; };
+		103424A01F47E45900AD45BF /* RAMAnimatedTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMAnimatedTabBarController.swift; sourceTree = "<group>"; };
+		103424A21F47E45900AD45BF /* RAMBadge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMBadge.swift; sourceTree = "<group>"; };
+		103424A31F47E45900AD45BF /* RAMItemAnimationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMItemAnimationProtocol.swift; sourceTree = "<group>"; };
 		104472391F45B476006E1034 /* propaty.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = propaty.plist; sourceTree = "<group>"; };
 		106A8C391F45635100FC9E0F /* AndroidClock.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AndroidClock.ttf; sourceTree = "<group>"; };
 		106A8C3A1F45635100FC9E0F /* AndroidClock_Highlight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AndroidClock_Highlight.ttf; sourceTree = "<group>"; };
@@ -236,6 +252,77 @@
 			path = tab;
 			sourceTree = "<group>";
 		};
+		103424941F47E45900AD45BF /* RAMAnimatedTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				103424951F47E45900AD45BF /* Animations */,
+				103424A01F47E45900AD45BF /* RAMAnimatedTabBarController.swift */,
+				103424A11F47E45900AD45BF /* RAMBadge */,
+				103424A31F47E45900AD45BF /* RAMItemAnimationProtocol.swift */,
+			);
+			path = RAMAnimatedTabBarController;
+			sourceTree = "<group>";
+		};
+		103424951F47E45900AD45BF /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				103424961F47E45900AD45BF /* BounceAnimation */,
+				103424981F47E45900AD45BF /* FrameAnimation */,
+				1034249A1F47E45900AD45BF /* FumeAnimation */,
+				1034249C1F47E45900AD45BF /* RotationAnimation */,
+				1034249E1F47E45900AD45BF /* TransitionAniamtions */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		103424961F47E45900AD45BF /* BounceAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				103424971F47E45900AD45BF /* RAMBounceAnimation.swift */,
+			);
+			path = BounceAnimation;
+			sourceTree = "<group>";
+		};
+		103424981F47E45900AD45BF /* FrameAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				103424991F47E45900AD45BF /* RAMFrameItemAnimation.swift */,
+			);
+			path = FrameAnimation;
+			sourceTree = "<group>";
+		};
+		1034249A1F47E45900AD45BF /* FumeAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				1034249B1F47E45900AD45BF /* RAMFumeAnimation.swift */,
+			);
+			path = FumeAnimation;
+			sourceTree = "<group>";
+		};
+		1034249C1F47E45900AD45BF /* RotationAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				1034249D1F47E45900AD45BF /* RAMRotationAnimation.swift */,
+			);
+			path = RotationAnimation;
+			sourceTree = "<group>";
+		};
+		1034249E1F47E45900AD45BF /* TransitionAniamtions */ = {
+			isa = PBXGroup;
+			children = (
+				1034249F1F47E45900AD45BF /* RAMTransitionItemAnimations.swift */,
+			);
+			path = TransitionAniamtions;
+			sourceTree = "<group>";
+		};
+		103424A11F47E45900AD45BF /* RAMBadge */ = {
+			isa = PBXGroup;
+			children = (
+				103424A21F47E45900AD45BF /* RAMBadge.swift */,
+			);
+			path = RAMBadge;
+			sourceTree = "<group>";
+		};
 		106A8C371F45635100FC9E0F /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +393,7 @@
 		10AA60F71F4192CB00F59887 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				103424941F47E45900AD45BF /* RAMAnimatedTabBarController */,
 				108D47671F44158400441C23 /* AMReachability */,
 				10117EFC1F4584DC00A7C2BD /* AnimationView_lib */,
 				10AA61021F419D9600F59887 /* Configuration_lib */,
@@ -685,16 +773,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-mobileinnovation-app1/Pods-mobileinnovation-app1-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Download-Font-iOS/Download_Font_iOS.framework",
 				"${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework",
-				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Download_Font_iOS.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTMorphingLabel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -782,16 +866,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-mobileinnovation-app1Tests/Pods-mobileinnovation-app1Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Download-Font-iOS/Download_Font_iOS.framework",
 				"${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework",
-				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Download_Font_iOS.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTMorphingLabel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -806,16 +886,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-mobileinnovation-app1UITests/Pods-mobileinnovation-app1UITests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Download-Font-iOS/Download_Font_iOS.framework",
 				"${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework",
-				"${BUILT_PRODUCTS_DIR}/RAMAnimatedTabBarController/RAMAnimatedTabBarController.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Download_Font_iOS.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTMorphingLabel.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RAMAnimatedTabBarController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -831,10 +907,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				108D47691F44158400441C23 /* AMReachability.swift in Sources */,
+				103424A41F47E45900AD45BF /* RAMBounceAnimation.swift in Sources */,
 				10084C2A1F43363E00EFE995 /* BaseViewController.swift in Sources */,
 				10084C281F432E1D00EFE995 /* FirstViewController.swift in Sources */,
 				10117F061F45857700A7C2BD /* Tab4_ViewController.swift in Sources */,
+				103424A91F47E45900AD45BF /* RAMAnimatedTabBarController.swift in Sources */,
 				10117EFE1F4584DC00A7C2BD /* AnimationView_lib.swift in Sources */,
+				103424A71F47E45900AD45BF /* RAMRotationAnimation.swift in Sources */,
+				103424AB1F47E45900AD45BF /* RAMItemAnimationProtocol.swift in Sources */,
 				10AA61061F419DC500F59887 /* UrlSession_lib.swift in Sources */,
 				10117F081F45858C00A7C2BD /* Tab5_ViewController.swift in Sources */,
 				10117F041F45856700A7C2BD /* Tab3_ViewController.swift in Sources */,
@@ -842,7 +922,11 @@
 				10AA61041F419D9600F59887 /* Configuration.swift in Sources */,
 				10BE15DB1F3D9FAF0007641A /* AppDelegate.swift in Sources */,
 				10117F001F45854A00A7C2BD /* Tab1_ViewController.swift in Sources */,
+				103424A51F47E45900AD45BF /* RAMFrameItemAnimation.swift in Sources */,
+				103424AA1F47E45900AD45BF /* RAMBadge.swift in Sources */,
+				103424A61F47E45900AD45BF /* RAMFumeAnimation.swift in Sources */,
 				108D476C1F446C7A00441C23 /* Notification_lib.swift in Sources */,
+				103424A81F47E45900AD45BF /* RAMTransitionItemAnimations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
