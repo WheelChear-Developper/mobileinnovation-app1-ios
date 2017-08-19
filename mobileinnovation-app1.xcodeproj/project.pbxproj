@@ -10,6 +10,12 @@
 		0FDD254E8D70A199A8B4340D /* Pods_mobileinnovation_app1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C4E3CD8AA443754CB79C21 /* Pods_mobileinnovation_app1Tests.framework */; };
 		10084C281F432E1D00EFE995 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10084C271F432E1D00EFE995 /* FirstViewController.swift */; };
 		10084C2A1F43363E00EFE995 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10084C291F43363E00EFE995 /* BaseViewController.swift */; };
+		100A75441F482CF6005DE91C /* TabBack_375.png in Resources */ = {isa = PBXBuildFile; fileRef = 100A75431F482CF6005DE91C /* TabBack_375.png */; };
+		100A754A1F48308F005DE91C /* TabBack_320.png in Resources */ = {isa = PBXBuildFile; fileRef = 100A75451F48308F005DE91C /* TabBack_320.png */; };
+		100A754B1F48308F005DE91C /* TabBack_414.png in Resources */ = {isa = PBXBuildFile; fileRef = 100A75461F48308F005DE91C /* TabBack_414.png */; };
+		100A754C1F48308F005DE91C /* TabBack_768.png in Resources */ = {isa = PBXBuildFile; fileRef = 100A75471F48308F005DE91C /* TabBack_768.png */; };
+		100A754D1F48308F005DE91C /* TabBack_834.png in Resources */ = {isa = PBXBuildFile; fileRef = 100A75481F48308F005DE91C /* TabBack_834.png */; };
+		100A754E1F48308F005DE91C /* TabBack_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 100A75491F48308F005DE91C /* TabBack_1024.png */; };
 		10117EFE1F4584DC00A7C2BD /* AnimationView_lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117EFD1F4584DC00A7C2BD /* AnimationView_lib.swift */; };
 		10117F001F45854A00A7C2BD /* Tab1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117EFF1F45854A00A7C2BD /* Tab1_ViewController.swift */; };
 		10117F021F45855800A7C2BD /* Tab2_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117F011F45855800A7C2BD /* Tab2_ViewController.swift */; };
@@ -27,12 +33,6 @@
 		10328EB31F469801008B2B7C /* Takeout.png in Resources */ = {isa = PBXBuildFile; fileRef = 10328EA91F469801008B2B7C /* Takeout.png */; };
 		10328EB41F469801008B2B7C /* Takeout@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10328EAA1F469801008B2B7C /* Takeout@2x.png */; };
 		10328EC51F46BE78008B2B7C /* Typodermic - NasalizationRg-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10328EC01F46BD7B008B2B7C /* Typodermic - NasalizationRg-Regular.otf */; };
-		1034247D1F47D12C00AD45BF /* TabBack_320.png in Resources */ = {isa = PBXBuildFile; fileRef = 1034247C1F47D12C00AD45BF /* TabBack_320.png */; };
-		103424891F47D4FB00AD45BF /* TabBack_375.png in Resources */ = {isa = PBXBuildFile; fileRef = 103424881F47D4FB00AD45BF /* TabBack_375.png */; };
-		1034248D1F47D73700AD45BF /* TabBack_414.png in Resources */ = {isa = PBXBuildFile; fileRef = 1034248C1F47D73700AD45BF /* TabBack_414.png */; };
-		1034248F1F47D90B00AD45BF /* TabBack_768.png in Resources */ = {isa = PBXBuildFile; fileRef = 1034248E1F47D90B00AD45BF /* TabBack_768.png */; };
-		103424911F47DA1B00AD45BF /* TabBack_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 103424901F47DA1B00AD45BF /* TabBack_1024.png */; };
-		103424931F47DB2300AD45BF /* TabBack_834.png in Resources */ = {isa = PBXBuildFile; fileRef = 103424921F47DB2300AD45BF /* TabBack_834.png */; };
 		103424A41F47E45900AD45BF /* RAMBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103424971F47E45900AD45BF /* RAMBounceAnimation.swift */; };
 		103424A51F47E45900AD45BF /* RAMFrameItemAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103424991F47E45900AD45BF /* RAMFrameItemAnimation.swift */; };
 		103424A61F47E45900AD45BF /* RAMFumeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1034249B1F47E45900AD45BF /* RAMFumeAnimation.swift */; };
@@ -104,6 +104,12 @@
 /* Begin PBXFileReference section */
 		10084C271F432E1D00EFE995 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		10084C291F43363E00EFE995 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		100A75431F482CF6005DE91C /* TabBack_375.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_375.png; sourceTree = "<group>"; };
+		100A75451F48308F005DE91C /* TabBack_320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_320.png; sourceTree = "<group>"; };
+		100A75461F48308F005DE91C /* TabBack_414.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_414.png; sourceTree = "<group>"; };
+		100A75471F48308F005DE91C /* TabBack_768.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_768.png; sourceTree = "<group>"; };
+		100A75481F48308F005DE91C /* TabBack_834.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_834.png; sourceTree = "<group>"; };
+		100A75491F48308F005DE91C /* TabBack_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_1024.png; sourceTree = "<group>"; };
 		10117EFD1F4584DC00A7C2BD /* AnimationView_lib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationView_lib.swift; sourceTree = "<group>"; };
 		10117EFF1F45854A00A7C2BD /* Tab1_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab1_ViewController.swift; sourceTree = "<group>"; };
 		10117F011F45855800A7C2BD /* Tab2_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab2_ViewController.swift; sourceTree = "<group>"; };
@@ -122,12 +128,6 @@
 		10328EAA1F469801008B2B7C /* Takeout@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Takeout@2x.png"; sourceTree = "<group>"; };
 		10328EB91F46B5E6008B2B7C /* Bridght-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridght-Header.h"; sourceTree = "<group>"; };
 		10328EC01F46BD7B008B2B7C /* Typodermic - NasalizationRg-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Typodermic - NasalizationRg-Regular.otf"; sourceTree = "<group>"; };
-		1034247C1F47D12C00AD45BF /* TabBack_320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_320.png; sourceTree = "<group>"; };
-		103424881F47D4FB00AD45BF /* TabBack_375.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_375.png; sourceTree = "<group>"; };
-		1034248C1F47D73700AD45BF /* TabBack_414.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_414.png; sourceTree = "<group>"; };
-		1034248E1F47D90B00AD45BF /* TabBack_768.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_768.png; sourceTree = "<group>"; };
-		103424901F47DA1B00AD45BF /* TabBack_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_1024.png; sourceTree = "<group>"; };
-		103424921F47DB2300AD45BF /* TabBack_834.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_834.png; sourceTree = "<group>"; };
 		103424971F47E45900AD45BF /* RAMBounceAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMBounceAnimation.swift; sourceTree = "<group>"; };
 		103424991F47E45900AD45BF /* RAMFrameItemAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMFrameItemAnimation.swift; sourceTree = "<group>"; };
 		1034249B1F47E45900AD45BF /* RAMFumeAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMFumeAnimation.swift; sourceTree = "<group>"; };
@@ -242,12 +242,12 @@
 				10328EA81F469801008B2B7C /* PinMap@2x.png */,
 				10328EA91F469801008B2B7C /* Takeout.png */,
 				10328EAA1F469801008B2B7C /* Takeout@2x.png */,
-				1034247C1F47D12C00AD45BF /* TabBack_320.png */,
-				103424881F47D4FB00AD45BF /* TabBack_375.png */,
-				1034248C1F47D73700AD45BF /* TabBack_414.png */,
-				1034248E1F47D90B00AD45BF /* TabBack_768.png */,
-				103424921F47DB2300AD45BF /* TabBack_834.png */,
-				103424901F47DA1B00AD45BF /* TabBack_1024.png */,
+				100A75451F48308F005DE91C /* TabBack_320.png */,
+				100A75431F482CF6005DE91C /* TabBack_375.png */,
+				100A75461F48308F005DE91C /* TabBack_414.png */,
+				100A75471F48308F005DE91C /* TabBack_768.png */,
+				100A75481F48308F005DE91C /* TabBack_834.png */,
+				100A75491F48308F005DE91C /* TabBack_1024.png */,
 			);
 			path = tab;
 			sourceTree = "<group>";
@@ -660,9 +660,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				10328EC51F46BE78008B2B7C /* Typodermic - NasalizationRg-Regular.otf in Resources */,
-				103424911F47DA1B00AD45BF /* TabBack_1024.png in Resources */,
 				10328EB01F469801008B2B7C /* PersonalConnections@2x.png in Resources */,
-				103424891F47D4FB00AD45BF /* TabBack_375.png in Resources */,
+				100A754A1F48308F005DE91C /* TabBack_320.png in Resources */,
 				10BE15E51F3D9FAF0007641A /* LaunchScreen.storyboard in Resources */,
 				10328EB41F469801008B2B7C /* Takeout@2x.png in Resources */,
 				106A8C861F45635200FC9E0F /* DroidSerif-BoldItalic.ttf in Resources */,
@@ -676,27 +675,28 @@
 				10328EAF1F469801008B2B7C /* PersonalConnections.png in Resources */,
 				106A8C931F45635200FC9E0F /* Roboto-Light.ttf in Resources */,
 				10328EAD1F469801008B2B7C /* Deskwork.png in Resources */,
+				100A75441F482CF6005DE91C /* TabBack_375.png in Resources */,
 				106A8C6E1F45635200FC9E0F /* AndroidClock_Highlight.ttf in Resources */,
+				100A754C1F48308F005DE91C /* TabBack_768.png in Resources */,
 				10328EB31F469801008B2B7C /* Takeout.png in Resources */,
-				1034248F1F47D90B00AD45BF /* TabBack_768.png in Resources */,
 				106A8C781F45635200FC9E0F /* DroidSans.ttf in Resources */,
-				103424931F47DB2300AD45BF /* TabBack_834.png in Resources */,
 				1044723A1F45B476006E1034 /* propaty.plist in Resources */,
 				106A8C841F45635200FC9E0F /* DroidSansMono.ttf in Resources */,
 				106A8C981F45635200FC9E0F /* RobotoCondensed-Bold.ttf in Resources */,
+				100A754D1F48308F005DE91C /* TabBack_834.png in Resources */,
 				10328EAE1F469801008B2B7C /* Deskwork@2x.png in Resources */,
+				100A754B1F48308F005DE91C /* TabBack_414.png in Resources */,
 				106A8C911F45635200FC9E0F /* Roboto-BoldItalic.ttf in Resources */,
-				1034248D1F47D73700AD45BF /* TabBack_414.png in Resources */,
 				106A8C701F45635200FC9E0F /* AndroidEmoji.ttf in Resources */,
 				106A8C9A1F45635200FC9E0F /* RobotoCondensed-Italic.ttf in Resources */,
 				106A8C881F45635200FC9E0F /* DroidSerif-Regular.ttf in Resources */,
 				106A8C871F45635200FC9E0F /* DroidSerif-Italic.ttf in Resources */,
 				106A8C971F45635200FC9E0F /* Roboto-ThinItalic.ttf in Resources */,
 				106A8C7E1F45635200FC9E0F /* DroidSansFallbackFull.ttf in Resources */,
+				100A754E1F48308F005DE91C /* TabBack_1024.png in Resources */,
 				106A8C961F45635200FC9E0F /* Roboto-Thin.ttf in Resources */,
 				106A8C9E1F45635200FC9E0F /* company_icon_logo.png in Resources */,
 				106A8C941F45635200FC9E0F /* Roboto-LightItalic.ttf in Resources */,
-				1034247D1F47D12C00AD45BF /* TabBack_320.png in Resources */,
 				106A8C991F45635200FC9E0F /* RobotoCondensed-BoldItalic.ttf in Resources */,
 				106A8C7F1F45635200FC9E0F /* DroidSansFallbackLegacy.ttf in Resources */,
 				106A8C7D1F45635200FC9E0F /* DroidSansFallback.ttf in Resources */,

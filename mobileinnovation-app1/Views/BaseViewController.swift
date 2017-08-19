@@ -19,6 +19,8 @@ class BaseViewController: UIViewController, UrlSession_libDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.base_setStatusBarBackgroundColor(color: UIColor.clear)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -31,11 +33,6 @@ class BaseViewController: UIViewController, UrlSession_libDelegate {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-    }
-
-    // ステータスバー表示
-    override var prefersStatusBarHidden: Bool {
-        return true
     }
 
     // ステータスバーの色変更

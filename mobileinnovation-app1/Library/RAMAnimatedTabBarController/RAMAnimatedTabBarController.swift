@@ -252,8 +252,8 @@ open class RAMAnimatedTabBarController: UITabBarController {
     
     self.initializeContainers()
 
+    UITabBar.appearance().backgroundColor = UIColor.clear
     let myBoundSize: CGSize = UIScreen.main.bounds.size
-    print(myBoundSize)
     if myBoundSize.width == 320 {
         UITabBar.appearance().backgroundImage = UIImage(named: "TabBack_320.png")
     }
@@ -275,6 +275,8 @@ open class RAMAnimatedTabBarController: UITabBarController {
 
     // 開始タブ設定 
     self.setSelectIndex(from: 0, to: 2)
+
+//    UITabBar.appearance().line forFirstBaselineLayout.isHidden = true
   }
 
   fileprivate func initializeContainers() {

@@ -13,8 +13,6 @@ class Tab1_ViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.base_setStatusBarBackgroundColor(color: #colorLiteral(red: 0.4117647059, green: 0.8039215686, blue: 0.7921568627, alpha: 1))
-
         //self.base_tabIconCountSet(tabNo: 1, bage:"123")
 
 
@@ -26,6 +24,16 @@ class Tab1_ViewController: BaseViewController {
 
 
         //        lbl_token.text = config_instance.configurationGet_String(keyName: "DeviceToken")
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+
+        self.base_setStatusBarBackgroundColor(color: #colorLiteral(red: 0.2549019608, green: 0.3490196078, blue: 0.5411764706, alpha: 1))
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
 
     override func didReceiveMemoryWarning() {
