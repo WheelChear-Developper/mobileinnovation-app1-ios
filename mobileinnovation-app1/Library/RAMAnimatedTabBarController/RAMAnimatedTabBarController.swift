@@ -272,8 +272,11 @@ open class RAMAnimatedTabBarController: UITabBarController {
     if myBoundSize.width == 1024 {
         UITabBar.appearance().backgroundImage = UIImage(named: "TabBack_1024.png")
     }
+
+    // 開始タブ設定 
+    self.setSelectIndex(from: 0, to: 2)
   }
-  
+
   fileprivate func initializeContainers() {
     if !self.didInit || !self.didLoadView {
       return
