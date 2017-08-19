@@ -13,12 +13,12 @@ class Tab3_ViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.base_setStatusBarBackgroundColor(color: #colorLiteral(red: 0.4117647059, green: 0.8039215686, blue: 0.7921568627, alpha: 1))
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
 
     /*
     // MARK: - Navigation

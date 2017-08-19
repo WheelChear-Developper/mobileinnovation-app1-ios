@@ -215,7 +215,7 @@
             </objects>
             <point key="canvasLocation" x="1126" y="123"/>
         </scene>
-        <!--Item 3-->
+        <!--Main-->
         <scene sceneID="7br-tU-yeF">
             <objects>
                 <viewController id="fcc-MG-MOf" customClass="Tab3_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
@@ -228,7 +228,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.99206507209999995" green="0.97282183170000003" blue="0.95294427869999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="2" title="Item 3" image="PersonalConnections.png" id="ipw-7C-WhM" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
+                    <tabBarItem key="tabBarItem" tag="2" title="Main" image="PersonalConnections.png" id="ipw-7C-WhM" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="8"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">

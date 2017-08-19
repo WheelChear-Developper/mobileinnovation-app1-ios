@@ -33,8 +33,18 @@ class BaseViewController: UIViewController, UrlSession_libDelegate {
         super.didReceiveMemoryWarning()
     }
 
+    // ステータスバー表示
     override var prefersStatusBarHidden: Bool {
-        return false
+        return true
+    }
+
+    // ステータスバーの色変更
+    func base_setStatusBarBackgroundColor(color: UIColor) {
+        guard let statusBarWindow = UIApplication.shared.value(forKey: "statusBarWindow") as? UIView else {
+            return
+        }
+        let statusBar = statusBarWindow.subviews[0] as UIView
+        statusBar.backgroundColor = color
     }
 
     // Tabにカウントを設定する
