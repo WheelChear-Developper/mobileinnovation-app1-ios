@@ -35,9 +35,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dxs-sV-kgR">
-                                <rect key="frame" x="21" y="119.33333333333334" width="372" height="498.33333333333326"/>
+                                <rect key="frame" x="21" y="97.666666666666686" width="372" height="542"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="モバイルへの 果てしない挑戦と ものづくり" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zXZ-F1-mdd">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="モバイルへの 果てしない挑戦と ものづくり" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="zXZ-F1-mdd">
                                         <rect key="frame" x="0.0" y="0.0" width="372" height="141"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="36"/>
                                         <color key="textColor" red="0.25490196079999999" green="0.34901960780000002" blue="0.54117647059999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -49,8 +49,8 @@
                                             <constraint firstAttribute="width" secondItem="SuF-3y-aBX" secondAttribute="height" multiplier="1:1" id="XvZ-0M-k1W"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boundless challenge and  manufacturing to mobility" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="16" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="73h-zx-xhR">
-                                        <rect key="frame" x="0.0" y="367" width="372" height="131.33333333333331"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boundless challenge  and manufacturing to mobility" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="73h-zx-xhR">
+                                        <rect key="frame" x="0.0" y="367" width="372" height="175"/>
                                         <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="32"/>
                                         <color key="textColor" red="0.25489547029999998" green="0.34781902349999999" blue="0.54060913710000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
