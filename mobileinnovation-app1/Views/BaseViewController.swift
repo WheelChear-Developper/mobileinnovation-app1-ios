@@ -33,6 +33,10 @@ class BaseViewController: UIViewController, UrlSession_libDelegate {
         super.didReceiveMemoryWarning()
     }
 
+    override var prefersStatusBarHidden: Bool {
+        return false
+    }
+
     // Tabにカウントを設定する
     func base_tabIconCountSet(tabNo: Int, bage: String) {
         if let tabItem = self.tabBarController?.tabBar.items?[tabNo] {
