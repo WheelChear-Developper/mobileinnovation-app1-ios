@@ -96,7 +96,7 @@
             </objects>
             <point key="canvasLocation" x="70" y="122"/>
         </scene>
-        <!--Item 2-->
+        <!--Special-->
         <scene sceneID="80f-Xf-TQA">
             <objects>
                 <viewController id="hkp-0D-WLg" customClass="Tab2_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
@@ -137,7 +137,7 @@
                             <constraint firstAttribute="trailing" secondItem="w1F-Dx-B7k" secondAttribute="trailing" id="xtR-lP-iJ5"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="Item 2" image="Deskwork.png" id="cMj-m3-enh" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
+                    <tabBarItem key="tabBarItem" tag="1" title="Special" image="card4.png" id="cMj-m3-enh" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
                                 <color key="value" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -153,7 +153,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wdk-0r-QJW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="VU2-aR-TWB" customClass="RAMRightRotationAnimation" customModule="mobileinnovation_app1" customModuleProvider="target">
+                <customObject id="VU2-aR-TWB" customClass="RAMFlipBottomTransitionItemAnimations" customModule="mobileinnovation_app1" customModuleProvider="target">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="textSelectedColor">
                             <color key="value" red="0.1602814759" green="0.54555299509999999" blue="0.65736040610000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -166,7 +166,7 @@
             </objects>
             <point key="canvasLocation" x="3636" y="-638"/>
         </scene>
-        <!--Item 1-->
+        <!--Infomation-->
         <scene sceneID="YSv-1R-8Eu">
             <objects>
                 <viewController id="XNy-Vg-fri" customClass="Tab1_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
@@ -207,7 +207,7 @@
                             <constraint firstAttribute="trailing" secondItem="oeY-RJ-tTW" secondAttribute="trailing" id="odb-T6-3EP"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" image="Care.png" id="PzL-jY-Oqk" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
+                    <tabBarItem key="tabBarItem" title="Infomation" image="corche1.png" id="PzL-jY-Oqk" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                 <color key="value" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -223,7 +223,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hbd-hL-xeC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="k40-mS-NMw" customClass="RAMRightRotationAnimation" customModule="mobileinnovation_app1" customModuleProvider="target">
+                <customObject id="k40-mS-NMw" customClass="RAMFlipLeftTransitionItemAnimations" customModule="mobileinnovation_app1" customModuleProvider="target">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="textSelectedColor">
                             <color key="value" red="0.1602814759" green="0.54555299509999999" blue="0.65736040610000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -265,6 +265,8 @@
                 <navigationController storyboardIdentifier="MainNavigation" navigationBarHidden="YES" id="9ON-Qf-WyB" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="736"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ciZ-hW-9Xv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -459,7 +461,7 @@
                             <constraint firstAttribute="trailing" secondItem="YfY-x6-YGm" secondAttribute="trailing" id="VwG-Tm-50o"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="2" title="Main" image="PersonalConnections.png" id="ipw-7C-WhM" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
+                    <tabBarItem key="tabBarItem" tag="2" title="Main" image="corche5.png" id="ipw-7C-WhM" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="8"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">
@@ -482,7 +484,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NMh-HB-gqB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="467-Cg-ecn" customClass="RAMFlipBottomTransitionItemAnimations" customModule="mobileinnovation_app1" customModuleProvider="target">
+                <customObject id="467-Cg-ecn" customClass="RAMBounceAnimation" customModule="mobileinnovation_app1" customModuleProvider="target">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="textSelectedColor">
                             <color key="value" red="0.1602814759" green="0.54555299509999999" blue="0.65736040610000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -490,12 +492,13 @@
                         <userDefinedRuntimeAttribute type="color" keyPath="iconSelectedColor">
                             <color key="value" red="0.1602814759" green="0.54555299509999999" blue="0.65736040610000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imagesPath" value="animation"/>
                     </userDefinedRuntimeAttributes>
                 </customObject>
             </objects>
             <point key="canvasLocation" x="3635" y="121"/>
         </scene>
-        <!--Item 4-->
+        <!--SNS-->
         <scene sceneID="9zJ-ry-PS9">
             <objects>
                 <viewController id="ExW-db-4oI" customClass="Tab4_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
@@ -536,7 +539,7 @@
                             <constraint firstItem="TTC-Qk-3EJ" firstAttribute="leading" secondItem="pzK-Ep-30F" secondAttribute="leading" id="cHl-TQ-xcc"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="3" title="Item 4" image="Takeout.png" id="SHE-BJ-5kS" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
+                    <tabBarItem key="tabBarItem" tag="3" title="SNS" image="sns2.png" id="SHE-BJ-5kS" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                 <color key="value" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -606,7 +609,7 @@
                             <constraint firstAttribute="trailing" secondItem="64O-Hy-baB" secondAttribute="trailing" id="zpO-Xv-MLE"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="4" title="Map" image="PinMap.png" id="hx2-l6-7Ul" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
+                    <tabBarItem key="tabBarItem" tag="4" title="Map" image="map2.png" id="hx2-l6-7Ul" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                 <color key="value" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -622,7 +625,7 @@
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="byS-D7-gQd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="ATE-kb-6z0" customClass="RAMLeftRotationAnimation" customModule="mobileinnovation_app1" customModuleProvider="target">
+                <customObject id="ATE-kb-6z0" customClass="RAMFlipBottomTransitionItemAnimations" customModule="mobileinnovation_app1" customModuleProvider="target">
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="textSelectedColor">
                             <color key="value" red="0.1602814759" green="0.54555299509999999" blue="0.65736040610000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -637,11 +640,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Care.png" width="30" height="30"/>
-        <image name="Deskwork.png" width="30" height="30"/>
-        <image name="PersonalConnections.png" width="30" height="30"/>
-        <image name="PinMap.png" width="30" height="30"/>
-        <image name="Takeout.png" width="30" height="30"/>
+        <image name="card4.png" width="30" height="30"/>
         <image name="company_icon_logo.png" width="200" height="200"/>
+        <image name="corche1.png" width="30" height="30"/>
+        <image name="corche5.png" width="30" height="30"/>
+        <image name="map2.png" width="30" height="30"/>
+        <image name="sns2.png" width="30" height="30"/>
     </resources>
 </document>
