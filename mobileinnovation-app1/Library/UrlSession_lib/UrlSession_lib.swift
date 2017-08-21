@@ -23,7 +23,7 @@ class UrlSession_lib:NSObject {
 
     var urlSession_libDelegate:UrlSession_libDelegate?
 
-    func get(urlSession_lib: UrlSession_lib, currentView: BaseViewController, url urlString: String, queryItems: [URLQueryItem]? = nil, session: UrlSession_lib) {
+    func get(urlSession_lib: UrlSession_lib, currentView: BaseViewController, url urlString: String, queryItems: [URLQueryItem]? = nil) {
 
         // 通信状態確認
         let reachability = AMReachability()
