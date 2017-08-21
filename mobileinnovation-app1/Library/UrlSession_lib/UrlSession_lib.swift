@@ -17,8 +17,8 @@ protocol UrlSession_libDelegate {
 
 class UrlSession_lib:NSObject {
 
-    static var STATIC_TIMEOUTINTERVALFORREQUEST: TimeInterval = 20
-    static var STATIC_TIMEOUTINTERVALFORRESOURCE: TimeInterval = 20
+    static var STATIC_TIMEOUTINTERVALFORREQUEST: TimeInterval = 10
+    static var STATIC_TIMEOUTINTERVALFORRESOURCE: TimeInterval = 10
     static var STATIC_STAGING_DOMAINURL: String = "http://192.168.0.170:8000"
     static var STATIC_PRODUCTION_DOMAINURL: String = "http://192.168.0.170:8000"
 

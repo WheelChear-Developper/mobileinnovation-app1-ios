@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0FDD254E8D70A199A8B4340D /* Pods_mobileinnovation_app1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C4E3CD8AA443754CB79C21 /* Pods_mobileinnovation_app1Tests.framework */; };
-		10084C281F432E1D00EFE995 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10084C271F432E1D00EFE995 /* FirstViewController.swift */; };
 		10084C2A1F43363E00EFE995 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10084C291F43363E00EFE995 /* BaseViewController.swift */; };
 		100A755C1F485A88005DE91C /* TabBack_375.png in Resources */ = {isa = PBXBuildFile; fileRef = 100A755B1F485A88005DE91C /* TabBack_375.png */; };
 		100A75621F485DAE005DE91C /* TabBack_320.png in Resources */ = {isa = PBXBuildFile; fileRef = 100A755D1F485DAE005DE91C /* TabBack_320.png */; };
@@ -17,12 +16,14 @@
 		100A75651F485DAE005DE91C /* TabBack_834.png in Resources */ = {isa = PBXBuildFile; fileRef = 100A75601F485DAE005DE91C /* TabBack_834.png */; };
 		100A75661F485DAE005DE91C /* TabBack_1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 100A75611F485DAE005DE91C /* TabBack_1024.png */; };
 		100F83E11F4AE1BE00F686E8 /* back1.png in Resources */ = {isa = PBXBuildFile; fileRef = 100F83E01F4AE1BE00F686E8 /* back1.png */; };
+		100F83EC1F4AF87800F686E8 /* Tab1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100F83E31F4AF87800F686E8 /* Tab1_ViewController.swift */; };
+		100F83ED1F4AF87800F686E8 /* Tab2_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100F83E51F4AF87800F686E8 /* Tab2_ViewController.swift */; };
+		100F83EE1F4AF87800F686E8 /* Tab3_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100F83E71F4AF87800F686E8 /* Tab3_ViewController.swift */; };
+		100F83EF1F4AF87800F686E8 /* Tab4_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100F83E91F4AF87800F686E8 /* Tab4_ViewController.swift */; };
+		100F83F01F4AF87800F686E8 /* Tab5_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100F83EB1F4AF87800F686E8 /* Tab5_ViewController.swift */; };
+		100F83F31F4AF8B000F686E8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100F83F21F4AF8B000F686E8 /* FirstViewController.swift */; };
+		100F83F71F4AF9A500F686E8 /* Tab3_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100F83F61F4AF9A500F686E8 /* Tab3_TableViewCell.swift */; };
 		10117EFE1F4584DC00A7C2BD /* AnimationView_lib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117EFD1F4584DC00A7C2BD /* AnimationView_lib.swift */; };
-		10117F001F45854A00A7C2BD /* Tab1_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117EFF1F45854A00A7C2BD /* Tab1_ViewController.swift */; };
-		10117F021F45855800A7C2BD /* Tab2_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117F011F45855800A7C2BD /* Tab2_ViewController.swift */; };
-		10117F041F45856700A7C2BD /* Tab3_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117F031F45856700A7C2BD /* Tab3_ViewController.swift */; };
-		10117F061F45857700A7C2BD /* Tab4_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117F051F45857700A7C2BD /* Tab4_ViewController.swift */; };
-		10117F081F45858C00A7C2BD /* Tab5_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10117F071F45858C00A7C2BD /* Tab5_ViewController.swift */; };
 		101F802B1F49DE15004908DA /* card1.png in Resources */ = {isa = PBXBuildFile; fileRef = 101F80071F49DE15004908DA /* card1.png */; };
 		101F802C1F49DE15004908DA /* card1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 101F80081F49DE15004908DA /* card1@2x.png */; };
 		101F802D1F49DE15004908DA /* card2.png in Resources */ = {isa = PBXBuildFile; fileRef = 101F80091F49DE15004908DA /* card2.png */; };
@@ -132,7 +133,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10084C271F432E1D00EFE995 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		10084C291F43363E00EFE995 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		100A755B1F485A88005DE91C /* TabBack_375.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_375.png; sourceTree = "<group>"; };
 		100A755D1F485DAE005DE91C /* TabBack_320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_320.png; sourceTree = "<group>"; };
@@ -141,12 +141,14 @@
 		100A75601F485DAE005DE91C /* TabBack_834.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_834.png; sourceTree = "<group>"; };
 		100A75611F485DAE005DE91C /* TabBack_1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBack_1024.png; sourceTree = "<group>"; };
 		100F83E01F4AE1BE00F686E8 /* back1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back1.png; sourceTree = "<group>"; };
+		100F83E31F4AF87800F686E8 /* Tab1_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab1_ViewController.swift; sourceTree = "<group>"; };
+		100F83E51F4AF87800F686E8 /* Tab2_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab2_ViewController.swift; sourceTree = "<group>"; };
+		100F83E71F4AF87800F686E8 /* Tab3_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab3_ViewController.swift; sourceTree = "<group>"; };
+		100F83E91F4AF87800F686E8 /* Tab4_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab4_ViewController.swift; sourceTree = "<group>"; };
+		100F83EB1F4AF87800F686E8 /* Tab5_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab5_ViewController.swift; sourceTree = "<group>"; };
+		100F83F21F4AF8B000F686E8 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		100F83F61F4AF9A500F686E8 /* Tab3_TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab3_TableViewCell.swift; sourceTree = "<group>"; };
 		10117EFD1F4584DC00A7C2BD /* AnimationView_lib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationView_lib.swift; sourceTree = "<group>"; };
-		10117EFF1F45854A00A7C2BD /* Tab1_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab1_ViewController.swift; sourceTree = "<group>"; };
-		10117F011F45855800A7C2BD /* Tab2_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab2_ViewController.swift; sourceTree = "<group>"; };
-		10117F031F45856700A7C2BD /* Tab3_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab3_ViewController.swift; sourceTree = "<group>"; };
-		10117F051F45857700A7C2BD /* Tab4_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab4_ViewController.swift; sourceTree = "<group>"; };
-		10117F071F45858C00A7C2BD /* Tab5_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab5_ViewController.swift; sourceTree = "<group>"; };
 		101F80071F49DE15004908DA /* card1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card1.png; sourceTree = "<group>"; };
 		101F80081F49DE15004908DA /* card1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "card1@2x.png"; sourceTree = "<group>"; };
 		101F80091F49DE15004908DA /* card2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card2.png; sourceTree = "<group>"; };
@@ -281,6 +283,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		100F83E21F4AF87800F686E8 /* Tab1 */ = {
+			isa = PBXGroup;
+			children = (
+				100F83E31F4AF87800F686E8 /* Tab1_ViewController.swift */,
+			);
+			path = Tab1;
+			sourceTree = "<group>";
+		};
+		100F83E41F4AF87800F686E8 /* Tab2 */ = {
+			isa = PBXGroup;
+			children = (
+				100F83E51F4AF87800F686E8 /* Tab2_ViewController.swift */,
+			);
+			path = Tab2;
+			sourceTree = "<group>";
+		};
+		100F83E61F4AF87800F686E8 /* TAb3 */ = {
+			isa = PBXGroup;
+			children = (
+				100F83E71F4AF87800F686E8 /* Tab3_ViewController.swift */,
+				100F83F61F4AF9A500F686E8 /* Tab3_TableViewCell.swift */,
+			);
+			path = TAb3;
+			sourceTree = "<group>";
+		};
+		100F83E81F4AF87800F686E8 /* Tab4 */ = {
+			isa = PBXGroup;
+			children = (
+				100F83E91F4AF87800F686E8 /* Tab4_ViewController.swift */,
+			);
+			path = Tab4;
+			sourceTree = "<group>";
+		};
+		100F83EA1F4AF87800F686E8 /* Tab5 */ = {
+			isa = PBXGroup;
+			children = (
+				100F83EB1F4AF87800F686E8 /* Tab5_ViewController.swift */,
+			);
+			path = Tab5;
+			sourceTree = "<group>";
+		};
+		100F83F11F4AF8B000F686E8 /* FirstViewController */ = {
+			isa = PBXGroup;
+			children = (
+				100F83F21F4AF8B000F686E8 /* FirstViewController.swift */,
+			);
+			path = FirstViewController;
+			sourceTree = "<group>";
+		};
 		10117EFC1F4584DC00A7C2BD /* AnimationView_lib */ = {
 			isa = PBXGroup;
 			children = (
@@ -513,12 +564,12 @@
 			isa = PBXGroup;
 			children = (
 				10084C291F43363E00EFE995 /* BaseViewController.swift */,
-				10084C271F432E1D00EFE995 /* FirstViewController.swift */,
-				10117EFF1F45854A00A7C2BD /* Tab1_ViewController.swift */,
-				10117F011F45855800A7C2BD /* Tab2_ViewController.swift */,
-				10117F031F45856700A7C2BD /* Tab3_ViewController.swift */,
-				10117F051F45857700A7C2BD /* Tab4_ViewController.swift */,
-				10117F071F45858C00A7C2BD /* Tab5_ViewController.swift */,
+				100F83F11F4AF8B000F686E8 /* FirstViewController */,
+				100F83E21F4AF87800F686E8 /* Tab1 */,
+				100F83E41F4AF87800F686E8 /* Tab2 */,
+				100F83E61F4AF87800F686E8 /* TAb3 */,
+				100F83E81F4AF87800F686E8 /* Tab4 */,
+				100F83EA1F4AF87800F686E8 /* Tab5 */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1035,21 +1086,22 @@
 				108D47691F44158400441C23 /* AMReachability.swift in Sources */,
 				103424A41F47E45900AD45BF /* RAMBounceAnimation.swift in Sources */,
 				10084C2A1F43363E00EFE995 /* BaseViewController.swift in Sources */,
-				10084C281F432E1D00EFE995 /* FirstViewController.swift in Sources */,
-				10117F061F45857700A7C2BD /* Tab4_ViewController.swift in Sources */,
 				103424A91F47E45900AD45BF /* RAMAnimatedTabBarController.swift in Sources */,
 				10117EFE1F4584DC00A7C2BD /* AnimationView_lib.swift in Sources */,
 				103424A71F47E45900AD45BF /* RAMRotationAnimation.swift in Sources */,
+				100F83F31F4AF8B000F686E8 /* FirstViewController.swift in Sources */,
 				103424AB1F47E45900AD45BF /* RAMItemAnimationProtocol.swift in Sources */,
 				10AA61061F419DC500F59887 /* UrlSession_lib.swift in Sources */,
-				10117F081F45858C00A7C2BD /* Tab5_ViewController.swift in Sources */,
-				10117F041F45856700A7C2BD /* Tab3_ViewController.swift in Sources */,
-				10117F021F45855800A7C2BD /* Tab2_ViewController.swift in Sources */,
+				100F83F71F4AF9A500F686E8 /* Tab3_TableViewCell.swift in Sources */,
+				100F83EF1F4AF87800F686E8 /* Tab4_ViewController.swift in Sources */,
+				100F83EE1F4AF87800F686E8 /* Tab3_ViewController.swift in Sources */,
+				100F83ED1F4AF87800F686E8 /* Tab2_ViewController.swift in Sources */,
 				10AA61041F419D9600F59887 /* Configuration.swift in Sources */,
 				10BE15DB1F3D9FAF0007641A /* AppDelegate.swift in Sources */,
-				10117F001F45854A00A7C2BD /* Tab1_ViewController.swift in Sources */,
 				103424A51F47E45900AD45BF /* RAMFrameItemAnimation.swift in Sources */,
+				100F83F01F4AF87800F686E8 /* Tab5_ViewController.swift in Sources */,
 				103424AA1F47E45900AD45BF /* RAMBadge.swift in Sources */,
+				100F83EC1F4AF87800F686E8 /* Tab1_ViewController.swift in Sources */,
 				103424A61F47E45900AD45BF /* RAMFumeAnimation.swift in Sources */,
 				108D476C1F446C7A00441C23 /* Notification_lib.swift in Sources */,
 				103424A81F47E45900AD45BF /* RAMTransitionItemAnimations.swift in Sources */,

@@ -28,9 +28,10 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        notice_boardTableview.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-
+        self.base_setStatusBarBackgroundColor(color: #colorLiteral(red: 0.2549019608, green: 0.3490196078, blue: 0.5411764706, alpha: 1))
         view_moji1_back.backgroundColor = UIColor(patternImage: UIImage(named: "back1.png")!)
+
+        notice_boardTableview.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
 
     func setLoading() {
@@ -44,8 +45,6 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidDisappear(animated)
-
-        self.base_setStatusBarBackgroundColor(color: #colorLiteral(red: 0.2549019608, green: 0.3490196078, blue: 0.5411764706, alpha: 1))
 
         // Loading表示設定
         self.setLoading()
@@ -68,8 +67,14 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = String(indexPath.row)
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Tab3_TableViewCell_1") as! Tab3_TableViewCell
+
+        // セルに値を設定
+//        cell.myImageView.image = UIImage(named: imageNames[indexPath.row])
+        cell.lbl_title.text = json_Data[indexPath.row]["title"].string//imageTitles[indexPath.row]
+        cell.txt_message.text = json_Data[indexPath.row]["message"].string//imageDescriptions[indexPath.row]
+        
         return cell
     }
 
@@ -78,11 +83,11 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
 
         if urlSession_lib == urlSessionGetClient_jsonNoticeList {
 
-            // Loading非表示
-            self.unsetLoading()
-
             json_Data = json["notices"]
             notice_boardTableview.reloadData()
+
+            // Loading非表示
+            self.unsetLoading()
         }
     }
     override func UrlSessionBack_DataFailureAction(urlSession_lib: UrlSession_lib, statusErrCode: Int, errType: String) {
