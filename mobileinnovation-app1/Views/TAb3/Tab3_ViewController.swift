@@ -32,25 +32,16 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
         view_moji1_back.backgroundColor = UIColor(patternImage: UIImage(named: "back1.png")!)
 
         notice_boardTableview.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
-    }
-
-    func setLoading() {
-        view_loading.isHidden = false
-        activeIndicatorView.startAnimating()
-    }
-    func unsetLoading() {
-        view_loading.isHidden = true
-        activeIndicatorView.stopAnimating()
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
 
         // Loading表示設定
         self.setLoading()
 
         // APIKEY取得
         urlSessionGetClient_jsonNoticeList.get(urlSession_lib: urlSessionGetClient_jsonNoticeList, currentView: self, url: "/api/json_notice_list/")
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -61,7 +52,17 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
         super.didReceiveMemoryWarning()
     }
 
+    func setLoading() {
+        view_loading.isHidden = false
+        self.view.setNeedsDisplay()
+        activeIndicatorView.startAnimating()
+    }
+    func unsetLoading() {
+        view_loading.isHidden = true
+        activeIndicatorView.stopAnimating()
+    }
 
+    ///////////////////////////////////////////////// Table Method Groupe ////////////////////////////////////////////////////////////////
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return json_Data.count
     }
@@ -72,22 +73,25 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
 
         // セルに値を設定
 //        cell.myImageView.image = UIImage(named: imageNames[indexPath.row])
-        cell.lbl_title.text = json_Data[indexPath.row]["title"].string//imageTitles[indexPath.row]
-        cell.txt_message.text = json_Data[indexPath.row]["message"].string//imageDescriptions[indexPath.row]
+        let title: String = json_Data[indexPath.row]["title"].string!
+        let message: String = json_Data[indexPath.row]["message"].string!
+        cell.lbl_title.text = title
+        cell.lbl_message.text = message
         
         return cell
     }
+    ///////////////////////////////////////////////// Table Method Groupe ////////////////////////////////////////////////////////////////
 
     // UrlSession_lib processing
     override func UrlSessionBack_SuccessAction(urlSession_lib: UrlSession_lib, currentView: BaseViewController, json: JSON) {
 
         if urlSession_lib == urlSessionGetClient_jsonNoticeList {
 
-            json_Data = json["notices"]
-            notice_boardTableview.reloadData()
-
             // Loading非表示
             self.unsetLoading()
+
+            json_Data = json["notices"]
+            notice_boardTableview.reloadData()
         }
     }
     override func UrlSessionBack_DataFailureAction(urlSession_lib: UrlSession_lib, statusErrCode: Int, errType: String) {
@@ -120,3 +124,4 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
         self.present(alert, animated: true, completion: nil)
     }
 }
+

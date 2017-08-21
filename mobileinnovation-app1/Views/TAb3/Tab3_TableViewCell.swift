@@ -12,7 +12,7 @@ class Tab3_TableViewCell: UITableViewCell {
 
     @IBOutlet weak var image_photo: UIImageView!
     @IBOutlet weak var lbl_title: UILabel!
-    @IBOutlet weak var txt_message: UITextView!
+    @IBOutlet weak var lbl_message: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
