@@ -8,6 +8,7 @@
 
 import UIKit
 import LTMorphingLabel
+import SwiftyJSON
 
 class FirstViewController: BaseViewController {
 
@@ -109,13 +110,14 @@ class FirstViewController: BaseViewController {
         super.didReceiveMemoryWarning()
     }
 
-    override func UrlSessionBack_SuccessAction(urlSession_lib: UrlSession_lib, currentView: BaseViewController, dicJson: NSDictionary) {
+    // UrlSession_lib processing
+    override func UrlSessionBack_SuccessAction(urlSession_lib: UrlSession_lib, currentView: BaseViewController, json: JSON) {
 
         if urlSession_lib == urlSessionGetClient_apikeyget {
 
             // ApiKey ローカル保存
-            let dic = dicJson["apikey"]
-            self.base_config_instance.configurationSet_String(value: dic as! String, keyName: "ApiKey")
+            let dic = json["apikey"].string
+            self.base_config_instance.configurationSet_String(value: dic!, keyName: "ApiKey")
             print("apikey = " + self.base_config_instance.configurationGet_String(keyName: "ApiKey"))
 
             // DeviceTokenチェック

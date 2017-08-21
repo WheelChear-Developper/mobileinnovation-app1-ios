@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 protocol UrlSession_libDelegate {
-    func UrlSessionBack_SuccessAction(urlSession_lib: UrlSession_lib, currentView: BaseViewController, dicJson: NSDictionary)
+    func UrlSessionBack_SuccessAction(urlSession_lib: UrlSession_lib, currentView: BaseViewController, json: JSON)
     func UrlSessionBack_DataFailureAction(urlSession_lib: UrlSession_lib, statusErrCode: Int, errType: String)
     func UrlSessionBack_HttpFailureAction(errType: String)
 }
@@ -56,11 +57,11 @@ class UrlSession_lib:NSObject {
                 //print(response)
                 let statusCode: Int = (response as! HTTPURLResponse).statusCode
                 print("HttpStatusCode : \(statusCode)")
-                do {
-                    let json: NSDictionary = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! NSDictionary
-                    //print("Json : \(json)")
-                    self.urlSession_libDelegate?.UrlSessionBack_SuccessAction(urlSession_lib: urlSession_lib, currentView: currentView, dicJson: json)
-                } catch {
+                if statusCode == 200 {
+                    let json = JSON(data: data)
+                    print("\(json)")
+                    self.urlSession_libDelegate?.UrlSessionBack_SuccessAction(urlSession_lib: urlSession_lib, currentView: currentView, json: json)
+                }else{
                     self.urlSession_libDelegate?.UrlSessionBack_DataFailureAction(urlSession_lib: urlSession_lib, statusErrCode: statusCode, errType: "Serialize Error")
                 }
             } else {
@@ -113,11 +114,11 @@ class UrlSession_lib:NSObject {
                 //print(response)
                 let statusCode = (response as! HTTPURLResponse).statusCode
                 print("HttpStatusCode : \(statusCode)")
-                do {
-                    let json: NSDictionary = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.allowFragments) as! NSDictionary
-                    //print("Json : \(json)")
-                    self.urlSession_libDelegate?.UrlSessionBack_SuccessAction(urlSession_lib: urlSession_lib, currentView: currentView, dicJson: json)
-                } catch {
+                if statusCode == 200 {
+                    let json = JSON(data: data)
+                    print("\(json)")
+                    self.urlSession_libDelegate?.UrlSessionBack_SuccessAction(urlSession_lib: urlSession_lib, currentView: currentView, json: json)
+                }else{
                     self.urlSession_libDelegate?.UrlSessionBack_DataFailureAction(urlSession_lib: urlSession_lib, statusErrCode: statusCode, errType: "Serialize Error")
                 }
             } else {
