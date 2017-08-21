@@ -32,16 +32,16 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
         view_moji1_back.backgroundColor = UIColor(patternImage: UIImage(named: "back1.png")!)
 
         notice_boardTableview.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
 
         // Loading表示設定
         self.setLoading()
 
         // APIKEY取得
         urlSessionGetClient_jsonNoticeList.get(urlSession_lib: urlSessionGetClient_jsonNoticeList, currentView: self, url: "/api/json_notice_list/")
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
     }
 
     override func viewDidAppear(_ animated: Bool) {
