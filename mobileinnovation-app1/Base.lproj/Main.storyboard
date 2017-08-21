@@ -267,7 +267,7 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="414" height="736"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ciZ-hW-9Xv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ciZ-hW-9Xv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -470,17 +470,17 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="activeIndicatorView.startAnimating()"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xee-W9-baz">
-                                        <rect key="frame" x="31.666666666666686" y="80" width="41.333333333333314" height="15"/>
-                                        <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="12"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xee-W9-baz">
+                                        <rect key="frame" x="18" y="80" width="69.666666666666686" height="20"/>
+                                        <fontDescription key="fontDescription" name="NasalizationRg-Regular" family="Nasalization" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="qOd-sc-n7M" firstAttribute="centerX" secondItem="c2B-ch-u00" secondAttribute="centerX" id="Dgy-fI-rIJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="Xee-W9-baz" secondAttribute="bottom" constant="10" id="HYV-37-9cX"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xee-W9-baz" secondAttribute="bottom" constant="5" id="HYV-37-9cX"/>
                                     <constraint firstItem="Xee-W9-baz" firstAttribute="centerX" secondItem="c2B-ch-u00" secondAttribute="centerX" id="QGL-cJ-ua8"/>
                                     <constraint firstAttribute="width" secondItem="c2B-ch-u00" secondAttribute="height" multiplier="1:1" id="TdK-kM-fgh"/>
                                     <constraint firstItem="qOd-sc-n7M" firstAttribute="top" secondItem="c2B-ch-u00" secondAttribute="top" constant="5" id="Zkj-Ef-cTh"/>
