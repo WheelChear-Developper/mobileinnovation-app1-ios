@@ -79,7 +79,7 @@ class FirstViewController: BaseViewController {
         let appCode: AnyObject = dictionary?.object(forKey: "APP_CODE") as AnyObject
 
         // APIKEY取得
-        urlSessionGetClient_apikeyget.post(urlSession_lib: urlSessionGetClient_apikeyget, currentView: self, url: "api/apikey_get", parameters: ["app_code": appCode])
+        urlSessionGetClient_apikeyget.post(urlSession_lib: urlSessionGetClient_apikeyget, currentView: self, url: "/api/apikey_get", parameters: ["app_code": appCode])
     }
 
     func setApi_devicetoken() {
@@ -91,13 +91,13 @@ class FirstViewController: BaseViewController {
 
         #if DEBUG
             // APIKEY取得
-            urlSessionGetClient_apidevicetoken.post(urlSession_lib: urlSessionGetClient_apidevicetoken, currentView: self, url: "api/notification/token_post", parameters: ["app_code": appCode, "device_token": self.base_config_instance.configurationGet_String(keyName: "DeviceToken"), "device_type": "iOS_Staging"])
+            urlSessionGetClient_apidevicetoken.post(urlSession_lib: urlSessionGetClient_apidevicetoken, currentView: self, url: "/api/notification/token_post", parameters: ["app_code": appCode, "device_token": self.base_config_instance.configurationGet_String(keyName: "DeviceToken"), "device_type": "iOS_Staging"])
         #elseif STAGING
             // APIKEY取得
-            urlSessionGetClient_apidevicetoken.post(urlSession_lib: urlSessionGetClient_apidevicetoken, currentView: self, url: "api/notification/token_post", parameters: ["app_code": appCode, "device_token": self.base_config_instance.configurationGet_String(keyName: "DeviceToken"), "device_type": "iOS_Staging"])
+            urlSessionGetClient_apidevicetoken.post(urlSession_lib: urlSessionGetClient_apidevicetoken, currentView: self, url: "/api/notification/token_post", parameters: ["app_code": appCode, "device_token": self.base_config_instance.configurationGet_String(keyName: "DeviceToken"), "device_type": "iOS_Staging"])
         #else
             // APIKEY取得
-            urlSessionGetClient_apidevicetoken.post(urlSession_lib: urlSessionGetClient_apidevicetoken, currentView: self, url: "api/notification/token_post", parameters: ["app_code": appCode, "device_token": self.base_config_instance.configurationGet_String(keyName: "DeviceToken"), "device_type": "iOS"])
+            urlSessionGetClient_apidevicetoken.post(urlSession_lib: urlSessionGetClient_apidevicetoken, currentView: self, url: "/api/notification/token_post", parameters: ["app_code": appCode, "device_token": self.base_config_instance.configurationGet_String(keyName: "DeviceToken"), "device_type": "iOS"])
         #endif
     }
 
