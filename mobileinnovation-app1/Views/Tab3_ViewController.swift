@@ -22,10 +22,15 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var activeIndicatorView: NVActivityIndicatorView!
     @IBOutlet weak var view_loading: UIView!
 
+    // 文字１のVIEW
+    @IBOutlet weak var view_moji1_back: UIView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         notice_boardTableview.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+
+        view_moji1_back.backgroundColor = UIColor(patternImage: UIImage(named: "back1.png")!)
     }
 
     func setLoading() {
