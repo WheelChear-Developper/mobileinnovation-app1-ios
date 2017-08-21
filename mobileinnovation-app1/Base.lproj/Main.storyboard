@@ -452,13 +452,74 @@
                                     <outlet property="delegate" destination="fcc-MG-MOf" id="XP3-FX-0Rf"/>
                                 </connections>
                             </scrollView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c2B-ch-u00">
+                                <rect key="frame" x="154.66666666666669" y="315.66666666666669" width="105.00000000000006" height="105"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qOd-sc-n7M" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
+                                        <rect key="frame" x="17.666666666666686" y="5" width="70" height="70"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="duL-9j-XQp"/>
+                                            <constraint firstAttribute="width" secondItem="qOd-sc-n7M" secondAttribute="height" multiplier="1:1" id="k33-Il-uex"/>
+                                            <constraint firstAttribute="height" constant="70" id="r02-bi-cfg"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.047058823530000002" green="0.5450980392" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="activeIndicatorView.startAnimating()"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xee-W9-baz">
+                                        <rect key="frame" x="31.666666666666686" y="80" width="41.333333333333314" height="15"/>
+                                        <fontDescription key="fontDescription" name="GujaratiSangamMN" family="Gujarati Sangam MN" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="qOd-sc-n7M" firstAttribute="centerX" secondItem="c2B-ch-u00" secondAttribute="centerX" id="Dgy-fI-rIJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xee-W9-baz" secondAttribute="bottom" constant="10" id="HYV-37-9cX"/>
+                                    <constraint firstItem="Xee-W9-baz" firstAttribute="centerX" secondItem="c2B-ch-u00" secondAttribute="centerX" id="QGL-cJ-ua8"/>
+                                    <constraint firstAttribute="width" secondItem="c2B-ch-u00" secondAttribute="height" multiplier="1:1" id="TdK-kM-fgh"/>
+                                    <constraint firstItem="qOd-sc-n7M" firstAttribute="top" secondItem="c2B-ch-u00" secondAttribute="top" constant="5" id="Zkj-Ef-cTh"/>
+                                    <constraint firstAttribute="bottom" secondItem="qOd-sc-n7M" secondAttribute="bottom" constant="30" id="mgm-4H-uZL"/>
+                                    <constraint firstItem="Xee-W9-baz" firstAttribute="top" secondItem="qOd-sc-n7M" secondAttribute="bottom" constant="5" id="nX0-vU-SFo"/>
+                                    <constraint firstItem="qOd-sc-n7M" firstAttribute="top" secondItem="c2B-ch-u00" secondAttribute="top" constant="5" id="qU6-tv-uBw"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.047058823530000002" green="0.5450980392" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="activeIndicatorView.startAnimating()"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="3" height="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.25490196078431371" green="0.34901960784313724" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="qMz-ja-OVU" firstAttribute="top" secondItem="YfY-x6-YGm" secondAttribute="bottom" id="6Cq-qn-e86"/>
+                            <constraint firstItem="c2B-ch-u00" firstAttribute="centerY" secondItem="d7s-F3-RF5" secondAttribute="centerY" id="8C2-IZ-5h7"/>
                             <constraint firstItem="YfY-x6-YGm" firstAttribute="top" secondItem="Oyc-4P-Oep" secondAttribute="bottom" id="CMo-UN-dBy"/>
                             <constraint firstItem="YfY-x6-YGm" firstAttribute="leading" secondItem="d7s-F3-RF5" secondAttribute="leading" id="RWt-oc-Bpf"/>
                             <constraint firstAttribute="trailing" secondItem="YfY-x6-YGm" secondAttribute="trailing" id="VwG-Tm-50o"/>
+                            <constraint firstItem="c2B-ch-u00" firstAttribute="centerX" secondItem="d7s-F3-RF5" secondAttribute="centerX" id="srH-0l-ULG"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" tag="2" title="Main" image="corche5.png" id="ipw-7C-WhM" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
@@ -480,7 +541,9 @@
                     </tabBarItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="activeIndicatorView" destination="qOd-sc-n7M" id="tpr-rC-Ike"/>
                         <outlet property="notice_boardTableview" destination="3hk-b1-Buh" id="SRz-fj-44s"/>
+                        <outlet property="view_loading" destination="c2B-ch-u00" id="eBJ-zi-boa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NMh-HB-gqB" userLabel="First Responder" sceneMemberID="firstResponder"/>

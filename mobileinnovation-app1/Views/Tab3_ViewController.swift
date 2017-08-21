@@ -8,15 +8,19 @@
 
 import UIKit
 import SwiftyJSON
+import NVActivityIndicatorView
 
 class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
 
     // UrlSession_libのインスタンス(apikeyget用)
     let urlSessionGetClient_jsonNoticeList = UrlSession_lib()
 
+    @IBOutlet weak var notice_boardTableview: UITableView!
     var json_Data: JSON = []
 
-    @IBOutlet weak var notice_boardTableview: UITableView!
+    // NVActivityIndicatorView　インスタンス
+    @IBOutlet weak var activeIndicatorView: NVActivityIndicatorView!
+    @IBOutlet weak var view_loading: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +28,22 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
         notice_boardTableview.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
 
+    func setLoading() {
+        view_loading.isHidden = false
+        activeIndicatorView.startAnimating()
+    }
+    func unsetLoading() {
+        view_loading.isHidden = true
+        activeIndicatorView.stopAnimating()
+    }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidDisappear(animated)
 
         self.base_setStatusBarBackgroundColor(color: #colorLiteral(red: 0.2549019608, green: 0.3490196078, blue: 0.5411764706, alpha: 1))
+
+        // Loading表示設定
+        self.setLoading()
 
         // APIKEY取得
         urlSessionGetClient_jsonNoticeList.get(urlSession_lib: urlSessionGetClient_jsonNoticeList, currentView: self, url: "/api/json_notice_list/")
@@ -56,6 +72,9 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
     override func UrlSessionBack_SuccessAction(urlSession_lib: UrlSession_lib, currentView: BaseViewController, json: JSON) {
 
         if urlSession_lib == urlSessionGetClient_jsonNoticeList {
+
+            // Loading非表示
+            self.unsetLoading()
 
             json_Data = json["notices"]
             notice_boardTableview.reloadData()
