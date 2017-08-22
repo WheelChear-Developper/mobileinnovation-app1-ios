@@ -265,7 +265,7 @@
                 <navigationController storyboardIdentifier="MainNavigation" navigationBarHidden="YES" id="9ON-Qf-WyB" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ciZ-hW-9Xv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ciZ-hW-9Xv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -383,7 +383,7 @@
                                                                                             <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pT-rH-6hJ">
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3pT-rH-6hJ">
                                                                                             <rect key="frame" x="65" y="21" width="241" height="43"/>
                                                                                             <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="8"/>
                                                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -556,74 +556,13 @@
                                     <constraint firstAttribute="trailing" secondItem="HqZ-a9-l7S" secondAttribute="trailing" id="mFW-To-Bcd"/>
                                 </constraints>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c2B-ch-u00">
-                                <rect key="frame" x="155" y="316" width="105" height="105"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qOd-sc-n7M" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
-                                        <rect key="frame" x="17" y="5" width="70" height="70"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="70" id="duL-9j-XQp"/>
-                                            <constraint firstAttribute="width" secondItem="qOd-sc-n7M" secondAttribute="height" multiplier="1:1" id="k33-Il-uex"/>
-                                            <constraint firstAttribute="height" constant="70" id="r02-bi-cfg"/>
-                                        </constraints>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                                <color key="value" red="0.047058823530000002" green="0.5450980392" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="activeIndicatorView.startAnimating()"/>
-                                        </userDefinedRuntimeAttributes>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xee-W9-baz">
-                                        <rect key="frame" x="18" y="80" width="70" height="20"/>
-                                        <fontDescription key="fontDescription" name="NasalizationRg-Regular" family="Nasalization" pointSize="14"/>
-                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="qOd-sc-n7M" firstAttribute="centerX" secondItem="c2B-ch-u00" secondAttribute="centerX" id="Dgy-fI-rIJ"/>
-                                    <constraint firstAttribute="bottom" secondItem="Xee-W9-baz" secondAttribute="bottom" constant="5" id="HYV-37-9cX"/>
-                                    <constraint firstItem="Xee-W9-baz" firstAttribute="centerX" secondItem="c2B-ch-u00" secondAttribute="centerX" id="QGL-cJ-ua8"/>
-                                    <constraint firstAttribute="width" secondItem="c2B-ch-u00" secondAttribute="height" multiplier="1:1" id="TdK-kM-fgh"/>
-                                    <constraint firstItem="qOd-sc-n7M" firstAttribute="top" secondItem="c2B-ch-u00" secondAttribute="top" constant="5" id="Zkj-Ef-cTh"/>
-                                    <constraint firstAttribute="bottom" secondItem="qOd-sc-n7M" secondAttribute="bottom" constant="30" id="mgm-4H-uZL"/>
-                                    <constraint firstItem="Xee-W9-baz" firstAttribute="top" secondItem="qOd-sc-n7M" secondAttribute="bottom" constant="5" id="nX0-vU-SFo"/>
-                                    <constraint firstItem="qOd-sc-n7M" firstAttribute="top" secondItem="c2B-ch-u00" secondAttribute="top" constant="5" id="qU6-tv-uBw"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                        <color key="value" red="0.047058823530000002" green="0.5450980392" blue="0.6588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="typeName" value="activeIndicatorView.startAnimating()"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="NO"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
-                                        <size key="value" width="3" height="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
-                                        <integer key="value" value="3"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
-                                        <real key="value" value="0.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.25490196078431371" green="0.34901960784313724" blue="0.54117647058823526" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="mog-Pp-M8s" secondAttribute="bottom" constant="49" id="4tJ-8t-c6V"/>
-                            <constraint firstItem="c2B-ch-u00" firstAttribute="centerY" secondItem="d7s-F3-RF5" secondAttribute="centerY" id="8C2-IZ-5h7"/>
                             <constraint firstItem="mog-Pp-M8s" firstAttribute="leading" secondItem="d7s-F3-RF5" secondAttribute="leading" id="V6T-oJ-GoN"/>
                             <constraint firstAttribute="trailing" secondItem="mog-Pp-M8s" secondAttribute="trailing" id="bZ4-MD-gMw"/>
                             <constraint firstItem="mog-Pp-M8s" firstAttribute="top" secondItem="d7s-F3-RF5" secondAttribute="top" constant="20" id="nig-Kd-UBU"/>
-                            <constraint firstItem="c2B-ch-u00" firstAttribute="centerX" secondItem="d7s-F3-RF5" secondAttribute="centerX" id="srH-0l-ULG"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" tag="2" title="Main" image="corche5.png" id="ipw-7C-WhM" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
@@ -645,10 +584,8 @@
                     </tabBarItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
-                        <outlet property="activeIndicatorView" destination="qOd-sc-n7M" id="tpr-rC-Ike"/>
                         <outlet property="lbl_animation" destination="gx2-j4-Dm1" id="oPg-CM-ABL"/>
                         <outlet property="notice_boardTableview" destination="3hk-b1-Buh" id="SRz-fj-44s"/>
-                        <outlet property="view_loading" destination="c2B-ch-u00" id="eBJ-zi-boa"/>
                         <outlet property="view_moji1_back" destination="oEP-8i-WWY" id="CqS-mg-Trc"/>
                     </connections>
                 </viewController>

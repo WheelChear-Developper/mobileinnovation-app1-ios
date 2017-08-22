@@ -10,6 +10,7 @@ import UIKit
 import SwiftyJSON
 import NVActivityIndicatorView
 import LTMorphingLabel
+import CircularSpinner
 
 class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -18,10 +19,6 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
 
     @IBOutlet weak var notice_boardTableview: UITableView!
     var json_Data: JSON = []
-
-    // NVActivityIndicatorView　インスタンス
-    @IBOutlet weak var activeIndicatorView: NVActivityIndicatorView!
-    @IBOutlet weak var view_loading: UIView!
 
     // 縦文字のVIEW
     @IBOutlet weak var view_moji1_back: UIView!
@@ -60,13 +57,13 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
         super.viewDidAppear(animated)
 
         // Loading表示設定
-        self.setLoading()
+        CircularSpinner.show("Loading...", animated: true, type: .indeterminate)
 
         // API_最新情報取得
         self.getNotice_list()
 
         // Loading非表示
-        self.unsetLoading()
+        CircularSpinner.hide()
 
         // Tableview更新
         self.notice_boardTableview.reloadData()
@@ -102,16 +99,6 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
         if patern_lbl_animation.count <= int_count_lbl_animation {
             int_count_lbl_animation = 0
         }
-    }
-
-    // ローディング表示設定
-    func setLoading() {
-        view_loading.isHidden = false
-        activeIndicatorView.startAnimating()
-    }
-    func unsetLoading() {
-        view_loading.isHidden = true
-        activeIndicatorView.stopAnimating()
     }
 
     ///////////////////////////////////////////////// Table Method Groupe ////////////////////////////////////////////////////////////////
