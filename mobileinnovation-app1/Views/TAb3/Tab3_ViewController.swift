@@ -35,20 +35,23 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // ステータスバー背景色設定
         self.base_setStatusBarBackgroundColor(color: #colorLiteral(red: 0.2549019608, green: 0.3490196078, blue: 0.5411764706, alpha: 1))
+
+        // 縦文字の背景設定
         view_moji1_back.backgroundColor = UIColor(patternImage: UIImage(named: "back1.png")!)
 
+        // TableviewCell設定
         notice_boardTableview.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidDisappear(animated)
 
-        // 下のローディング文字
+        // 文字アニメーション設定
         lbl_animation.morphingEffect = .scale
         int_count_lbl_animation = 0
         patern_lbl_animation = ["公式アプリをリリースしました。", "スマホアプリを開発しています。", "FacebookなどのSNSでも情報公開しています"]
-
         timer_lbl_animation = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(self.update_lbl_animation), userInfo: nil, repeats: true)
         timer_lbl_animation.fire()
 
@@ -78,6 +81,16 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
         super.didReceiveMemoryWarning()
     }
 
+    // 文字アニメーション用タイマーセレクター
+    func update_lbl_animation(tm: Timer) {
+        lbl_animation.text = patern_lbl_animation[int_count_lbl_animation]
+        int_count_lbl_animation = int_count_lbl_animation + 1
+        if patern_lbl_animation.count <= int_count_lbl_animation {
+            int_count_lbl_animation = 0
+        }
+    }
+
+    // ローディング表示設定
     func setLoading() {
         view_loading.isHidden = false
         activeIndicatorView.startAnimating()
@@ -85,14 +98,6 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
     func unsetLoading() {
         view_loading.isHidden = true
         activeIndicatorView.stopAnimating()
-    }
-
-    func update_lbl_animation(tm: Timer) {
-        lbl_animation.text = patern_lbl_animation[int_count_lbl_animation]
-        int_count_lbl_animation = int_count_lbl_animation + 1
-        if patern_lbl_animation.count <= int_count_lbl_animation {
-            int_count_lbl_animation = 0
-        }
     }
 
     ///////////////////////////////////////////////// Table Method Groupe ////////////////////////////////////////////////////////////////
