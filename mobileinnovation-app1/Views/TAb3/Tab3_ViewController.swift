@@ -72,11 +72,34 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
         let cell = tableView.dequeueReusableCell(withIdentifier: "Tab3_TableViewCell_1") as! Tab3_TableViewCell
 
         // セルに値を設定
-//        cell.myImageView.image = UIImage(named: imageNames[indexPath.row])
+        let image: String = json_Data[indexPath.row]["image"].string!
         let title: String = json_Data[indexPath.row]["title"].string!
         let message: String = json_Data[indexPath.row]["message"].string!
         cell.lbl_title.text = title
         cell.lbl_message.text = message
+
+        cell.image_photo.image = nil
+        if image != "" {
+
+            #if DEBUG
+                // 本体のAPP_CODE取得
+                let path = Bundle.main.path(forResource: "propaty", ofType: "plist")
+                let dictionary = NSDictionary(contentsOfFile: path!)
+                let domainName: AnyObject = dictionary?.object(forKey: "DomainName_Staging") as AnyObject
+            #elseif STAGING
+                // 本体のAPP_CODE取得
+                let path = Bundle.main.path(forResource: "propaty", ofType: "plist")
+                let dictionary = NSDictionary(contentsOfFile: path!)
+                let domainName: AnyObject = dictionary?.object(forKey: "DomainName_Production") as AnyObject
+            #else
+                // 本体のAPP_CODE取得
+                let path = Bundle.main.path(forResource: "propaty", ofType: "plist")
+                let dictionary = NSDictionary(contentsOfFile: path!)
+                let domainName: AnyObject = dictionary?.object(forKey: "DomainName_Production") as AnyObject
+            #endif
+
+            cell.image_photo.loadImage(urlString: (domainName as! String) + "/static/notice_board/images/" + image)
+        }
         
         return cell
     }

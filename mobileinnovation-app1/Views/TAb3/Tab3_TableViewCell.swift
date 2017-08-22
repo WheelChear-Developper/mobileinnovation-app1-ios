@@ -10,7 +10,7 @@ import UIKit
 
 class Tab3_TableViewCell: UITableViewCell {
 
-    @IBOutlet weak var image_photo: UIImageView!
+    @IBOutlet weak var image_photo: AsyncImageView!
     @IBOutlet weak var lbl_title: UILabel!
     @IBOutlet weak var lbl_message: UILabel!
 

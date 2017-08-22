@@ -19,8 +19,6 @@ class UrlSession_lib:NSObject {
 
     static var STATIC_TIMEOUTINTERVALFORREQUEST: TimeInterval = 10
     static var STATIC_TIMEOUTINTERVALFORRESOURCE: TimeInterval = 10
-    static var STATIC_STAGING_DOMAINURL: String = "http://192.168.0.170:8000"
-    static var STATIC_PRODUCTION_DOMAINURL: String = "http://192.168.0.170:8000"
 
     var urlSession_libDelegate:UrlSession_libDelegate?
 
@@ -34,11 +32,26 @@ class UrlSession_lib:NSObject {
 
         var totalUrl: String = ""
         #if DEBUG
-            totalUrl = UrlSession_lib.STATIC_STAGING_DOMAINURL + urlString
+            // 本体のAPP_CODE取得
+            let path = Bundle.main.path(forResource: "propaty", ofType: "plist")
+            let dictionary = NSDictionary(contentsOfFile: path!)
+            let domainName: AnyObject = dictionary?.object(forKey: "DomainName_Staging") as AnyObject
+
+            totalUrl = (domainName as! String) + urlString
         #elseif STAGING
-            totalUrl = UrlSession_lib.STATIC_STAGING_DOMAINURL + urlString
+            // 本体のAPP_CODE取得
+            let path = Bundle.main.path(forResource: "propaty", ofType: "plist")
+            let dictionary = NSDictionary(contentsOfFile: path!)
+            let domainName: AnyObject = dictionary?.object(forKey: "DomainName_Production") as AnyObject
+
+            totalUrl = domainName + urlString
         #else
-            totalUrl = UrlSession_lib.STATIC_PRODUCTION_DOMAINURL + urlString
+            // 本体のAPP_CODE取得
+            let path = Bundle.main.path(forResource: "propaty", ofType: "plist")
+            let dictionary = NSDictionary(contentsOfFile: path!)
+            let domainName: AnyObject = dictionary?.object(forKey: "DomainName_Production") as AnyObject
+
+            totalUrl = domainName + urlString
         #endif
 
         self.urlSession_libDelegate = currentView
@@ -83,11 +96,26 @@ class UrlSession_lib:NSObject {
 
         var totalUrl: String = ""
         #if DEBUG
-            totalUrl = UrlSession_lib.STATIC_STAGING_DOMAINURL + urlString
+            // 本体のAPP_CODE取得
+            let path = Bundle.main.path(forResource: "propaty", ofType: "plist")
+            let dictionary = NSDictionary(contentsOfFile: path!)
+            let domainName: AnyObject = dictionary?.object(forKey: "DomainName_Staging") as AnyObject
+
+            totalUrl = (domainName as! String) + urlString
         #elseif STAGING
-            totalUrl = UrlSession_lib.STATIC_STAGING_DOMAINURL + urlString
+            // 本体のAPP_CODE取得
+            let path = Bundle.main.path(forResource: "propaty", ofType: "plist")
+            let dictionary = NSDictionary(contentsOfFile: path!)
+            let domainName: AnyObject = dictionary?.object(forKey: "DomainName_Production") as AnyObject
+
+            totalUrl = domainName + urlString
         #else
-            totalUrl = UrlSession_lib.STATIC_PRODUCTION_DOMAINURL + urlString
+            // 本体のAPP_CODE取得
+            let path = Bundle.main.path(forResource: "propaty", ofType: "plist")
+            let dictionary = NSDictionary(contentsOfFile: path!)
+            let domainName: AnyObject = dictionary?.object(forKey: "DomainName_Production") as AnyObject
+
+            totalUrl = domainName + urlString
         #endif
 
         self.urlSession_libDelegate = currentView
