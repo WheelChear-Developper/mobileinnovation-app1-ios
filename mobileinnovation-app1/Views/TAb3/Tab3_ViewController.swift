@@ -99,6 +99,9 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
             #endif
 
             cell.image_photo.loadImage(urlString: (domainName as! String) + "/static/notice_board/images/" + image)
+        }else{
+
+            cell.image_photo.image = UIImage(named:"company_icon_logo.png")!
         }
         
         return cell

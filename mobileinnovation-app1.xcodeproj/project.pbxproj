@@ -73,7 +73,7 @@
 		103424AA1F47E45900AD45BF /* RAMBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103424A21F47E45900AD45BF /* RAMBadge.swift */; };
 		103424AB1F47E45900AD45BF /* RAMItemAnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103424A31F47E45900AD45BF /* RAMItemAnimationProtocol.swift */; };
 		1044723A1F45B476006E1034 /* propaty.plist in Resources */ = {isa = PBXBuildFile; fileRef = 104472391F45B476006E1034 /* propaty.plist */; };
-		105883371F4BB8AB000A87CE /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105883361F4BB8AB000A87CE /* AsyncImageView.swift */; };
+		1058833A1F4BC77D000A87CE /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105883391F4BC77D000A87CE /* AsyncImageView.swift */; };
 		106A8C6D1F45635200FC9E0F /* AndroidClock.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 106A8C391F45635100FC9E0F /* AndroidClock.ttf */; };
 		106A8C6E1F45635200FC9E0F /* AndroidClock_Highlight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 106A8C3A1F45635100FC9E0F /* AndroidClock_Highlight.ttf */; };
 		106A8C6F1F45635200FC9E0F /* AndroidClock_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 106A8C3B1F45635100FC9E0F /* AndroidClock_Solid.ttf */; };
@@ -200,7 +200,7 @@
 		103424A21F47E45900AD45BF /* RAMBadge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMBadge.swift; sourceTree = "<group>"; };
 		103424A31F47E45900AD45BF /* RAMItemAnimationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMItemAnimationProtocol.swift; sourceTree = "<group>"; };
 		104472391F45B476006E1034 /* propaty.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = propaty.plist; sourceTree = "<group>"; };
-		105883361F4BB8AB000A87CE /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		105883391F4BC77D000A87CE /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		106A8C391F45635100FC9E0F /* AndroidClock.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AndroidClock.ttf; sourceTree = "<group>"; };
 		106A8C3A1F45635100FC9E0F /* AndroidClock_Highlight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AndroidClock_Highlight.ttf; sourceTree = "<group>"; };
 		106A8C3B1F45635100FC9E0F /* AndroidClock_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AndroidClock_Solid.ttf; sourceTree = "<group>"; };
@@ -465,6 +465,14 @@
 			path = RAMBadge;
 			sourceTree = "<group>";
 		};
+		105883381F4BC77D000A87CE /* AsyncImageView */ = {
+			isa = PBXGroup;
+			children = (
+				105883391F4BC77D000A87CE /* AsyncImageView.swift */,
+			);
+			path = AsyncImageView;
+			sourceTree = "<group>";
+		};
 		106A8C371F45635100FC9E0F /* fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -536,13 +544,13 @@
 		10AA60F71F4192CB00F59887 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				105883381F4BC77D000A87CE /* AsyncImageView */,
 				103424941F47E45900AD45BF /* RAMAnimatedTabBarController */,
 				108D47671F44158400441C23 /* AMReachability */,
 				10117EFC1F4584DC00A7C2BD /* AnimationView_lib */,
 				10AA61021F419D9600F59887 /* Configuration_lib */,
 				108D476A1F446C5A00441C23 /* Notification_lib */,
 				10AA61011F419D7C00F59887 /* UrlSession_lib */,
-				105883361F4BB8AB000A87CE /* AsyncImageView.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -1086,7 +1094,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				105883371F4BB8AB000A87CE /* AsyncImageView.swift in Sources */,
 				108D47691F44158400441C23 /* AMReachability.swift in Sources */,
 				103424A41F47E45900AD45BF /* RAMBounceAnimation.swift in Sources */,
 				10084C2A1F43363E00EFE995 /* BaseViewController.swift in Sources */,
@@ -1097,6 +1104,7 @@
 				103424AB1F47E45900AD45BF /* RAMItemAnimationProtocol.swift in Sources */,
 				10AA61061F419DC500F59887 /* UrlSession_lib.swift in Sources */,
 				100F83F71F4AF9A500F686E8 /* Tab3_TableViewCell.swift in Sources */,
+				1058833A1F4BC77D000A87CE /* AsyncImageView.swift in Sources */,
 				100F83EF1F4AF87800F686E8 /* Tab4_ViewController.swift in Sources */,
 				100F83EE1F4AF87800F686E8 /* Tab3_ViewController.swift in Sources */,
 				100F83ED1F4AF87800F686E8 /* Tab2_ViewController.swift in Sources */,
