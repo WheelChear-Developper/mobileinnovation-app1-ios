@@ -54,16 +54,22 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
         patern_lbl_animation = ["公式アプリをリリースしました。", "スマホアプリを開発しています。", "FacebookなどのSNSでも情報公開しています"]
         timer_lbl_animation = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(self.update_lbl_animation), userInfo: nil, repeats: true)
         timer_lbl_animation.fire()
-
-        // Loading表示設定
-        self.setLoading()
-
-        // APIKEY取得
-        urlSessionGetClient_jsonNoticeList.get(urlSession_lib: urlSessionGetClient_jsonNoticeList, currentView: self, url: "/api/json_notice_list/")
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+
+        // Loading表示設定
+        self.setLoading()
+
+        // API_最新情報取得
+        self.getNotice_list()
+
+        // Loading非表示
+        self.unsetLoading()
+
+        // Tableview更新
+        self.notice_boardTableview.reloadData()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -79,6 +85,14 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+
+    // API_最新情報取得
+    func getNotice_list() {
+        let urlString: String = HttpRequestController().getDomain() + "/api/json_notice_list/"
+        let parsedData: JSON = HttpRequestController().sendGetRequestSynchronous(urlString: urlString)
+        print(parsedData)
+        self.json_Data = parsedData["notices"]
     }
 
     // 文字アニメーション用タイマーセレクター
@@ -119,24 +133,7 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
         cell.image_photo.image = nil
         if image != "" {
 
-            #if DEBUG
-                // 本体のAPP_CODE取得
-                let path = Bundle.main.path(forResource: "propaty", ofType: "plist")
-                let dictionary = NSDictionary(contentsOfFile: path!)
-                let domainName: AnyObject = dictionary?.object(forKey: "DomainName_Staging") as AnyObject
-            #elseif STAGING
-                // 本体のAPP_CODE取得
-                let path = Bundle.main.path(forResource: "propaty", ofType: "plist")
-                let dictionary = NSDictionary(contentsOfFile: path!)
-                let domainName: AnyObject = dictionary?.object(forKey: "DomainName_Production") as AnyObject
-            #else
-                // 本体のAPP_CODE取得
-                let path = Bundle.main.path(forResource: "propaty", ofType: "plist")
-                let dictionary = NSDictionary(contentsOfFile: path!)
-                let domainName: AnyObject = dictionary?.object(forKey: "DomainName_Production") as AnyObject
-            #endif
-
-            cell.image_photo.loadImage(urlString: (domainName as! String) + "/static/notice_board/images/" + image)
+            cell.image_photo.loadImage(urlString: HttpRequestController().getDomain() + "/static/notice_board/images/" + image)
         }else{
 
             cell.image_photo.image = UIImage(named:"company_icon_logo.png")!
@@ -145,47 +142,5 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
         return cell
     }
     ///////////////////////////////////////////////// Table Method Groupe ////////////////////////////////////////////////////////////////
-
-    // UrlSession_lib processing
-    override func UrlSessionBack_SuccessAction(urlSession_lib: UrlSession_lib, currentView: BaseViewController, json: JSON) {
-
-        if urlSession_lib == urlSessionGetClient_jsonNoticeList {
-
-            // Loading非表示
-            self.unsetLoading()
-
-            json_Data = json["notices"]
-            notice_boardTableview.reloadData()
-        }
-    }
-    override func UrlSessionBack_DataFailureAction(urlSession_lib: UrlSession_lib, statusErrCode: Int, errType: String) {
-
-        if urlSession_lib == urlSessionGetClient_jsonNoticeList {
-
-            let alert = UIAlertController(
-                title: "エラー",
-                message: "通信に失敗しました。電波条件の良い場所で再度お試しください。(エラーコード：\(statusErrCode))",
-                preferredStyle: .alert)
-
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-
-            }))
-
-            self.present(alert, animated: true, completion: nil)
-        }
-    }
-    override func UrlSessionBack_HttpFailureAction(errType: String) {
-
-        let alert = UIAlertController(
-            title: "エラー",
-            message: "通信に失敗しました。電波条件の良い場所で再度お試しください。",
-            preferredStyle: .alert)
-
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-
-        }))
-        
-        self.present(alert, animated: true, completion: nil)
-    }
 }
 
