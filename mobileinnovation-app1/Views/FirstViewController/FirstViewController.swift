@@ -18,12 +18,11 @@ class FirstViewController: BaseViewController {
     let urlSessionGetClient_apidevicetoken = UrlSession_lib()
 
     // Loading関連変数
-    var timer: Timer!
-    var loading_paternNo: Int!
-    var loading_patern:[String]!
-
-    // View
     @IBOutlet weak var lbl_Loading: LTMorphingLabel!
+    var timer_loading: Timer!
+    var int_count_paternNo_loading: Int!
+    var patern_loading:[String]!
+
     @IBOutlet weak var img_logo: UIImageView!
     @IBOutlet weak var lbl_info1: UILabel!
     @IBOutlet weak var lbl_info2: UILabel!
@@ -35,12 +34,13 @@ class FirstViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidDisappear(animated)
 
+        // 下のローディング文字
         lbl_Loading.morphingEffect = .sparkle
-        loading_paternNo = 0
-        loading_patern = ["L", "Lo", "Loa", "Load", "Loadi", "Loadin", "Loading", "Loading ", "Loading N", "Loading No", "Loading Now"]
+        int_count_paternNo_loading = 0
+        patern_loading = ["L", "Lo", "Loa", "Load", "Loadi", "Loadin", "Loading", "Loading ", "Loading N", "Loading No", "Loading Now"]
 
-        timer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
-        timer.fire()
+        timer_loading = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
+        timer_loading.fire()
 
         // DeviceToken 初期化
         self.base_config_instance.configurationSet_String(value: "", keyName: "DeviceToken")
@@ -65,10 +65,10 @@ class FirstViewController: BaseViewController {
     }
 
     func update(tm: Timer) {
-        lbl_Loading.text = loading_patern[loading_paternNo]
-        loading_paternNo = loading_paternNo + 1
-        if loading_patern.count <= loading_paternNo {
-            loading_paternNo = 0
+        lbl_Loading.text = patern_loading[int_count_paternNo_loading]
+        int_count_paternNo_loading = int_count_paternNo_loading + 1
+        if patern_loading.count <= int_count_paternNo_loading {
+            int_count_paternNo_loading = 0
         }
     }
 
@@ -134,7 +134,7 @@ class FirstViewController: BaseViewController {
         if urlSession_lib == urlSessionGetClient_apidevicetoken {
 
             // タイマーストップ
-            timer.invalidate()
+            timer_loading.invalidate()
 
             // 画面遷移
             let next = storyboard!.instantiateViewController(withIdentifier: "MainNavigation")

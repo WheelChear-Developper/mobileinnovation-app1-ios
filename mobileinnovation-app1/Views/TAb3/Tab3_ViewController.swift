@@ -9,6 +9,7 @@
 import UIKit
 import SwiftyJSON
 import NVActivityIndicatorView
+import LTMorphingLabel
 
 class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -22,8 +23,14 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var activeIndicatorView: NVActivityIndicatorView!
     @IBOutlet weak var view_loading: UIView!
 
-    // 文字１のVIEW
+    // 縦文字のVIEW
     @IBOutlet weak var view_moji1_back: UIView!
+    
+    // 文字アニメーション
+    @IBOutlet weak var lbl_animation: LTMorphingLabel!
+    var timer_lbl_animation: Timer!
+    var int_count_lbl_animation: Int!
+    var patern_lbl_animation:[String]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +44,14 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidDisappear(animated)
 
+        // 下のローディング文字
+        lbl_animation.morphingEffect = .scale
+        int_count_lbl_animation = 0
+        patern_lbl_animation = ["公式アプリをリリースしました。", "スマホアプリを開発しています。", "FacebookなどのSNSでも情報公開しています"]
+
+        timer_lbl_animation = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(self.update_lbl_animation), userInfo: nil, repeats: true)
+        timer_lbl_animation.fire()
+
         // Loading表示設定
         self.setLoading()
 
@@ -48,18 +63,36 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
         super.viewDidAppear(animated)
     }
 
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
+
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+
+        // タイマーストップ
+        timer_lbl_animation.invalidate()
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
     func setLoading() {
         view_loading.isHidden = false
-        self.view.setNeedsDisplay()
         activeIndicatorView.startAnimating()
     }
     func unsetLoading() {
         view_loading.isHidden = true
         activeIndicatorView.stopAnimating()
+    }
+
+    func update_lbl_animation(tm: Timer) {
+        lbl_animation.text = patern_lbl_animation[int_count_lbl_animation]
+        int_count_lbl_animation = int_count_lbl_animation + 1
+        if patern_lbl_animation.count <= int_count_lbl_animation {
+            int_count_lbl_animation = 0
+        }
     }
 
     ///////////////////////////////////////////////// Table Method Groupe ////////////////////////////////////////////////////////////////
