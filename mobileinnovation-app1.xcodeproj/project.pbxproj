@@ -638,15 +638,15 @@
 			isa = PBXGroup;
 			children = (
 				10AA61001F41935C00F59887 /* mobileinnovation-app1.entitlements */,
+				10BE15E11F3D9FAF0007641A /* Assets.xcassets */,
+				10BE15E31F3D9FAF0007641A /* LaunchScreen.storyboard */,
+				10BE15DE1F3D9FAF0007641A /* Main.storyboard */,
 				10BE15DA1F3D9FAF0007641A /* AppDelegate.swift */,
 				10AA60F61F4192CB00F59887 /* Controllers */,
 				10AA60F71F4192CB00F59887 /* Library */,
 				10AA60FA1F4192CB00F59887 /* Models */,
 				10AA60FB1F4192CB00F59887 /* Resource */,
 				10AA60FC1F4192CB00F59887 /* Views */,
-				10BE15DE1F3D9FAF0007641A /* Main.storyboard */,
-				10BE15E11F3D9FAF0007641A /* Assets.xcassets */,
-				10BE15E31F3D9FAF0007641A /* LaunchScreen.storyboard */,
 				10BE15E61F3D9FAF0007641A /* Info.plist */,
 				104472391F45B476006E1034 /* propaty.plist */,
 				10328EB91F46B5E6008B2B7C /* Bridght-Header.h */,

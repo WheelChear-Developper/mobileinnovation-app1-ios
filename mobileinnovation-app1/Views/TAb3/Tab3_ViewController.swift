@@ -48,8 +48,8 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
         // 文字アニメーション設定
         lbl_animation.morphingEffect = .scale
         int_count_lbl_animation = 0
-        patern_lbl_animation = ["公式アプリをリリースしました。", "スマホアプリを開発しています。", "FacebookなどのSNSでも情報公開しています"]
-        timer_lbl_animation = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(self.update_lbl_animation), userInfo: nil, repeats: true)
+        patern_lbl_animation = ["公式アプリをリリースしました", "スマホアプリを開発しています", "このアプリでもいろいろな機能をご確認下さい", "FacebookなどのSNSでも公開しています", "SNSからご相談お待ちしています"]
+        timer_lbl_animation = Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(self.update_lbl_animation), userInfo: nil, repeats: true)
         timer_lbl_animation.fire()
     }
 
@@ -110,6 +110,11 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "Tab3_TableViewCell_1") as! Tab3_TableViewCell
 
+        cell.selectionStyle = UITableViewCellSelectionStyle.none
+
+
+
+
         // セルに値を設定
         let image: String = json_Data[indexPath.row]["image"].string!
         let title: String = json_Data[indexPath.row]["title"].string!
@@ -127,6 +132,11 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
         }
         
         return cell
+    }
+
+    @objc func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+
     }
     ///////////////////////////////////////////////// Table Method Groupe ////////////////////////////////////////////////////////////////
 }
