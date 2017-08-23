@@ -96,7 +96,7 @@
             </objects>
             <point key="canvasLocation" x="70" y="122"/>
         </scene>
-        <!--Special-->
+        <!--セキュリテイー-->
         <scene sceneID="80f-Xf-TQA">
             <objects>
                 <viewController id="hkp-0D-WLg" customClass="Tab2_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
@@ -137,7 +137,7 @@
                             <constraint firstAttribute="trailing" secondItem="w1F-Dx-B7k" secondAttribute="trailing" id="xtR-lP-iJ5"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="Special" image="card4.png" id="cMj-m3-enh" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
+                    <tabBarItem key="tabBarItem" tag="1" title="セキュリテイー" image="card4.png" id="cMj-m3-enh" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
                                 <color key="value" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -166,7 +166,7 @@
             </objects>
             <point key="canvasLocation" x="3636" y="-638"/>
         </scene>
-        <!--Infomation-->
+        <!--お知らせ-->
         <scene sceneID="YSv-1R-8Eu">
             <objects>
                 <viewController id="XNy-Vg-fri" customClass="Tab1_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
@@ -207,7 +207,7 @@
                             <constraint firstAttribute="trailing" secondItem="oeY-RJ-tTW" secondAttribute="trailing" id="odb-T6-3EP"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Infomation" image="corche1.png" id="PzL-jY-Oqk" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
+                    <tabBarItem key="tabBarItem" title="お知らせ" image="corche1.png" id="PzL-jY-Oqk" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                 <color key="value" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -281,7 +281,7 @@
             </objects>
             <point key="canvasLocation" x="1126" y="123"/>
         </scene>
-        <!--Main-->
+        <!--メイン-->
         <scene sceneID="7br-tU-yeF">
             <objects>
                 <viewController id="fcc-MG-MOf" customClass="Tab3_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
@@ -600,7 +600,7 @@
                             <constraint firstItem="mog-Pp-M8s" firstAttribute="top" secondItem="d7s-F3-RF5" secondAttribute="top" constant="20" id="nig-Kd-UBU"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="2" title="Main" image="corche5.png" id="ipw-7C-WhM" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
+                    <tabBarItem key="tabBarItem" tag="2" title="メイン" image="corche5.png" id="ipw-7C-WhM" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="8"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">
@@ -725,7 +725,7 @@
             </objects>
             <point key="canvasLocation" x="4555" y="122"/>
         </scene>
-        <!--SNS-->
+        <!--情報共有-->
         <scene sceneID="9zJ-ry-PS9">
             <objects>
                 <viewController id="ExW-db-4oI" customClass="Tab4_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
@@ -766,7 +766,7 @@
                             <constraint firstItem="TTC-Qk-3EJ" firstAttribute="leading" secondItem="pzK-Ep-30F" secondAttribute="leading" id="cHl-TQ-xcc"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="3" title="SNS" image="sns2.png" id="SHE-BJ-5kS" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
+                    <tabBarItem key="tabBarItem" tag="3" title="情報共有" image="sns2.png" id="SHE-BJ-5kS" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                 <color key="value" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -795,7 +795,7 @@
             </objects>
             <point key="canvasLocation" x="3636" y="899"/>
         </scene>
-        <!--Map-->
+        <!--アプリ設定-->
         <scene sceneID="hYe-FH-JTZ">
             <objects>
                 <viewController id="Vsa-kO-G7R" customClass="Tab5_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
@@ -836,7 +836,7 @@
                             <constraint firstAttribute="trailing" secondItem="64O-Hy-baB" secondAttribute="trailing" id="zpO-Xv-MLE"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="4" title="Map" image="map2.png" id="hx2-l6-7Ul" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
+                    <tabBarItem key="tabBarItem" tag="4" title="アプリ設定" image="setting.png" id="hx2-l6-7Ul" customClass="RAMAnimatedTabBarItem" customModule="mobileinnovation_app1">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                 <color key="value" red="0.41176470590000003" green="0.80392156859999997" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -871,7 +871,7 @@
         <image name="company_icon_logo.png" width="200" height="200"/>
         <image name="corche1.png" width="30" height="30"/>
         <image name="corche5.png" width="30" height="30"/>
-        <image name="map2.png" width="30" height="30"/>
+        <image name="setting.png" width="30" height="30"/>
         <image name="sns2.png" width="30" height="30"/>
     </resources>
 </document>
