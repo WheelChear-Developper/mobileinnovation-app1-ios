@@ -46,6 +46,9 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidDisappear(animated)
 
+        // NavigationBarを非表示にしたい場合
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+
         // 文字アニメーション設定
         lbl_animation.morphingEffect = .scale
         int_count_lbl_animation = 0
@@ -113,9 +116,6 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
 
         cell.selectionStyle = UITableViewCellSelectionStyle.none
 
-
-
-
         // セルに値を設定
         let image: String = json_Data[indexPath.row]["image"].string!
         let title: String = json_Data[indexPath.row]["title"].string!
@@ -139,12 +139,9 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
 
 //        SCLAlertView().showInfo("infomation", subTitle: "subTitle")
 
-        let storyboard: UIStoryboard = self.storyboard!
-        let nextView = storyboard.instantiateViewController(withIdentifier: "Tab3_Infomation_ViewController")
-        let navi = UINavigationController(rootViewController: nextView)
-        // アニメーションの設定
-        navi.modalTransitionStyle = .crossDissolve
-        present(navi, animated: true, completion: nil)
+        // Navigation画面遷移
+        let secondViewController = Tab3_Infomation_ViewController()
+        self.navigationController?.pushViewController(secondViewController, animated: true)
     }
     ///////////////////////////////////////////////// Table Method Groupe ////////////////////////////////////////////////////////////////
 }

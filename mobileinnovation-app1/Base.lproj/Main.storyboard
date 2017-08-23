@@ -265,7 +265,7 @@
                 <navigationController storyboardIdentifier="MainNavigation" navigationBarHidden="YES" id="9ON-Qf-WyB" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ciZ-hW-9Xv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="ciZ-hW-9Xv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -640,22 +640,22 @@
             <point key="canvasLocation" x="3634.7826086956525" y="120.65217391304348"/>
         </scene>
         <!--Tab3 Infomation View Controller-->
-        <scene sceneID="bGY-KD-lUI">
+        <scene sceneID="aBr-V1-gpo">
             <objects>
-                <viewController storyboardIdentifier="Tab3_Infomation_ViewController" id="HZ1-VC-Zcj" customClass="Tab3_Infomation_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Tab3_Infomation_ViewController" id="apq-ay-i42" customClass="Tab3_Infomation_ViewController" customModule="mobileinnovation_app1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="m7Y-U9-lyV"/>
-                        <viewControllerLayoutGuide type="bottom" id="w3g-fn-yCd"/>
+                        <viewControllerLayoutGuide type="top" id="HjY-L7-Zy1"/>
+                        <viewControllerLayoutGuide type="bottom" id="P99-Eg-ff1"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="EJM-lt-TZb">
+                    <view key="view" contentMode="scaleToFill" id="Rhg-lJ-c6p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aHC-yQ-14G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U9y-xk-luf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4551" y="123"/>
+            <point key="canvasLocation" x="4555" y="122"/>
         </scene>
         <!--SNS-->
         <scene sceneID="9zJ-ry-PS9">

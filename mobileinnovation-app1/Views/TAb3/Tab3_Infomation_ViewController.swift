@@ -7,14 +7,22 @@
 //
 
 import UIKit
-import WYMaterialButton
 
 class Tab3_Infomation_ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // NavigationBarを表示したい場合
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+
+        // Controllerのタイトルを設定する.
+        self.title = "My Second View"
+
+        // Viewの背景色を定義する.
+        self.view.backgroundColor = #colorLiteral(red: 0.2549019608, green: 0.3490196078, blue: 0.5411764706, alpha: 1)
+
+
     }
 
     override func didReceiveMemoryWarning() {
