@@ -10,6 +10,10 @@ import UIKit
 
 class Tab3_Infomation_ViewController: UIViewController {
 
+    @IBOutlet weak var lbl_title: UILabel!
+    @IBOutlet weak var img_photo: AsyncImageView!
+    @IBOutlet weak var lbl_message: UILabel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,7 +21,7 @@ class Tab3_Infomation_ViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
 
         // Controllerのタイトルを設定する.
-        self.title = "My Second View"
+        self.title = "最新情報"
 
         // Viewの背景色を定義する.
         self.view.backgroundColor = #colorLiteral(red: 0.2549019608, green: 0.3490196078, blue: 0.5411764706, alpha: 1)

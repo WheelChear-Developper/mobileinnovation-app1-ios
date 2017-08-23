@@ -139,8 +139,8 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
 
 //        SCLAlertView().showInfo("infomation", subTitle: "subTitle")
 
-        // Navigation画面遷移
-        let secondViewController = Tab3_Infomation_ViewController()
+        // Navigation画面遷移infomatinSub
+        let secondViewController = storyboard!.instantiateViewController(withIdentifier: "Tab3_Infomation_ViewController")
         self.navigationController?.pushViewController(secondViewController, animated: true)
     }
     ///////////////////////////////////////////////// Table Method Groupe ////////////////////////////////////////////////////////////////
