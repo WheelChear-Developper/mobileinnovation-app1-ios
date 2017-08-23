@@ -61,6 +61,7 @@
 		101F804D1F49DE15004908DA /* sns2.png in Resources */ = {isa = PBXBuildFile; fileRef = 101F80291F49DE15004908DA /* sns2.png */; };
 		101F804E1F49DE15004908DA /* sns2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 101F802A1F49DE15004908DA /* sns2@2x.png */; };
 		101F80501F49E1EE004908DA /* animation.plist in Resources */ = {isa = PBXBuildFile; fileRef = 101F804F1F49E1EE004908DA /* animation.plist */; };
+		10221F8F1F4D7B6D009A9A31 /* Tab3_Infomation_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10221F8E1F4D7B6D009A9A31 /* Tab3_Infomation_ViewController.swift */; };
 		10328EB11F469801008B2B7C /* map2.png in Resources */ = {isa = PBXBuildFile; fileRef = 10328EA71F469801008B2B7C /* map2.png */; };
 		10328EB21F469801008B2B7C /* map2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10328EA81F469801008B2B7C /* map2@2x.png */; };
 		10328EC51F46BE78008B2B7C /* Typodermic - NasalizationRg-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 10328EC01F46BD7B008B2B7C /* Typodermic - NasalizationRg-Regular.otf */; };
@@ -188,6 +189,7 @@
 		101F80291F49DE15004908DA /* sns2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sns2.png; sourceTree = "<group>"; };
 		101F802A1F49DE15004908DA /* sns2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sns2@2x.png"; sourceTree = "<group>"; };
 		101F804F1F49E1EE004908DA /* animation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = animation.plist; sourceTree = "<group>"; };
+		10221F8E1F4D7B6D009A9A31 /* Tab3_Infomation_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab3_Infomation_ViewController.swift; sourceTree = "<group>"; };
 		10328EA71F469801008B2B7C /* map2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map2.png; sourceTree = "<group>"; };
 		10328EA81F469801008B2B7C /* map2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map2@2x.png"; sourceTree = "<group>"; };
 		10328EB91F46B5E6008B2B7C /* Bridght-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridght-Header.h"; sourceTree = "<group>"; };
@@ -308,6 +310,7 @@
 			children = (
 				100F83E71F4AF87800F686E8 /* Tab3_ViewController.swift */,
 				100F83F61F4AF9A500F686E8 /* Tab3_TableViewCell.swift */,
+				10221F8E1F4D7B6D009A9A31 /* Tab3_Infomation_ViewController.swift */,
 			);
 			path = TAb3;
 			sourceTree = "<group>";
@@ -969,6 +972,7 @@
 				"${BUILT_PRODUCTS_DIR}/CircularSpinner/CircularSpinner.framework",
 				"${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -976,6 +980,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CircularSpinner.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTMorphingLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1066,6 +1071,7 @@
 				"${BUILT_PRODUCTS_DIR}/CircularSpinner/CircularSpinner.framework",
 				"${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1073,6 +1079,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CircularSpinner.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTMorphingLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1090,6 +1097,7 @@
 				"${BUILT_PRODUCTS_DIR}/CircularSpinner/CircularSpinner.framework",
 				"${BUILT_PRODUCTS_DIR}/LTMorphingLabel/LTMorphingLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -1097,6 +1105,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CircularSpinner.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LTMorphingLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1127,6 +1136,7 @@
 				100F83ED1F4AF87800F686E8 /* Tab2_ViewController.swift in Sources */,
 				10AA61041F419D9600F59887 /* Configuration.swift in Sources */,
 				10AB54971F4C4C4300F68427 /* HttpRequestController.swift in Sources */,
+				10221F8F1F4D7B6D009A9A31 /* Tab3_Infomation_ViewController.swift in Sources */,
 				10BE15DB1F3D9FAF0007641A /* AppDelegate.swift in Sources */,
 				103424A51F47E45900AD45BF /* RAMFrameItemAnimation.swift in Sources */,
 				100F83F01F4AF87800F686E8 /* Tab5_ViewController.swift in Sources */,

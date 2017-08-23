@@ -7,7 +7,8 @@ target 'mobileinnovation-app1' do
     pod 'CircularSpinner'
     pod 'NVActivityIndicatorView'
     pod 'LTMorphingLabel', :git => 'https://github.com/lexrus/LTMorphingLabel.git', :branch => 'swift3'
-    pod 'WYMaterialButton'
+    pod 'SCLAlertView'
+
     pod 'DeployGateSDK'
 
 
@@ -18,6 +19,7 @@ target 'mobileinnovation-app1Tests' do
     pod 'CircularSpinner'
     pod 'NVActivityIndicatorView'
     pod 'LTMorphingLabel', :git => 'https://github.com/lexrus/LTMorphingLabel.git', :branch => 'swift3'
+    pod 'SCLAlertView'
 
     pod 'DeployGateSDK'
 
@@ -29,10 +31,9 @@ target 'mobileinnovation-app1UITests' do
     pod 'CircularSpinner'
     pod 'NVActivityIndicatorView'
     pod 'LTMorphingLabel', :git => 'https://github.com/lexrus/LTMorphingLabel.git', :branch => 'swift3'
+    pod 'SCLAlertView'
 
     pod 'DeployGateSDK'
 
 
 end
-/Users/amatani/Desktop/EHFAuthenticator-Touch-ID-master
-/Users/amatani/Desktop/EHFAuthenticator-Touch-ID-master.zip

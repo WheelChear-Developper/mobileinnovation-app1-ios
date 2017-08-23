@@ -11,6 +11,7 @@ import SwiftyJSON
 import NVActivityIndicatorView
 import LTMorphingLabel
 import CircularSpinner
+import SCLAlertView
 
 class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -136,7 +137,14 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
 
     @objc func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
+//        SCLAlertView().showInfo("infomation", subTitle: "subTitle")
 
+        let storyboard: UIStoryboard = self.storyboard!
+        let nextView = storyboard.instantiateViewController(withIdentifier: "Tab3_Infomation_ViewController")
+        let navi = UINavigationController(rootViewController: nextView)
+        // アニメーションの設定
+        navi.modalTransitionStyle = .crossDissolve
+        present(navi, animated: true, completion: nil)
     }
     ///////////////////////////////////////////////// Table Method Groupe ////////////////////////////////////////////////////////////////
 }
