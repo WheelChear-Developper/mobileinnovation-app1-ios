@@ -35,17 +35,41 @@ class Tab3_Infomation_ViewController: UIViewController {
 
         if para_str_image != "" {
 
-            self.img_photo.loadImage(urlString: HttpRequestController().getDomain() + "/static/notice_board/images/" + para_str_image)
+            let req = URLRequest(url: NSURL(string:HttpRequestController().getDomain() + "/static/notice_board/images/" + para_str_image)! as URL,
+                                 cachePolicy: .returnCacheDataElseLoad,
+                                 timeoutInterval: 5 * 60);
+            let conf =  URLSessionConfiguration.default;
+            let session = URLSession(configuration: conf, delegate: nil, delegateQueue: OperationQueue.main);
+
+            session.dataTask(with: req, completionHandler:
+                { (data, resp, err) in
+                    if((err) == nil){ //Success
+                        let image = UIImage(data:data!)
+                        self.img_photo.image = image;
+
+                        let constraint = NSLayoutConstraint(
+                            item: self.img_photo,
+                            attribute:NSLayoutAttribute.height,
+                            relatedBy:NSLayoutRelation.equal,
+                            toItem: self.img_photo,
+                            attribute: NSLayoutAttribute.width,
+                            multiplier: (image?.size.height)! / (image?.size.width)!,
+                            constant:0)
+
+                        NSLayoutConstraint.activate([constraint])
+
+                    }else{ //Error
+                        print("AsyncImageView:Error \(String(describing: err?.localizedDescription))");
+                    }
+            }).resume();
+
         }else{
 
             self.img_photo.image = UIImage(named:"company_icon_logo.png")!
         }
-
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-
-
 }

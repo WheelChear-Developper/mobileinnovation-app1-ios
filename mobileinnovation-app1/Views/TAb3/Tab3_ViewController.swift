@@ -127,12 +127,38 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
         cell.image_photo.image = nil
         if image != "" {
 
-            cell.image_photo.loadImage(urlString: HttpRequestController().getDomain() + "/static/notice_board/images/" + image)
-        }else{
+            let req = URLRequest(url: NSURL(string:HttpRequestController().getDomain() + "/static/notice_board/images/" + image)! as URL,
+                                 cachePolicy: .returnCacheDataElseLoad,
+                                 timeoutInterval: 5 * 60);
+            let conf =  URLSessionConfiguration.default;
+            let session = URLSession(configuration: conf, delegate: nil, delegateQueue: OperationQueue.main);
 
+            session.dataTask(with: req, completionHandler:
+                { (data, resp, err) in
+                    if((err) == nil){ //Success
+                        let image = UIImage(data:data!)
+                        cell.image_photo.image = image;
+
+                        let constraint = NSLayoutConstraint(
+                            item: cell.image_photo,
+                            attribute:NSLayoutAttribute.height,
+                            relatedBy:NSLayoutRelation.equal,
+                            toItem: cell.image_photo,
+                            attribute: NSLayoutAttribute.width,
+                            multiplier: (image?.size.height)! / (image?.size.width)!,
+                            constant:0)
+
+                        NSLayoutConstraint.activate([constraint])
+
+                    }else{ //Error
+                        print("AsyncImageView:Error \(String(describing: err?.localizedDescription))");
+                    }
+            }).resume();
+            
+        }else{
+            
             cell.image_photo.image = UIImage(named:"company_icon_logo.png")!
         }
-        
         return cell
     }
 
