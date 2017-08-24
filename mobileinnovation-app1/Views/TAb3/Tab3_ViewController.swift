@@ -20,6 +20,7 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
 
     @IBOutlet weak var notice_boardTableview: UITableView!
     var json_Data: JSON = []
+    var int_notice_boardTableRow: Int!
 
     // 縦文字のVIEW
     @IBOutlet weak var view_moji1_back: UIView!
@@ -61,13 +62,13 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
         super.viewDidAppear(animated)
 
         // Loading表示設定
-        CircularSpinner.show("Loading...", animated: true, type: .indeterminate)
+//        CircularSpinner.show("Loading...", animated: true, type: .indeterminate)
 
         // API_最新情報取得
         self.getNotice_list()
 
         // Loading非表示
-        CircularSpinner.hide()
+//        CircularSpinner.hide()
 
         // Tableview更新
         self.notice_boardTableview.reloadData()
@@ -139,10 +140,22 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
 
 //        SCLAlertView().showInfo("infomation", subTitle: "subTitle")
 
-        // Navigation画面遷移infomatinSub
-        let secondViewController = storyboard!.instantiateViewController(withIdentifier: "Tab3_Infomation_ViewController")
-        self.navigationController?.pushViewController(secondViewController, animated: true)
+        // 行設定
+        int_notice_boardTableRow = indexPath.row
+
+        performSegue(withIdentifier: "infomatinSub",sender: nil)
     }
     ///////////////////////////////////////////////// Table Method Groupe ////////////////////////////////////////////////////////////////
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        if segue.identifier == "infomatinSub" {
+
+            let infomation = segue.destination as! Tab3_Infomation_ViewController
+            infomation.para_str_image = json_Data[int_notice_boardTableRow]["image"].string!
+            infomation.para_str_title = json_Data[int_notice_boardTableRow]["title"].string!
+            infomation.para_str_message = json_Data[int_notice_boardTableRow]["message"].string!
+        }
+    }
 }
 

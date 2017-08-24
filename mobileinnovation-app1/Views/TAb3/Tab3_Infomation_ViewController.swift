@@ -10,9 +10,13 @@ import UIKit
 
 class Tab3_Infomation_ViewController: UIViewController {
 
-    @IBOutlet weak var lbl_title: UILabel!
     @IBOutlet weak var img_photo: AsyncImageView!
+    @IBOutlet weak var lbl_title: UILabel!
     @IBOutlet weak var lbl_message: UILabel!
+
+    var para_str_image: String!
+    var para_str_title: String!
+    var para_str_message: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,23 +30,22 @@ class Tab3_Infomation_ViewController: UIViewController {
         // Viewの背景色を定義する.
         self.view.backgroundColor = #colorLiteral(red: 0.2549019608, green: 0.3490196078, blue: 0.5411764706, alpha: 1)
 
+        self.lbl_title.text = para_str_title
+        self.lbl_message.text = para_str_message
+
+        if para_str_image != "" {
+
+            self.img_photo.loadImage(urlString: HttpRequestController().getDomain() + "/static/notice_board/images/" + para_str_image)
+        }else{
+
+            self.img_photo.image = UIImage(named:"company_icon_logo.png")!
+        }
 
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
