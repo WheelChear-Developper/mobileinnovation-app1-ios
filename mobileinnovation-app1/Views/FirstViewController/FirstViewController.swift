@@ -79,26 +79,8 @@ class FirstViewController: BaseViewController {
         let dictionary = NSDictionary(contentsOfFile: path!)
         let appCode: AnyObject = dictionary?.object(forKey: "APP_CODE") as AnyObject
 
-        // POST
-        let urlString: String = HttpRequestController().getDomain() + "/api/apikey_get"
-        let post: String = "app_code=" + (appCode as! String)
-        let parsedData: JSON = HttpRequestController().sendPostRequestSynchronous(urlString: urlString, post: post)
-        print(parsedData)
-
-        // ApiKey ローカル保存
-        let dic = parsedData["apikey"].string
-        self.base_config_instance.configurationSet_String(value: dic!, keyName: "ApiKey")
-        print("apikey = " + self.base_config_instance.configurationGet_String(keyName: "ApiKey"))
-
-        // DeviceTokenチェック
-        while true {
-            if self.base_config_instance.configurationGet_String(keyName: "DeviceToken") != "" {
-                break
-            }
-        }
-
-        // DeviceToken登録
-        self.setApi_devicetoken()
+        // APIKEY取得
+        urlSessionGetClient_apikeyget.post(urlSession_lib: urlSessionGetClient_apikeyget, currentView: self, url: "/api/apikey_get", parameters: ["app_code": appCode])
     }
 
     func setApi_devicetoken() {
@@ -109,23 +91,13 @@ class FirstViewController: BaseViewController {
         let appCode: AnyObject = dictionary?.object(forKey: "APP_CODE") as AnyObject
 
         // POST
-        let urlString: String = HttpRequestController().getDomain() + "/api/notification/token_post"
         #if DEBUG
             // APIKEY取得
-            let post: String = "app_code=" + (appCode as! String) + "&device_token=" + self.base_config_instance.configurationGet_String(keyName: "DeviceToken") + "&device_type=" + "iOS_Staging"
+            urlSessionGetClient_apidevicetoken.post(urlSession_lib: urlSessionGetClient_apidevicetoken, currentView: self, url: "/api/notification/token_post", parameters: ["app_code": appCode, "device_token": self.base_config_instance.configurationGet_String(keyName: "DeviceToken"), "device_type": "iOS_Staging"])
         #else
             // APIKEY取得
-            let post: String = "app_code=" + (appCode as! String) + "&device_token=" + self.base_config_instance.configurationGet_String(keyName: "DeviceToken") + "&device_type=" + "iOS"
+            urlSessionGetClient_apidevicetoken.post(urlSession_lib: urlSessionGetClient_apidevicetoken, currentView: self, url: "/api/notification/token_post", parameters: ["app_code": appCode, "device_token": self.base_config_instance.configurationGet_String(keyName: "DeviceToken"), "device_type": "iOS"])
         #endif
-        let parsedData: JSON = HttpRequestController().sendPostRequestSynchronous(urlString: urlString, post: post)
-        print(parsedData)
-
-        // タイマーストップ
-        timer_loading.invalidate()
-
-        // 画面遷移
-        let next = storyboard!.instantiateViewController(withIdentifier: "MainNavigation")
-        self.present(next,animated: true, completion: nil)
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -135,4 +107,69 @@ class FirstViewController: BaseViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+
+
+    // UrlSession_lib processing
+    override func UrlSessionBack_SuccessAction(urlSession_lib: UrlSession_lib, json: JSON) {
+
+        if urlSession_lib == urlSessionGetClient_apikeyget {
+
+            // ApiKey ローカル保存
+            let dic = json["apikey"].string
+            self.base_config_instance.configurationSet_String(value: dic!, keyName: "ApiKey")
+            print("apikey = " + self.base_config_instance.configurationGet_String(keyName: "ApiKey"))
+
+            // DeviceTokenチェック
+            while true {
+                if self.base_config_instance.configurationGet_String(keyName: "DeviceToken") != "" {
+                    break
+                }
+            }
+
+            // DeviceToken登録
+            self.setApi_devicetoken()
+        }
+
+        if urlSession_lib == urlSessionGetClient_apidevicetoken {
+
+            // タイマーストップ
+            timer_loading.invalidate()
+
+            // 画面遷移
+            let next = storyboard!.instantiateViewController(withIdentifier: "MainNavigation")
+            self.present(next,animated: true, completion: nil)
+        }
+    }
+    override func UrlSessionBack_DataFailureAction(urlSession_lib: UrlSession_lib, statusErrCode: Int, errType: String) {
+
+        if urlSession_lib == urlSessionGetClient_apikeyget {
+
+            let alert = UIAlertController(
+                title: "エラー",
+                message: "通信に失敗しました。電波条件の良い場所で再度お試しください。(エラーコード：\(statusErrCode))",
+                preferredStyle: .alert)
+
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                //APIKEY取得
+                self.getApi_akikey()
+            }))
+
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    override func UrlSessionBack_HttpFailureAction(errType: String) {
+
+        let alert = UIAlertController(
+            title: "エラー",
+            message: "通信に失敗しました。電波条件の良い場所で再度お試しください。",
+            preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            //APIKEY取得
+            self.getApi_akikey()
+        }))
+
+        self.present(alert, animated: true, completion: nil)
+    }
+
 }

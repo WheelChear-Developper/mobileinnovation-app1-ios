@@ -91,10 +91,9 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
 
     // API_最新情報取得
     func getNotice_list() {
-        let urlString: String = HttpRequestController().getDomain() + "/api/json_notice_list/"
-        let parsedData: JSON = HttpRequestController().sendGetRequestSynchronous(urlString: urlString)
-        print(parsedData)
-        self.json_Data = parsedData["notices"]
+
+        urlSessionGetClient_jsonNoticeList.get(urlSession_lib: urlSessionGetClient_jsonNoticeList, currentView: self, url: "/api/json_notice_list/")
+        
     }
 
     // 文字アニメーション用タイマーセレクター
@@ -171,6 +170,51 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
             infomation.para_str_title = json_Data[int_notice_boardTableRow]["title"].string!
             infomation.para_str_message = json_Data[int_notice_boardTableRow]["message"].string!
         }
+    }
+
+
+    // UrlSession_lib processing
+    override func UrlSessionBack_SuccessAction(urlSession_lib: UrlSession_lib, json: JSON) {
+
+        if urlSession_lib == urlSessionGetClient_jsonNoticeList {
+
+            self.json_Data = json["notices"]
+
+            // APIからの遅延処理
+            DispatchQueue.main.async(execute: {
+
+                self.notice_boardTableview.reloadData()
+            })
+        }
+    }
+    override func UrlSessionBack_DataFailureAction(urlSession_lib: UrlSession_lib, statusErrCode: Int, errType: String) {
+
+        if urlSession_lib == urlSessionGetClient_jsonNoticeList {
+
+            let alert = UIAlertController(
+                title: "エラー",
+                message: "通信に失敗しました。電波条件の良い場所で再度お試しください。(エラーコード：\(statusErrCode))",
+                preferredStyle: .alert)
+
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+
+            }))
+
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    override func UrlSessionBack_HttpFailureAction(errType: String) {
+
+        let alert = UIAlertController(
+            title: "エラー",
+            message: "通信に失敗しました。電波条件の良い場所で再度お試しください。",
+            preferredStyle: .alert)
+
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+
+        }))
+
+        self.present(alert, animated: true, completion: nil)
     }
 }
 

@@ -1,6 +1,11 @@
 import UIKit
 import SwiftyJSON
 
+protocol HttpRequestControllerDelegate {
+    func HttpRequestSessionBack_DataFailureAction(httpRequestController: HttpRequestController, error: Error)
+    func HttpRequestSessionBack_HttpFailureAction(errType: String)
+}
+
 /**
  //GETリクエストを非同期で送信
  let urlString: String = "https://proport.me?tomo=1&age=12"
@@ -35,6 +40,7 @@ import SwiftyJSON
 
 class HttpRequestController {
     let condition = NSCondition()
+    var httpRequestControllerDelegate:HttpRequestControllerDelegate?
 
     func getDomain() -> String {
 
@@ -58,7 +64,7 @@ class HttpRequestController {
          - urlString: String型のURL
          - funcs: 非同期で処置が完了した後に実行される関数
      */
-    func sendGetRequestAsynchronous(urlString: String, funcs: @escaping (JSON) -> Void){
+    func sendGetRequestAsynchronous(httpRequestController: HttpRequestController, urlString: String, funcs: @escaping (JSON) -> Void){
         var parsedData: JSON = [:]
         var encURL: NSURL = NSURL()
         encURL = NSURL(string:urlString.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!)!
@@ -84,7 +90,7 @@ class HttpRequestController {
      - Parameter urlString: String型のURL
      - Returns: String型のキーと、Any型の値を持ったDictionary型
      */
-    func sendGetRequestSynchronous(urlString: String) -> JSON{
+    func sendGetRequestSynchronous(httpRequestController: HttpRequestController, urlString: String) -> JSON{
         var parsedData: JSON = [:]
         var encURL: NSURL = NSURL()
         encURL = NSURL(string:urlString.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!)!
@@ -95,6 +101,8 @@ class HttpRequestController {
             
             if error == nil {
                 parsedData = JSON(data!)
+            }else{
+                self.httpRequestControllerDelegate?.HttpRequestSessionBack_DataFailureAction(httpRequestController: httpRequestController, error: error!)
             }
             
             self.condition.signal()
@@ -116,7 +124,7 @@ class HttpRequestController {
          - post: String型のpost情報(key=value&key2=value2のように指定する)
          - funcs: 非同期で処置が完了した後に実行される関数
      */
-    func sendPostRequestAsynchronous(urlString: String, post: String, funcs: @escaping (JSON) -> Void){
+    func sendPostRequestAsynchronous(httpRequestController: HttpRequestController, urlString: String, post: String, funcs: @escaping (JSON) -> Void){
         var parsedData: JSON = [:]
         var encURL: NSURL = NSURL()
         encURL = NSURL(string:urlString.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!)!
@@ -128,7 +136,10 @@ class HttpRequestController {
             
             if error == nil {
                 parsedData = JSON(data!)
+            }else{
+                self.httpRequestControllerDelegate?.HttpRequestSessionBack_DataFailureAction(httpRequestController: httpRequestController, error: error!)
             }
+
             funcs(parsedData)
         }
         task.resume()
@@ -143,7 +154,7 @@ class HttpRequestController {
      
      - Returns: String型のキーと、Any型の値を持ったDictionary型
      */
-    func sendPostRequestSynchronous(urlString: String, post: String) -> JSON{
+    func sendPostRequestSynchronous(httpRequestController: HttpRequestController, urlString: String, post: String) -> JSON{
         var parsedData: JSON = [:]
         var encURL: NSURL = NSURL()
         encURL = NSURL(string:urlString.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!)!
@@ -152,9 +163,11 @@ class HttpRequestController {
         r.httpBody = post.data(using: String.Encoding.utf8)
         
         let task = URLSession.shared.dataTask(with: r) { (data, response, error) in
-            
+
             if error == nil {
                 parsedData = JSON(data!)
+            }else{
+                self.httpRequestControllerDelegate?.HttpRequestSessionBack_DataFailureAction(httpRequestController: httpRequestController, error: error!)
             }
             
             self.condition.signal()

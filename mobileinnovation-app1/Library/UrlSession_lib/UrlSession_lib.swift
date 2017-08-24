@@ -10,7 +10,7 @@ import Foundation
 import SwiftyJSON
 
 protocol UrlSession_libDelegate {
-    func UrlSessionBack_SuccessAction(urlSession_lib: UrlSession_lib, currentView: BaseViewController, json: JSON)
+    func UrlSessionBack_SuccessAction(urlSession_lib: UrlSession_lib, json: JSON)
     func UrlSessionBack_DataFailureAction(urlSession_lib: UrlSession_lib, statusErrCode: Int, errType: String)
     func UrlSessionBack_HttpFailureAction(errType: String)
 }
@@ -66,14 +66,22 @@ class UrlSession_lib:NSObject {
         let session = URLSession(configuration: config, delegate: self as? URLSessionDelegate, delegateQueue: OperationQueue())
 
         let task = session.dataTask(with: url!) { (data: Data?, response: URLResponse?, error: Error?) in
-            if let data = data, let response = response {
+            if let _ = response, let data = data {
+
+                do {
+                    let jsonDic = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as! NSDictionary
+                    print(jsonDic)
+                } catch {
+                    self.urlSession_libDelegate?.UrlSessionBack_HttpFailureAction(errType: "Internet Error")
+                }
+
                 //print(response)
                 let statusCode: Int = (response as! HTTPURLResponse).statusCode
                 print("HttpStatusCode : \(statusCode)")
                 if statusCode == 200 {
                     let json = JSON(data: data)
                     print("\(json)")
-                    self.urlSession_libDelegate?.UrlSessionBack_SuccessAction(urlSession_lib: urlSession_lib, currentView: currentView, json: json)
+                    self.urlSession_libDelegate?.UrlSessionBack_SuccessAction(urlSession_lib: urlSession_lib, json: json)
                 }else{
                     self.urlSession_libDelegate?.UrlSessionBack_DataFailureAction(urlSession_lib: urlSession_lib, statusErrCode: statusCode, errType: "Serialize Error")
                 }
@@ -138,14 +146,22 @@ class UrlSession_lib:NSObject {
         let session = URLSession(configuration: config, delegate: self as? URLSessionDelegate, delegateQueue: OperationQueue())
 
         let task = session.dataTask(with: request) { (data: Data?, response: URLResponse?, error: Error?) in
-            if let data = data, let response = response {
+            if let _ = response, let data = data {
+
+                do {
+                    let jsonDic = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as! NSDictionary
+                    print(jsonDic)
+                } catch {
+                    self.urlSession_libDelegate?.UrlSessionBack_HttpFailureAction(errType: "Internet Error")
+                }
+                
                 //print(response)
                 let statusCode = (response as! HTTPURLResponse).statusCode
                 print("HttpStatusCode : \(statusCode)")
                 if statusCode == 200 {
                     let json = JSON(data: data)
                     print("\(json)")
-                    self.urlSession_libDelegate?.UrlSessionBack_SuccessAction(urlSession_lib: urlSession_lib, currentView: currentView, json: json)
+                    self.urlSession_libDelegate?.UrlSessionBack_SuccessAction(urlSession_lib: urlSession_lib, json: json)
                 }else{
                     self.urlSession_libDelegate?.UrlSessionBack_DataFailureAction(urlSession_lib: urlSession_lib, statusErrCode: statusCode, errType: "Serialize Error")
                 }
