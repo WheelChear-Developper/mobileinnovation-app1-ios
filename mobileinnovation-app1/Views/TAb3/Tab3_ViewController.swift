@@ -139,17 +139,6 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
                         let image = UIImage(data:data!)
                         cell.image_photo.image = image;
 
-                        let constraint = NSLayoutConstraint(
-                            item: cell.image_photo,
-                            attribute:NSLayoutAttribute.height,
-                            relatedBy:NSLayoutRelation.equal,
-                            toItem: cell.image_photo,
-                            attribute: NSLayoutAttribute.width,
-                            multiplier: (image?.size.height)! / (image?.size.width)!,
-                            constant:0)
-
-                        NSLayoutConstraint.activate([constraint])
-
                     }else{ //Error
                         print("AsyncImageView:Error \(String(describing: err?.localizedDescription))");
                     }
