@@ -35,7 +35,7 @@ class Tab3_Infomation_ViewController: UIViewController {
 
         if para_str_image != "" {
 
-            let req = URLRequest(url: NSURL(string:HttpRequestController().getDomain() + "/static/notice_board/images/" + para_str_image)! as URL,
+            let req = URLRequest(url: NSURL(string:UrlSession_lib().getDomain() + "/static/notice_board/images/" + para_str_image)! as URL,
                                  cachePolicy: .returnCacheDataElseLoad,
                                  timeoutInterval: 5 * 60);
             let conf =  URLSessionConfiguration.default;

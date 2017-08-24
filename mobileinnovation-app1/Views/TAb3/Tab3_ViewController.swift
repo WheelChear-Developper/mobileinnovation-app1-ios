@@ -126,7 +126,7 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
         cell.image_photo.image = nil
         if image != "" {
 
-            let req = URLRequest(url: NSURL(string:HttpRequestController().getDomain() + "/static/notice_board/images/" + image)! as URL,
+            let req = URLRequest(url: NSURL(string:UrlSession_lib().getDomain() + "/static/notice_board/images/" + image)! as URL,
                                  cachePolicy: .returnCacheDataElseLoad,
                                  timeoutInterval: 5 * 60);
             let conf =  URLSessionConfiguration.default;

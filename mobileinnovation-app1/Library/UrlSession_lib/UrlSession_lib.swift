@@ -22,6 +22,22 @@ class UrlSession_lib:NSObject {
 
     var urlSession_libDelegate:UrlSession_libDelegate?
 
+    func getDomain() -> String {
+
+        let path = Bundle.main.path(forResource: "propaty", ofType: "plist")
+        let dictionary = NSDictionary(contentsOfFile: path!)
+        #if DEBUG
+            // 本体のAPP_CODE取得
+            let domainName: AnyObject = dictionary?.object(forKey: "DomainName_Staging") as AnyObject
+        #else
+            // 本体のAPP_CODE取得
+            let domainName: AnyObject = dictionary?.object(forKey: "DomainName_Production") as AnyObject
+        #endif
+
+        return domainName as! String
+    }
+
+
     func get(urlSession_lib: UrlSession_lib, currentView: BaseViewController, url urlString: String, queryItems: [URLQueryItem]? = nil) {
 
         // 通信状態確認
