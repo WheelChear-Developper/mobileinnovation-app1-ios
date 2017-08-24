@@ -29,7 +29,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Zv-aD-ofE" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
-                                <rect key="frame" x="25" y="705" width="364" height="21"/>
+                                <rect key="frame" x="25" y="704" width="364" height="22"/>
                                 <fontDescription key="fontDescription" name="NasalizationRg-Regular" family="Nasalization" pointSize="18"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -622,7 +622,8 @@
                         <outlet property="lbl_animation" destination="gx2-j4-Dm1" id="oPg-CM-ABL"/>
                         <outlet property="notice_boardTableview" destination="3hk-b1-Buh" id="SRz-fj-44s"/>
                         <outlet property="view_moji1_back" destination="oEP-8i-WWY" id="CqS-mg-Trc"/>
-                        <segue destination="apq-ay-i42" kind="push" identifier="infomatinSub" id="HFC-vO-q3E"/>
+                        <outlet property="view_moji2_back" destination="Txb-dI-2oQ" id="Xiv-KZ-iaa"/>
+                        <segue destination="apq-ay-i42" kind="show" identifier="infomatinSub" id="HFC-vO-q3E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NMh-HB-gqB" userLabel="First Responder" sceneMemberID="firstResponder"/>

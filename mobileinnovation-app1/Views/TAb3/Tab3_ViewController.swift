@@ -24,6 +24,7 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
 
     // 縦文字のVIEW
     @IBOutlet weak var view_moji1_back: UIView!
+    @IBOutlet weak var view_moji2_back: UIView!
     
     // 文字アニメーション
     @IBOutlet weak var lbl_animation: LTMorphingLabel!
@@ -39,6 +40,7 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
 
         // 縦文字の背景設定
         view_moji1_back.backgroundColor = UIColor(patternImage: UIImage(named: "back1.png")!)
+        view_moji2_back.backgroundColor = UIColor(patternImage: UIImage(named: "back2.png")!)
 
         // TableviewCell設定
         notice_boardTableview.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
