@@ -11,6 +11,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="DroidSansJapanese.ttf">
+            <string>DroidSansJapanese</string>
+        </array>
         <array key="Typodermic - NasalizationRg-Regular.otf">
             <string>NasalizationRg-Regular</string>
         </array>
@@ -265,7 +268,7 @@
                 <navigationController storyboardIdentifier="MainNavigation" navigationBarHidden="YES" id="9ON-Qf-WyB" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="ciZ-hW-9Xv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="ciZ-hW-9Xv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -380,7 +383,7 @@
                                                                                             <constraints>
                                                                                                 <constraint firstAttribute="height" constant="12" id="pHd-Ws-SPl"/>
                                                                                             </constraints>
-                                                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="14"/>
+                                                                                            <fontDescription key="fontDescription" name="DroidSansJapanese" family="Droid Sans Japanese" pointSize="14"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
                                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1cz-uB-PmH">
@@ -396,8 +399,8 @@
                                                                                             </userDefinedRuntimeAttributes>
                                                                                         </view>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="none" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="3pT-rH-6hJ">
-                                                                                            <rect key="frame" x="65" y="32" width="211" height="12"/>
-                                                                                            <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="12"/>
+                                                                                            <rect key="frame" x="65" y="32" width="211" height="16"/>
+                                                                                            <fontDescription key="fontDescription" name="DroidSansJapanese" family="Droid Sans Japanese" pointSize="12"/>
                                                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
@@ -660,21 +663,21 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="666"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cae-y9-DHF">
-                                                <rect key="frame" x="20" y="15" width="374" height="32"/>
+                                                <rect key="frame" x="20" y="15" width="374" height="31"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsj-kW-9tQ">
-                                                        <rect key="frame" x="8" y="8" width="358" height="16"/>
-                                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsj-kW-9tQ">
+                                                        <rect key="frame" x="5" y="5" width="364" height="21"/>
+                                                        <fontDescription key="fontDescription" name="DroidSansJapanese" family="Droid Sans Japanese" pointSize="16"/>
                                                         <color key="textColor" red="0.039215686274509803" green="0.039215686274509803" blue="0.039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="fsj-kW-9tQ" firstAttribute="leading" secondItem="cae-y9-DHF" secondAttribute="leading" constant="8" id="d09-Sy-CDo"/>
-                                                    <constraint firstItem="fsj-kW-9tQ" firstAttribute="top" secondItem="cae-y9-DHF" secondAttribute="top" constant="8" id="tFs-KH-voi"/>
-                                                    <constraint firstAttribute="trailing" secondItem="fsj-kW-9tQ" secondAttribute="trailing" constant="8" id="uUj-P8-Xts"/>
-                                                    <constraint firstAttribute="bottom" secondItem="fsj-kW-9tQ" secondAttribute="bottom" constant="8" id="uls-ZH-qXM"/>
+                                                    <constraint firstItem="fsj-kW-9tQ" firstAttribute="leading" secondItem="cae-y9-DHF" secondAttribute="leading" constant="5" id="d09-Sy-CDo"/>
+                                                    <constraint firstItem="fsj-kW-9tQ" firstAttribute="top" secondItem="cae-y9-DHF" secondAttribute="top" constant="5" id="tFs-KH-voi"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fsj-kW-9tQ" secondAttribute="trailing" constant="5" id="uUj-P8-Xts"/>
+                                                    <constraint firstAttribute="bottom" secondItem="fsj-kW-9tQ" secondAttribute="bottom" constant="5" id="uls-ZH-qXM"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -683,10 +686,10 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H6G-1q-PNg">
-                                                <rect key="frame" x="20" y="52" width="374" height="405"/>
+                                                <rect key="frame" x="20" y="51" width="374" height="410"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3b-VL-WXU">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="405"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="410"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wiS-a0-w2V">
                                                                 <rect key="frame" x="15" y="15" width="344" height="344"/>
@@ -696,12 +699,12 @@
                                                                 </constraints>
                                                             </imageView>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RQu-Lb-sVR">
-                                                                <rect key="frame" x="10" y="369" width="354" height="26"/>
+                                                                <rect key="frame" x="10" y="369" width="354" height="31"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="enW-lQ-CC5">
-                                                                        <rect key="frame" x="5" y="5" width="344" height="16"/>
-                                                                        <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="16"/>
-                                                                        <color key="textColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="none" minimumFontSize="8" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="enW-lQ-CC5">
+                                                                        <rect key="frame" x="5" y="5" width="344" height="21"/>
+                                                                        <fontDescription key="fontDescription" name="DroidSansJapanese" family="Droid Sans Japanese" pointSize="16"/>
+                                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
