@@ -94,7 +94,7 @@ class Tab3_ViewController: BaseViewController, UITableViewDelegate, UITableViewD
     // API_最新情報取得
     func getNotice_list() {
 
-        urlSessionGetClient_jsonNoticeList.get(urlSession_lib: urlSessionGetClient_jsonNoticeList, currentView: self, url: "/api/json_notice_list/")
+        urlSessionGetClient_jsonNoticeList.get(urlSession_lib: urlSessionGetClient_jsonNoticeList, currentView: self, url: "/api/json_latestinformationmessage_list/")
         
     }
 
