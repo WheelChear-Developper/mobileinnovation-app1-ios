@@ -117,6 +117,7 @@
 		10BE15E51F3D9FAF0007641A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10BE15E31F3D9FAF0007641A /* LaunchScreen.storyboard */; };
 		10BE15F01F3D9FAF0007641A /* mobileinnovation_app1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BE15EF1F3D9FAF0007641A /* mobileinnovation_app1Tests.swift */; };
 		10BE15FB1F3D9FAF0007641A /* mobileinnovation_app1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BE15FA1F3D9FAF0007641A /* mobileinnovation_app1UITests.swift */; };
+		10F4178D1F5083400085A099 /* Tab5_FingerprintAuthentication_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F4178C1F5083400085A099 /* Tab5_FingerprintAuthentication_TableViewCell.swift */; };
 		340688C4D4836A00392CC0E1 /* Pods_mobileinnovation_app1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4016FE3E887F55A00E0D7A6 /* Pods_mobileinnovation_app1.framework */; };
 		98D58D4F9AE10687A18DF74E /* Pods_mobileinnovation_app1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42889033F4FF58E880111948 /* Pods_mobileinnovation_app1UITests.framework */; };
 /* End PBXBuildFile section */
@@ -256,6 +257,7 @@
 		10BE15F61F3D9FAF0007641A /* mobileinnovation-app1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mobileinnovation-app1UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10BE15FA1F3D9FAF0007641A /* mobileinnovation_app1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mobileinnovation_app1UITests.swift; sourceTree = "<group>"; };
 		10BE15FC1F3D9FAF0007641A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10F4178C1F5083400085A099 /* Tab5_FingerprintAuthentication_TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab5_FingerprintAuthentication_TableViewCell.swift; sourceTree = "<group>"; };
 		29C4E3CD8AA443754CB79C21 /* Pods_mobileinnovation_app1Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobileinnovation_app1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42889033F4FF58E880111948 /* Pods_mobileinnovation_app1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mobileinnovation_app1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		44041D7188E3C292CC84C372 /* Pods-mobileinnovation-app1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mobileinnovation-app1Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-mobileinnovation-app1Tests/Pods-mobileinnovation-app1Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 			children = (
 				100F83EB1F4AF87800F686E8 /* Tab5_ViewController.swift */,
 				109AE9BC1F4EF7CC0030079B /* Tab5_TableViewCell.swift */,
+				10F4178C1F5083400085A099 /* Tab5_FingerprintAuthentication_TableViewCell.swift */,
 			);
 			path = Tab5;
 			sourceTree = "<group>";
@@ -1137,6 +1140,7 @@
 				1058833A1F4BC77D000A87CE /* AsyncImageView.swift in Sources */,
 				100F83EF1F4AF87800F686E8 /* Tab4_ViewController.swift in Sources */,
 				100F83EE1F4AF87800F686E8 /* Tab3_ViewController.swift in Sources */,
+				10F4178D1F5083400085A099 /* Tab5_FingerprintAuthentication_TableViewCell.swift in Sources */,
 				100F83ED1F4AF87800F686E8 /* Tab2_ViewController.swift in Sources */,
 				10AA61041F419D9600F59887 /* Configuration.swift in Sources */,
 				109AE9BD1F4EF7CC0030079B /* Tab5_TableViewCell.swift in Sources */,
@@ -1312,7 +1316,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "d282df25-39e9-42e6-a56a-324ec0204a08";
 				PROVISIONING_PROFILE_SPECIFIER = "Mobile Innovation APP1 Development";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "-D DEBUG";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 				SWIFT_VERSION = 3.0;
@@ -1398,6 +1401,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.mobile-innovation.mobileinnovation-app1UITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "mobileinnovation-app1";
 			};
